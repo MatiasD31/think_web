@@ -111,9 +111,12 @@ li > a:hover { color:#D5F901; }
         width:100%;
         max-width:450px;
         min-width:320px;
-        
+        justify-content: flex-start;
         display:none;
     }
+
+
+    nav > ul > li { margin:25px 0px ;}
 
     #sub-list 
     {  
