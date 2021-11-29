@@ -1,0 +1,154 @@
+nav {
+    display:flex;
+    width:100%;
+    position:absolute;
+    z-index:60;
+    height:80px;
+    justify-content: space-between;
+}
+
+#bx-btn
+{
+    display:none;
+    justify-content: center;
+    align-items: center;
+    width:80px;
+    height:80px;
+    cursor:pointer;
+}
+
+#logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:15%;
+    height:80px;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width:56%;
+    height:80px;
+    list-style: none;
+    
+}
+
+nav > ul > li 
+{
+    position:relative;
+    cursor:pointer;
+}
+
+nav > ul > li > a ,
+nav > ul > li > span  
+{
+    text-decoration:none;
+    color:#FFFFFF;
+    transition:.2s;
+    -o-transition:.2s;
+    -moz-transition:.2s;
+    -webkit-transition:.2s;
+
+}
+nav > ul > li > span:hover, 
+li > a:hover { color:#D5F901; }
+
+
+/* sub list */
+
+#sub-list 
+{
+    border:1px solid #FFFFFF;
+    width:520px;
+    height:120px;
+    position:absolute;
+    background-color:#FFFFFF;
+    border-radius:5px;
+    left:-200px;
+    top:50px;
+    height:auto;
+    padding:15px;
+
+    display:none;
+}
+
+#sub-list > section > article > ul  
+{
+    list-style: none;
+}
+
+#sub-list > section > article > ul > li 
+{
+    font-size:.8rem;
+    padding:10px 0px 0px 10px;
+    display:flex;
+}
+
+#sub-list > section > article > ul > li > div > img { width:30px;padding:0px 10px 0px 0px; } 
+
+
+@media screen and ( max-width:1200px )
+{
+    #bx-btn { display:flex; }
+    
+    nav 
+    { 
+        background-color:#191919;
+        position:fixed; 
+    }
+
+    nav > ul 
+    {
+        background-color:#191919;
+        position:absolute;
+        display:flex;
+        flex-direction: column;
+        right:0px;
+        top:80px;
+        height:100vh;
+        width:100%;
+        max-width:450px;
+        min-width:320px;
+        
+        display:none;
+    }
+
+    #sub-list 
+    {  
+        width:100%;
+        height:auto;
+        position:relative;
+        border-radius:0px;
+        left:0px;
+        top:20px;
+        height:auto;
+        padding:15px;
+        display:none;
+        
+    }
+
+    /* nav > ul > li { border:1px solid white; } */
+
+    nav > ul > li > span { text-align: center; display:block; }  
+
+    #logo { min-width:250px; }
+}
+
+@media screen and ( max-width:800px ) 
+{
+    #logo { padding-bottom:10px; }
+    #bx-btn { display:flex; padding-bottom:15px; }
+}
+
+@media screen and ( max-width:400px ) 
+{
+    #sub-list > section > article 
+    { 
+        width:100%;
+        display:flex;
+        justify-content: center;
+        align-items: center; 
+    }
+}

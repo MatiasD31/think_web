@@ -1,0 +1,49 @@
+
+@font-face {
+    font-family:"think";
+    src: url(./../fonts/Gotham-Medium.ttf);
+}
+
+.think-light { font-family:"think-light"; font-weight: bold; }
+
+@font-face {
+    font-family:"think-light";
+    src: url(./../fonts/Gotham-Light.ttf);
+}
+
+.think-li { font-family : "think-light-italic" }
+
+@font-face {
+    font-family:"think-light-italic";
+    src: url(./../fonts/Gotham-LightItalic.ttf);
+}
+
+.think-black { font-family : "think-black" }
+
+@font-face {
+    font-family:"think-black";
+    src: url(./../fonts/Gotham-Black.ttf);
+}
+
+/* fonts */
+
+.text-center { text-align: center; }
+
+.fw { font-weight:bold; }
+
+/* font-size */
+
+.f-1 { font-size:3rem; }
+.f-2 { font-size:2.5rem; }
+.f-3 { font-size:2rem; }
+.f-4 { font-size:1.5rem; }
+.f-5 { font-size:1.2rem; }
+.f-6 { font-size:.9rem; }
+
+/* line heighths */
+
+.line-ht1 { line-height:50px; }
+.line-ht2 { line-height:40px; }
+.line-ht3 { line-height:30px; }
+.line-ht4 { line-height:20px; }
+.line-ht5 { line-height:10px; }

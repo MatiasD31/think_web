@@ -1,0 +1,17 @@
+
+/* BG - COLOURS */
+
+.bg-think { background-color:#7A42EB; }
+.bg-think-yellow { background-color:#D5F901;}
+.bg-think-blue { background-color:#00B8FF; }
+.bg-think-black { background-color:#000000; }
+.bg-think-dark { background-color:#191919; }
+.bg-think-white { background-color:#FFFFFF; }
+.bg-think-gray { background-color:#F5F5F5; }
+
+/* TEXT COLOURS */
+
+.fc-w1 { color:#FFFFFF; }
+.fc-think { color:#7A42EB; }
+.fc-think-yellow { color:#D5F901; }
+.fc-think-gray { color:rgba(0,0,0,.3); }
