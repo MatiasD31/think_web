@@ -463,6 +463,10 @@
 {
     #prices > section { width:90%; }
     #prices > section > section { padding:0px;margin-bottom:20px; }
+
+    #prices > section > section  > article { padding:25px;}
+
+    #prices > section > section > article > article > ul { padding-left:20px;}
 }
 
 /* our-products */
