@@ -24,6 +24,7 @@
 
 .bx-10 { width:10%; }
 .bx-20 { width:20%; }
+.bx-25 { width:25%; }
 .bx-30 { width:30%; }
 .bx-40 { width:40%; }
 .bx-50 { width:50%; }
@@ -42,7 +43,8 @@
 .bx-70,
 .bx-80,
 .bx-90,
-.bx-f { padding:10px; }
+.bx-f,
+.bx-25 { padding:10px; }
 
 /* HEIGHTS */
 

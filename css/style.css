@@ -562,4 +562,21 @@ footer > section > article > button { width:100% !important;color:#FFFFFF; }
 .s-network-social:hover { background-color:#7A42EB; }
 
 
+/* prices */
+
+
+/* our-products */
+
+#our-products > section > section > section 
+{
+    cursor:pointer;
+    transition:.4s;
+}
+
+#our-products > section > section > section:hover 
+{ 
+    box-shadow:0px 0px 25px rgba(0,0,0,.3);
+    width:100%;
+}
+
 
