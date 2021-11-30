@@ -163,26 +163,59 @@
 
         </section>
 
+        <script>
+
+            function loadVideos() 
+            {
+                videosFull = document.getElementsByClassName('video')
+
+                feacture = document.getElementsByClassName('video-feacture')
+
+                for( j = 0 ; j < feacture.length ; j++ )
+                {
+                    feacture[j].addEventListener('click',(e) => {
+
+                        selectedVideo = e.currentTarget.getAttribute('for')
+
+                        for( i = 0 ; i < feacture.length ; i++ )
+                        {
+                            videosFull[i].style.display = 'none' 
+                            videosFull[i].pause() 
+                        }
+
+                        videosFull[selectedVideo].style.display = 'flex'
+                    })
+                }
+            }
+
+            addEventListener('load', loadVideos )
+
+        </script>
+
         <section id="video" class="py-5 center col">
 
             <article class="bx-90">
-                <!-- <video src="" class="video"></video> -->
-                <img src="./imagenes/video-1.jpg.png" class="video">
-            </article>
 
+                <video src="./videos/02.mp4" class="video" for="0" controls></video>
+                <video src="./videos/01.mp4" class="video" for="1" controls></video>
+                <video src="./videos/03.mp4" class="video" for="2" controls></video>
+                <video src="./videos/01.mp4" class="video" for="3" controls></video>
+
+            </article>
+ 
             <section class="bx-f pt-5">
                 <ul>
-                    <li>Feacture 01</li>
-                    <li>Feacture 02</li>
-                    <li>Feacture 03</li>
-                    <li>Feacture 04</li>
+                    <li class="video-feacture" for="0">Feacture 01</li>
+                    <li class="video-feacture" for="1">Feacture 02</li>
+                    <li class="video-feacture" for="2">Feacture 03</li>
+                    <li class="video-feacture" for="3">Feacture 04</li>
                 </ul>
             </section>
 
         </section>
 
         <section id="gadgets" class="center col py-5" >
-
+             
             <article class="bx-90">
                 <ul class="center wrap">
 
@@ -190,10 +223,10 @@
 
                         <div class="bx-90">
                             <div class="bx-30 pb-2">
-                                <img src="./imagenes/Iconos/image.svg" class="img-md">
+                                <img src="./imagenes/Iconos/Union.svg" class="img-md">
                             </div>
-                            <h5 class="f-4 pb-2 fc-think">REPORTES BI</h5>
-                            <p class="think-light f-5 inter-line">Nuestro módulo de reportes es el más avanzado del mercado. Podes crear todos los Dashboards que necesites con nuestras más de 800 métricas y reportes.</p>
+                            <h5 class="f-4 pb-2 fc-think">INTEGRACIONES</h5>
+                            <p class="think-light f-5 inter-line">Tenemos integraciones con los principales servicios del mercado, cómo Mercado Pago, Pedidos Ya, Glovo, Rappi, Fudex entre otros.</p>
                         </div>
 
                     </li>
@@ -214,10 +247,10 @@
 
                         <div class="bx-90">
                             <div class="bx-30 pb-2">
-                                <img src="./imagenes/Iconos/image.svg" class="img-md">
+                                <img src="./imagenes/Iconos/Clock.svg" class="img-md">
                             </div>
-                            <h5 class="f-4 pb-2 fc-think">REPORTES BI</h5>
-                            <p class="think-light f-5 inter-line">Nuestro módulo de reportes es el más avanzado del mercado. Podes crear todos los Dashboards que necesites con nuestras más de 800 métricas y reportes.</p>
+                            <h5 class="f-4 pb-2 fc-think">BACKUP DIARIO</h5>
+                            <p class="think-light f-5 inter-line">Si, tu información es crucial para nosotros. Por eso contamos con muchos métodos de control de los datos y backup diario.</p>
                         </div>
 
                     </li>
@@ -226,10 +259,10 @@
 
                         <div class="bx-90">
                             <div class="bx-30 pb-2">
-                                <img src="./imagenes/Iconos/image.svg" class="img-md">
+                                <img src="./imagenes/Iconos/Calendar.svg" class="img-md">
                             </div>
-                            <h5 class="f-4 pb-2 fc-think">REPORTES BI</h5>
-                            <p class="think-light f-5 inter-line">Nuestro módulo de reportes es el más avanzado del mercado. Podes crear todos los Dashboards que necesites con nuestras más de 800 métricas y reportes.</p>
+                            <h5 class="f-4 pb-2 fc-think">SINCRONIZACIÓN AUTOMATICA</h5>
+                            <p class="think-light f-5 inter-line">Todas tus modificaciones se actualizaran en los locales automáticamente al otro día, sin que tengas que recordar "Sincronizar".</p>
                         </div>
 
                     </li>
@@ -519,7 +552,7 @@
 
         </section>
         
-        <section id="razons" class="col bg-think-gray pos-r">
+        <section id="razons" class="gral-padding col bg-think-gray pos-r">
 
             <header class="bx-50 center col">
                 <h5 class="text-center f-5 pb-2">POR QUE ELEGIRNOS</h5>
@@ -724,7 +757,85 @@
 
         </section>
 
-        <section id="screens" class="py-5 center col" style="display:none;">
+        <section id="mockups" class="gral-padding center col">
+
+            <header class="bx-50 center col">
+                <h5 class="text-center f-5 pb-2">FEATURE O PARTE DEL SISTEMA</h5>
+                <h2 class="text-center f-1">Screems del sistema</h2>
+            </header>
+
+            <section id="btns-mockups">
+                <button id="prev-mockup-video" class="btn-slide-apps">
+                    <img src="./imagenes/arrow-left.png" alt="">
+                </button>
+                <button id="next-mockup-video" class="btn-slide-apps">
+                    <img src="./imagenes/arrow-right.png" alt="">
+                </button>
+            </section>
+
+            <section id="bx-mockup">
+
+                <div id="circle-mockups" class="bg-think-yellow"></div>
+
+                <section id="bx-mockups-deslice">
+    
+                    <div class="bx-mockups-videos pos-r">   
+                        <div class="bx-btn-play">
+                            <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                            <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                        </div>
+                        <div id="bx-video-mockup">
+                            <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video>
+                        </div>
+                    </div>
+    
+                    <div class="bx-mockups-videos pos-r">   
+                        <div class="bx-btn-play">
+                            <img src="./imagenes/icon-pause.png" class="btn-pause" index="1">
+                            <img src="./imagenes/icon-play.png" class="btn-play" index="1">
+                        </div>
+                        <div id="bx-video-mockup">
+                            <video src="./videos/01.mp4" class="video-mockup" index="1" width="1000" height="680" controls></video>
+                        </div>
+                    </div>
+    
+                    <div class="bx-mockups-videos pos-r">   
+                        <div class="bx-btn-play">
+                            <img src="./imagenes/icon-pause.png" class="btn-pause" index="2">
+                            <img src="./imagenes/icon-play.png" class="btn-play" index="2">
+                        </div>
+                        <div id="bx-video-mockup">
+                            <video src="./videos/01.mp4" class="video-mockup" index="2" width="1000" height="680" controls></video>
+                        </div>
+                    </div>
+    
+                    <div class="bx-mockups-videos pos-r">   
+                        <div class="bx-btn-play">
+                            <img src="./imagenes/icon-pause.png" class="btn-pause" index="3">
+                            <img src="./imagenes/icon-play.png" class="btn-play" index="3">
+                        </div>
+                        <div id="bx-video-mockup">
+                            <video src="./videos/01.mp4" class="video-mockup" index="3" width="1000" height="680" controls></video>
+                        </div>
+                    </div>
+    
+                    <div class="bx-mockups-videos pos-r">   
+                        <div class="bx-btn-play">
+                            <img src="./imagenes/icon-pause.png" class="btn-pause" index="4">
+                            <img src="./imagenes/icon-play.png" class="btn-play" index="4">
+                        </div>
+                        <div id="bx-video-mockup">
+                            <video src="./videos/01.mp4" class="video-mockup" index="4" width="1000" height="680" controls></video>
+                        </div>
+                    </div>
+        
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="screens" class="gral-padding center col" style="display:none;">
 
             
 
@@ -762,7 +873,7 @@
 
         </section>
 
-        <section id="complementary" class="py-5 center col">
+        <section id="complementary" class="gral-padding center col">
 
             <header class="bx-50 center col">
                 <h5 class="text-center f-5 pb-2">OTROS PRODUCTOS</h5>
@@ -846,6 +957,8 @@
             </article>
 
         </section>
+
+        
 
     </section>
 
@@ -966,6 +1079,7 @@
 
     </footer>
 
+    <script src="js/mockupsVideos.js"></script>
     <script src="js/complementaryProducts.js"></script>
     <script src="js/toggle-menu.js"></script>
     <script src="js/testing.js"></script>

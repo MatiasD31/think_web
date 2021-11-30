@@ -63,7 +63,7 @@
 
 @media screen and ( max-width: 600px )
 {
-    #slide > section > article { width:100%; }
+    #slide > section  { padding:0px 2%; }
 
     .img-slide { width:1080px; }
 
@@ -182,6 +182,15 @@
     #gadgets > article > ul > li > div > p { text-align: center; }
 }
 
+@media screen and ( max-width: 600px ) 
+{
+    .img-md { width:100%; }
+
+    #gadgets > article > ul > li { padding:1%;}
+}
+
+
+
 
 
 /* customers */
@@ -249,15 +258,19 @@
 
 @media screen and ( max-width:600px ) 
 {
-    #video > section > ul  {
-        width:50%;
+
+    #video > section > ul  
+    {
+        width:100%;
         margin:auto;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    #video > section > ul > li { 
+    #video > section > ul > li 
+    { 
         text-align: center;
         margin-bottom:25px; 
+        width:50%;
     }
 }
 
@@ -489,6 +502,17 @@
 @media screen and ( max-width:500px )
 {
     #our-products > section > section { width:100%; }
+}
+
+/* mockups videos */
+
+@media screen and ( max-width:650px ) 
+{
+    .bx-mockups-videos 
+    { 
+        min-width:300px !important;
+        height:65vh !important;
+    }
 }
 
 
