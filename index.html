@@ -163,35 +163,6 @@
 
         </section>
 
-        <script>
-
-            function loadVideos() 
-            {
-                videosFull = document.getElementsByClassName('video')
-
-                feacture = document.getElementsByClassName('video-feacture')
-
-                for( j = 0 ; j < feacture.length ; j++ )
-                {
-                    feacture[j].addEventListener('click',(e) => {
-
-                        selectedVideo = e.currentTarget.getAttribute('for')
-
-                        for( i = 0 ; i < feacture.length ; i++ )
-                        {
-                            videosFull[i].style.display = 'none' 
-                            videosFull[i].pause() 
-                        }
-
-                        videosFull[selectedVideo].style.display = 'flex'
-                    })
-                }
-            }
-
-            addEventListener('load', loadVideos )
-
-        </script>
-
         <section id="video" class="py-5 center col">
 
             <article class="bx-90">
@@ -278,16 +249,18 @@
             <section class="bx-90 d-f wrap bg-think pos-r">
  
                  <img src="./imagenes/Vector.png" class="pos-a vector-Think">
- 
+
+                 <img src="./imagenes/shadow-more.png" class="more-shadow">
+  
                  <article class="bx-50 p-5">
                      <h1 class="f-1 fc-w1 pb-3 pl-5">Queres conocer nuestras novedades?</h1>
-                     <p class="f-6 fc-w1 pl-5 think-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam itaque, asperiores ut magni, laudantium sequi odio sint nobis alias voluptatibus, tempore fuga? Impedit temporibus, aut quia commodi voluptates non error?</p>
+                     <p class="f-5 fc-w1 pl-5 line-ht3 think-light">Suscribite a nuestro newsletter semanal, con todas las novedades. Sumate a nuestra comunidad.</p>
                  </article>
                  <article class="bx-50 p-5 center">
                      <form action="" id="form-subscribe">
                          <div class="bx-f p-1 d-f">
                              <input type="text" class="inp-subscribe" value="Dejanos tu email">
-                             <button class="btn">Subcribirse</button>
+                             <button class="btn fc-think">Subscribirme</button>
                          </div>
                      </form>
                  </article>
@@ -412,7 +385,11 @@
             <article class="card-think-about col center bg-think">
 
                 <p class="bx-70 fc-w1 line-ht3 think-light">
+                    
                     <img src="./imagenes/Vector.png" class="vector-preview">
+
+                    <img src="./imagenes/shadow-more.png" class="previews-more-shadow">
+
                     ThinkFood es una herramienta de satisfaccion que permite capturar datos de clientes y conocer que ocurre en tus locales, desde el punto de vista de tus clientes
                     <br> 
                     <a href="#" class="fc-think-yellow">Ver mas...</a>
@@ -1079,6 +1056,7 @@
 
     </footer>
 
+    <script src="js/full-videos.js"></script>
     <script src="js/mockupsVideos.js"></script>
     <script src="js/complementaryProducts.js"></script>
     <script src="js/toggle-menu.js"></script>
