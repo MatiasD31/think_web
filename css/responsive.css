@@ -184,7 +184,7 @@
 
 @media screen and ( max-width: 600px ) 
 {
-    .img-md { width:100%; }
+    .img-md { width:70%; }
 
     #gadgets > article > ul > li { padding:0px; }
     #gadgets > article  { padding:30px 0px; width:100%;  }
@@ -397,33 +397,54 @@
 /*  hero-1 */
 
 
-@media screen and ( max-width:900px ) 
+@media screen and ( max-width:1000px ) 
 {
-    #hero-1 > section > section { width:90%; }
-    
-    .mockup { width:200px;height:43vh; }
-    .mockup-image 
+    #hero-1 > section:last-child > section > section:last-child 
     {
-        width:100%;
-        border-radius:50px;
-        height:40vh;
+        justify-content: flex-end; 
     }
 
-    #hero-1 > section > section > article > .btn { width:100%; }
+    #hero-1 > section > section,
+    #hero-2 > section > section { width:90%;}
+
+    #hero-1 > section > section > section:first-child,
+    #hero-2 > section > section > section:last-child { width:60%; }
+    
+    #hero-1 > section > section > section:last-child,
+    #hero-2 > section > section > section:first-child { width:40%; }
 }
 
-@media screen and ( max-width:700px )
+@media screen and ( max-width:900px )
 {
-    #hero-1 > section:first-child > section > article { margin-top:0px; }
-    #hero-1 > section:last-child > section > article { margin-top:0px; }
-}
+    .mockup { width:260px; height:60vh; }
 
-@media screen and ( max-width:570px )
-{
-    #hero-1 > section > section > article { width:90%; }
-    #hero-1 > section > section { flex-wrap: wrap ; }
-    #mockup-01 { display:none; }
+    .mockup-image { height:57vh; }
 } 
+
+@media screen and ( max-width:760px )
+{
+    .mockup { display: none; }
+
+    #hero-1 > section > section > section:first-child,
+    #hero-2 > section > section > section:last-child { width:100%;padding:3% 1%; }
+
+    #hero-1 > section > section > section:last-child,
+    #hero-2 > section > section > section:first-child { width:0%; }
+
+    #hero-1 > section,
+    #hero-2 > section { height:50vh;}
+
+    .rectangle { height:50vh; }
+
+}
+
+@media screen and ( max-width:400px ) 
+{
+    .rectangle { width:100px; }
+}
+
+
+
 
 
 /* footer */

@@ -192,46 +192,54 @@
     width:70px;
 }
 
+
+/* hero-2 */
+
+
+
+/* #hero-2 > section:last-child > section > article { margin-top:-150px; } */
+
 /* hero-1 */
 
-#rectangle-right 
+.rectangle 
 {
+    width:200px;
+    height:60vh;
+    z-index:1;
     position:absolute;
-    margin-top:-11px;
-    right:0px;
-    width:10%;
-    height:70vh;
-    background-color:#7A42EB;
+    
 }
 
-.specs {
-    position:absolute;
-    z-index:30;
-    width:30%;
-    height:80vh;
-    color:white;
-}
+#hero-1 > section > .rectangle { right:0px; }
+#hero-2 > section > .rectangle { left:0px; }
 
-.specs-01 
+#hero-1 > section,
+#hero-2 > section 
 {
-    top:20%;
-    left:10%;
-}
-
-.specs-02 {
-    right:20%;
-    top:20%;
-}
-
-#hero-1 > .specs-01 > article:first-child
-{
+    height:60vh;
+    width:100%;
     display:flex;
-    align-items: center;
     justify-content: center;
 }
 
-#hero-1 > section:first-child > section > article { margin-top:250px; }
-#hero-1 > section:last-child > section > article { margin-top:-150px; }
+/* cajas de texo */
+#hero-1 > section > section > section:first-child,
+#hero-2 > section > section > section:last-child { position: relative; z-index:5; }
+
+/* alineacion para la primer caja principal */
+#hero-1 > section:first-child,
+#hero-2 > section:first-child { align-items: flex-end; }
+
+/* alineacion para la ultima caja principal */
+#hero-1 > section:last-child,
+#hero-2 > section:last-child { align-items: flex-start; }
+
+#hero-1 > section:last-child > section > section:last-child,
+#hero-2 > section:last-child > section > section:first-child
+{
+    display:flex;
+    justify-content: center; 
+}
 
 .mockup 
 {
@@ -243,11 +251,15 @@
     box-shadow:0px 0px 35px rgba(0,0,0,.7);
 }
 
-#mockup-01
+#mockup-01,
+#mockup-02
 {
     position:absolute;
-    bottom:200px;
+    z-index:5;
 }
+
+#mockup-01,
+#mockup-02 { bottom:200px; }
 
 .mockup-image 
 {
@@ -255,6 +267,9 @@
     border-radius:50px;
     height:67vh;
 }
+
+#hero-1 > section:last-child > section > section:first-child > button,
+#hero-2 > section:last-child > section > section:last-child > button { margin-top:50px; }
 
 /* complementary */
 
