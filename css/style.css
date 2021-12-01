@@ -69,7 +69,7 @@
     position: relative; 
     z-index:10; 
     margin-top:0px;
-    width:100%;
+    /* width:100%; */
 }
 
 
@@ -192,19 +192,12 @@
     width:70px;
 }
 
-
-/* hero-2 */
-
-
-
-/* #hero-2 > section:last-child > section > article { margin-top:-150px; } */
-
 /* hero-1 */
 
 .rectangle 
 {
     width:200px;
-    height:60vh;
+    height:70vh;
     z-index:1;
     position:absolute;
     
@@ -216,7 +209,7 @@
 #hero-1 > section,
 #hero-2 > section 
 {
-    height:60vh;
+    height:70vh;
     width:100%;
     display:flex;
     justify-content: center;
@@ -268,8 +261,9 @@
     height:67vh;
 }
 
-#hero-1 > section:last-child > section > section:first-child > button,
-#hero-2 > section:last-child > section > section:last-child > button { margin-top:50px; }
+/* hero-2 */
+
+
 
 /* complementary */
 
