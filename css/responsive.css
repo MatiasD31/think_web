@@ -350,7 +350,6 @@
 
 
 
-
 /* razons  */
 
 @media screen and ( max-width:1200px )
@@ -391,6 +390,24 @@
 {
     .btns-razons { width:60px;height:60px;margin-top:-25%; }
     .btns-razons > img { width:30px; }
+}
+
+
+/* flat heros */
+
+@media screen and ( max-width:1000px )
+{
+    #flat-hero-1 > section ,
+    #flat-hero-2 > section ,
+    #flat-hero-3 > section  { width:100%; }
+
+    #flat-hero-1 > section > article:first-child ,
+    #flat-hero-2 > section > article:last-child,
+    #flat-hero-3 > section > article:last-child { width:100%; }
+
+    #flat-hero-1 > section > article:last-child,
+    #flat-hero-2 > section > article:first-child,
+    #flat-hero-3 > section > article:first-child { display:none; }
 }
 
 
