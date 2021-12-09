@@ -278,6 +278,7 @@
 
 @media screen and ( max-width: 500px ) 
 {
+    #customers > header { width:90%; }
     #customers > article > ul > li { width:50%; }
 }
 

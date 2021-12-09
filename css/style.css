@@ -89,8 +89,19 @@
 
 /* customers */
 
-#customers > header { margin-bottom:100px; }
+
 #customers > article > ul { list-style: none; }
+
+#customers > article > ul > li { margin-top:50px; }
+
+#customers > article > button 
+{
+    font-family: "think-bold";
+    margin-top:50px;
+    width:252px;
+    height:60px;
+    color:#FFFFFF;
+}
 
 /* integrations */
 
