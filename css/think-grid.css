@@ -27,8 +27,11 @@
 .bx-25 { width:25%; }
 .bx-30 { width:30%; }
 .bx-40 { width:40%; }
+.bx-45 { width:45%; }
 .bx-50 { width:50%; }
+.bx-55 { width:55%; }
 .bx-60 { width:60%; }
+.bx-65 { width:65%; }
 .bx-70 { width:70%; }
 .bx-80 { width:80%; }
 .bx-90 { width:90%; }
@@ -37,9 +40,12 @@
 .bx-10,
 .bx-20,
 .bx-30,
+.bx-45,
 .bx-40,
 .bx-50,
+.bx-55,
 .bx-60,
+.bx-65,
 .bx-70,
 .bx-80,
 .bx-90,

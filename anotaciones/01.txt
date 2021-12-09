@@ -1,0 +1,20 @@
+Tú17:36
+https://matiasd31.github.io/think_web/
+https://www.figma.com/file/8AtuIGbViFABBOjsg7U1NP/Thinkion-Keyvisuals?node-id=22%3A7
+Hernán Fernández17:58
+<script defer>: el script se descarga de forma asíncrona, en paralelo con el análisis HTML, y además su ejecución es diferida hasta que termine el análisis HTML.
+No hay bloqueo en el renderizado HTML.
+Hernán Fernández18:27
+
+src set
+srcset
+https://www.w3schools.com/tags/att_source_srcset.asp
+
+Read more: https://html.com/attributes/img-srcset/#ixzz7EOoDngYl
+
+https://html.com/attributes/img-srcset/
+<img srcset=" /wp-content/uploads/flamingo4x.jpg 4x, /wp-content/uploads/flamingo3x.jpg 3x, /wp-content/uploads/flamingo2x.jpg 2x, /wp-content/uploads/flamingo1x.jpg 1x " src="/wp-content/uploads/flamingo-fallback.jpg" >
+
+Read more: https://html.com/attributes/img-srcset/#ixzz7EOoGXnTF
+
+<video src="http://player.vimeo.com/external/85569724.sd.mp4?s=43df5df0d733011263687d20a47557e4"></video>

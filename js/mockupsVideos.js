@@ -3,6 +3,7 @@ var margin = 0
 var contDeliceVideo = 0
 
 var cont = 0 
+
 var longDisplace = 0
 
 function loadVideosMockups() 
@@ -39,7 +40,7 @@ function loadVideosMockups()
         })
     }
 
-    prev.addEventListener('click',() => {
+    prev.addEventListener('click', () => {
 
         bodyWidth = document.body.clientWidth
 
@@ -86,8 +87,6 @@ function stop()
 
         btnPause[ k ].style.display = 'none'
     }
-
-    
 }
 
 function deslice ( direction )

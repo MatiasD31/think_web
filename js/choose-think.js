@@ -1,5 +1,3 @@
-
-
 function load_choose_think()
 {
     btns_razons = document.getElementsByClassName('btns-razons')

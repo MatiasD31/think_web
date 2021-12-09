@@ -1,22 +1,37 @@
 
+/*- Gotham -- book -*/
+
 @font-face {
     font-family:"think";
-    src: url(./../fonts/Gotham-Medium.ttf);
+    src: url(./../fonts/Gotham-Book.ttf);
 }
 
-.think-light { font-family:"think-light"; font-weight: bold; }
+.think { font-family:"think"; }
+
+/*- Gotham -- italic -*/
 
 @font-face {
-    font-family:"think-light";
-    src: url(./../fonts/Gotham-Light.ttf);
+    font-family:"think-light-italic";
+    src: url(./../fonts/Gotham-ThinItalic.ttf);
 }
 
 .think-li { font-family : "think-light-italic" }
 
 @font-face {
     font-family:"think-light-italic";
-    src: url(./../fonts/Gotham-LightItalic.ttf);
+    src: url(./../fonts/Gotham-BookItalic.ttf);
 }
+
+/*- Gotham -- bold -*/
+
+@font-face {
+    font-family:"think-bold";
+    src: url(./../fonts/Gotham-Bold.ttf);
+}
+
+.think-bold { font-family:"think-bold"; }
+
+/*- Gotham -- black -*/
 
 .think-black { font-family : "think-black" }
 
@@ -33,17 +48,17 @@
 
 /* font-size */
 
-.f-1 { font-size:3rem; }
-.f-2 { font-size:2.5rem; }
+.f-1 { font-size:53px; }
+.f-2 { font-size:40px; }
 .f-3 { font-size:2rem; }
-.f-4 { font-size:1.5rem; }
-.f-5 { font-size:1.2rem; }
+.f-4 { font-size:25px; }
+.f-5 { font-size:18px; }
 .f-6 { font-size:.9rem; }
 
 /* line heighths */
 
-.line-ht1 { line-height:50px; }
+.line-ht1 { line-height:65px; }
 .line-ht2 { line-height:40px; }
-.line-ht3 { line-height:30px; }
+.line-ht3 { line-height:28px; }
 .line-ht4 { line-height:20px; }
 .line-ht5 { line-height:10px; }
