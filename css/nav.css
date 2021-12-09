@@ -58,9 +58,10 @@ nav > ul > li > span
     -webkit-transition:.2s;
 
 }
-nav > ul > li > span:hover, 
-li > a:hover { color:#D5F901; }
 
+nav > ul > li:hover .links { color:#D5F901;}
+
+nav > ul > li:hover #sub-list { display:flex; } 
 
 /* sub list */
 
@@ -95,10 +96,12 @@ li > a:hover { color:#D5F901; }
 #sub-list > section > article > ul > li > div > img { width:30px;padding:0px 10px 0px 0px; } 
 
 
+.sub-btns > span > a { text-decoration: none; }
+
 @media screen and ( max-width:1200px )
 {
     #bx-btn { display:flex; }
-    
+
     nav 
     { 
         background-color:#191919;
@@ -124,7 +127,8 @@ li > a:hover { color:#D5F901; }
     }
 
 
-    nav > ul > li { margin:38px 0px;}
+    nav > ul > li:first-child { margin-top:80px;}
+    nav > ul > li { margin:25px 0px;}
 
     #sub-list 
     {  
