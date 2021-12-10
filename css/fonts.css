@@ -40,9 +40,21 @@
     src: url(./../fonts/Gotham-Black.ttf);
 }
 
+
+/*- Gotham -- black -*/
+
+.think-light { font-family : "think-light" }
+
+@font-face {
+    font-family:"think-light";
+    src: url(./../fonts/Gotham-Light.ttf);
+}
+
+
 /* fonts */
 
 .text-center { text-align: center; }
+.text-j { text-align: justify;}
 
 .fw { font-weight:bold; }
 

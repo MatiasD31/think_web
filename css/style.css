@@ -241,35 +241,78 @@
 
 #previews { width:100%; }
 
-.slide-previews 
-{ 
-    width:1920px;
-    height:1080px;
+.slide-previews { width:1920px; height:1080px; }
+
+#bx-btns-previews > button > img { display:block; margin: auto; }
+
+
+.slide-previews { display:none; } 
+.slide-previews:first-of-type { display:flex; }
+
+#previews > section > button { background-color:rgba(255,255,255,.6); }
+#previews > section > button:active { background-color: #7A42EB; } 
+
+#bx-btns-previews
+{
+    display: flex;
+    margin:auto;
+    top:0px;
+    bottom:0px;
+    position: absolute;
+    width:100%;
+    height:60px;
+    z-index:50;
+    justify-content: space-between;
 }
 
 .card-think-about
 {
-    position:absolute;
-    z-index:30;
+    padding:35px 50px;
     width:544px;
-    height:40vh;
+    line-height: 30px;
     bottom:-5%;
     left:10%;
-}
-
-.vector-preview 
-{  
     position:absolute;
-    width:40px;
-    left:-10px;
+    z-index:30;
+    display: none;
 }
 
-.previews-more-shadow 
+.card-think-about:first-of-type { display:flex; }
+
+.card-think-about > p > a,
+.card-think-about > p > span 
+{
+    text-align: left;
+    display:block; 
+    text-decoration: none; 
+    margin-top:10px;
+}
+
+#bx-arrows-thinks-reviews 
 {
     position:absolute;
-    top:35px;
+    top:15px;
+    left:0px;
+    width:100px;
+    height:100px;
+}
+
+#bx-arrows-thinks-reviews > img { position:absolute; }
+
+#bx-arrows-thinks-reviews > img:first-of-type 
+{
+    width:40px;
     left:-10px;
-    width:70px;
+    top:15px;
+    z-index:5;
+}
+
+#bx-arrows-thinks-reviews > img:last-child
+{
+    width:72px;
+    left:-18px;
+    top:-7px;
+    z-index:50;
 }
 
 /* hero-1 */
@@ -283,8 +326,11 @@
     
 }
 
+#hero-1 > section > section:last-child,
+#hero-2 > section:last-child > section { justify-content:space-between; } 
+
 #hero-1 > section:last-child > section > section:first-child > button,
-    #hero-2 > section:last-child > section > section:last-child > button { margin-top:50px; }
+#hero-2 > section:last-child > section > section:last-child > button { margin-top:50px; }
 
 #hero-1 > section > .rectangle { right:0px; }
 #hero-2 > section > .rectangle { left:0px; }
@@ -317,15 +363,33 @@
     justify-content: center; 
 }
 
+#hero-2  > section:first-of-type > section 
+{
+    display: flex;
+    justify-content: space-between;
+}
+
 .mockup 
 {
     border-radius:50px;
-    width:320px;
-    height:70vh;
-    padding:10px;
+    width:267px;
+    height:475px;
     overflow:hidden;
     box-shadow:0px 0px 35px rgba(0,0,0,.7);
 }
+
+.inner-mockup 
+{
+    width:247px;
+    height:455px;
+    background-color:#FFFFFF;
+    margin:10px;
+    border-radius:40px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.mockup-image { width:247px; height:455px; }
 
 #mockup-01,
 #mockup-02
@@ -337,12 +401,7 @@
 #mockup-01,
 #mockup-02 { bottom:200px; }
 
-.mockup-image 
-{
-    width:100%;
-    border-radius:50px;
-    height:67vh;
-}
+
 
 /* hero-2 */
 
@@ -395,9 +454,9 @@
 {
     border-radius:50%;
     border:none;
-    width:50px;
-    height:50px;
-    margin:0px 15px;
+    width:69px;
+    height:69px;
+    margin:0px 50px;
     cursor:pointer;
     display:flex;
     justify-content: center;

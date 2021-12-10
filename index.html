@@ -395,36 +395,131 @@
          
         <section id="previews" class="pos-r h-f">
 
-            <img class="slide-previews pos-a" src="./imagenes/dots.png">
+            <section id="bx-btns-previews">
+                <button id="prev-preview" class="btn-slide-apps">
+                    <img src="./imagenes/arrow-left.png" alt="">
+                </button>
+                <button id="next-preview" class="btn-slide-apps">
+                    <img src="./imagenes/arrow-right.png" alt="">
+                </button>
+            </section>
 
             <img class="slide-previews pos-a" src="./imagenes/patrick-tomasso-NlcCPeKNmwg-unsplash-scaled 1.png">
 
-            <article class="card-think-about col center bg-think">
+            <img class="slide-previews pos-a" src="./imagenes/dots.png">
 
-                <p class="bx-70 f-5 fc-w1 line-ht3 think-light">
-                    
-                    <img src="./imagenes/Vector.png" class="vector-preview">
+            <!-- CARD -->
 
-                    <img src="./imagenes/shadow-more.png" class="previews-more-shadow">
-                        ThinkFood es una herramienta de satisfaccion que permite capturar datos de clientes y conocer que ocurre en tus locales, desde el punto de vista de tus clientes
-                    <br>
-                    <a href="#" class="fc-think-yellow">VER MAS</a>
-                </p>
+            <article class="card-think-about col d-f bg-think">
+
+                <div id="bx-arrows-thinks-reviews">
+
+                    <img src="./imagenes/Vector.png">
+
+                    <img src="./imagenes/shadow-more.png">
+
+                </div>
                 
+                <p class="bx-f f-5 think-light fc-w1 text-j">
+                    ThinkFood es una herramienta de satisfaccion que permite capturar datos de clientes y conocer que ocurre en tus locales, desde el punto de vista de tus clientes
+                    <a href="#" class="fc-think-yellow think-bold">VER MAS</a>
+                </p>
+               
+            </article>
 
+            <article class="card-think-about col d-f bg-think-blue">
+
+                <div id="bx-arrows-thinks-reviews">
+
+                    <img src="./imagenes/dospuntos.png">
+
+                    <img src="./imagenes/dospuntos-shadow.png">
+
+                </div>
+                
+                <p class="bx-f f-5 think-light fc-w1 text-j">
+                    Thinkion nos ayudo a crecer como Marca y a expandirnos ordenadamente. 
+                    <span href="#" class="fc-w1 think-bold">Carlos Temple - TEMPLE</span>
+                </p>
+               
             </article>
 
 
         </section>
+
+        <script>
+
+            var cnt_preview = 0
+
+            function load_previews()
+            {
+                prev_preview = document.getElementById('prev-preview')
+
+                next_preview = document.getElementById('next-preview')
+
+                images_previews = document.getElementsByClassName('slide-previews')
+
+                card = document.getElementsByClassName('card-think-about')
+
+                next_preview.addEventListener('click', () => {
+
+                    cnt_preview++
+
+                    if( cnt_preview < images_previews.length )
+                    {
+                        hide_to_select_img( cnt_preview , images_previews , card )  
+                    } 
+                    else {
+                        cnt_preview = 0
+
+                        hide_to_select_img( cnt_preview , images_previews , card )     
+                    }
+                })
+
+                prev_preview.addEventListener('click', () => {
+
+                    cnt_preview--
+
+                    if( cnt_preview >= 0 )
+                    {
+                        hide_to_select_img( cnt_preview , images_previews , card )  
+                    } 
+                    else {
+
+                        cnt_preview = images_previews.length - 1
+
+                        hide_to_select_img( cnt_preview , images_previews , card )     
+                    }
+                })
+            }
+
+            function hide_to_select_img( cont , image_dom , card )
+            {
+
+                for( i = 0 ; i < image_dom.length ; i++ )
+                {
+                    image_dom[i].style.display = 'none'
+                    card[i].style.display = 'none'
+                }
+
+                image_dom[cont].style.display = 'flex' 
+                card[cont].style.display = 'flex'
+
+            }
+
+
+            addEventListener('load',load_previews)
+
+        </script>
         
         <section id="hero-1" class="pos-r">
- 
-            <section class="bg-think-black">
+            
+            <section class="bg-think-dark">
                 
                 <section class="bx-80 d-f">
 
                     <section class="bx-50 p-5">
-                        <h4 class="f-1 fc-w1">Título de la feature/spec.</h4>
+                        <h4 class="f-1 fc-w1 think-bold">Título de la feature/spec.</h4>
                     </section>
 
                     <section class="bx-50"></section>
@@ -439,12 +534,12 @@
 
                 <section class="bx-80 d-f">
 
-                    <section class="bx-50 p-5">
+                    <section class="bx-40 p-5">
                         
                         <p class="fc-w1 f-5 think-light line-ht3">Tenemos integraciones con los principales servicios del mercado, cómo Mercado Pago, Pedidos Ya, Glovo, Rappi, Fudex entre otros.</p>
                         
-                        <button class="btn fc-think">
-                            Ver mas...
+                        <button class="btn fc-think think-bold">
+                            Ver más
                         </button>
 
                     </section>
@@ -453,8 +548,10 @@
 
                         <div id="mockup-01" class="mockup bg-think">
 
-                            <img class="mockup-image" src="https://i.pinimg.com/736x/f0/7f/20/f07f201159e983effa46446c76e80712.jpg">
-                        
+                            <div class="inner-mockup">
+                                <img class="mockup-image" src="https://i.pinimg.com/736x/f0/7f/20/f07f201159e983effa46446c76e80712.jpg">
+                            </div>
+
                         </div>
 
                     </section>
@@ -465,18 +562,24 @@
 
         </section>
 
+        <style>
+
+           
+
+        </style>
+
         <section id="hero-2" class="pos-r">
              
-            <section class="bg-think-black">
+            <section class="bg-think-dark">
                 
                 <div class="rectangle bg-think-blue"></div>
 
                 <section class="bx-80 d-f">
 
-                    <section class="bx-50"></section>
+                    <section class="bx-40"></section>
 
-                    <section class="bx-50 p-5">
-                        <h4 class="f-1 fc-w1">Título de la feature/spec.</h4>
+                    <section class="bx-40 p-5">
+                        <h4 class="f-1 fc-w1 think-bold">Título de la feature/spec.</h4>
                     </section>
 
                 </section>
@@ -487,22 +590,24 @@
 
                 <section class="bx-80 d-f">
 
-                    <section class="bx-50">
+                    <section class="bx-40">
 
                         <div id="mockup-02" class="mockup bg-think-blue">
 
-                            <img class="mockup-image" src="https://i.pinimg.com/736x/f0/7f/20/f07f201159e983effa46446c76e80712.jpg">
+                            <div class="inner-mockup">
+                                <img class="mockup-image" src="https://i.pinimg.com/736x/f0/7f/20/f07f201159e983effa46446c76e80712.jpg">
+                            </div>
                         
                         </div>
 
                     </section>
 
-                    <section class="bx-50 p-5">
+                    <section class="bx-40 p-5">
                         
                         <p class="fc-w1 f-5 think-light line-ht3">Tenemos integraciones con los principales servicios del mercado, cómo Mercado Pago, Pedidos Ya, Glovo, Rappi, Fudex entre otros.</p>
                         
-                        <button class="btn fc-think-blue">
-                            Ver mas...
+                        <button class="btn fc-think-blue think-bold">
+                            Ver más
                         </button>
 
                     </section>

@@ -425,28 +425,25 @@
 
 /* previews */
 
+
 @media screen and ( max-width:1200px ) 
 {
-    .card-think-about { width:50%; }
+    .slide-previews { width:1200px; height:100vh; }
 }
 
 @media screen and ( max-width:800px ) 
 {
     .slide-previews { width:1440px; height:700px; }
-    .card-think-about { width:80%; }
-    .previews-more-shadow { top:50px; } 
 }
 
 @media screen and ( max-width:700px )
 {
-    .vector-preview { top:70px; }
-    .previews-more-shadow { top:50px; }
+    .card-think-about { width:80%; }
 } 
 
 @media screen and ( max-width:600px ) 
 {
-    .card-think-about > p { text-align: center; }
-    .card-think-about { padding:0px; }
+    .card-think-about { justify-content: center; align-items: center; }
 }
 
 @media screen and ( max-width:450px ) 
@@ -553,24 +550,14 @@
     #hero-2 > section:last-child > section > section:last-child > button { width:100%; }
 }
 
-@media screen and ( max-width:900px )
-{
-    .mockup { width:260px; height:60vh; }
-
-    .mockup-image { height:57vh; }
-} 
-
 @media screen and ( max-width:760px )
 {
     .mockup { display: none; }
 
     #hero-1 > section > section { margin-left:40px; }
+
     #hero-1 > section > section,
-    #hero-2 > section > section  
-    { 
-        padding:0px;
-        
-    }
+    #hero-2 > section > section  { padding:0px; }
 
     #hero-1 > section > section { justify-content: center;}
 
@@ -584,7 +571,13 @@
     #hero-2 > section { height:50vh;}
 
     .rectangle { height:50vh; }
+}
 
+@media screen and ( max-width:600px )
+{
+    #hero-1 > section,
+    #hero-2 > section,
+    .rectangle { height:40vh; }
 }
 
 @media screen and ( max-width:400px ) 
