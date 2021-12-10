@@ -340,18 +340,30 @@
 
 @media screen and ( max-width: 1000px ) 
 {
-    #benefits > section:first-child { width:30%; }
-    #benefits > section:last-child { width:70%; }
+
+    #benefits > section { width:80%;}
+    #benefits > section > section { padding:0px; } 
+    #benefits > section > section:first-child { width:40%; }
+    #benefits > section > section:last-child { width:60%; } 
 }
 
-@media screen and ( max-width: 800px ) 
+@media screen and ( max-width: 900px ) 
 {
-    #benefits > section:first-child { width:80%; }
-    #benefits > section:last-child { width:100%; }
+    #benefits { height:auto;padding:50px 0px; }
+    #benefits > section { flex-direction: column-reverse;width:90%; }
+    #benefits > section { flex-wrap: wrap;}
+    
+    #benefits > section > section:last-child { width:100%; }
+
+    #benefits > section > section:first-child { width:70%; }
+
+    #benefits > section > section:last-child > header,
+    #benefits > section > section:last-child > article { width:100%; }
 }
 
-@media screen and ( max-width: 400px )
+@media screen and ( max-width: 600px )
 {
+    #benefits > section > section:first-child { margin-top:20px;width:100%; }
     #benefits > section:last-child > article > button { width:100%; }
 } 
 
