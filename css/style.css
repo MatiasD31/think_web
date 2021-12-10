@@ -330,7 +330,12 @@
 #hero-2 > section:last-child > section { justify-content:space-between; } 
 
 #hero-1 > section:last-child > section > section:first-child > button,
-#hero-2 > section:last-child > section > section:last-child > button { margin-top:50px; }
+#hero-2 > section:last-child > section > section:last-child > button 
+{
+    width:252px;
+    height:60px; 
+    margin-top:50px; 
+}
 
 #hero-1 > section > .rectangle { right:0px; }
 #hero-2 > section > .rectangle { left:0px; }
@@ -380,11 +385,11 @@
 
 .inner-mockup 
 {
-    width:247px;
-    height:455px;
+    width:238px;
+    height:445px;
     background-color:#FFFFFF;
-    margin:10px;
-    border-radius:40px;
+    margin:15px;
+    border-radius:36px;
     position: absolute;
     overflow: hidden;
 }
@@ -403,9 +408,11 @@
 
 
 
-/* hero-2 */
+/* flat-heros */
 
-
+#flat-hero-1 > section,
+#flat-hero-2 > section,
+#flat-hero-3 > section { justify-content: space-between; }
 
 /* complementary */
 

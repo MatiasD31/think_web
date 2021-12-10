@@ -1,5 +1,16 @@
 /* all */
 
+@media screen and ( max-width: 1728px )
+{
+    #integrations > section > article:last-child { height:650px; }
+
+    #hero-1 > section,
+    #hero-2 > section { height:450px; }
+
+    #flat-hero-1 { height:900px; }
+    .rectangle { height:450px; }
+}
+
 @media screen and ( max-width: 600px ) 
 {
     .f-1 { font-size:28px;line-height:36px }
@@ -507,25 +518,47 @@
 
 /* flat heros */
 
-@media screen and ( max-width:1000px )
+@media screen and ( max-width:1300px )
 {
-    #flat-hero-1 > section ,
-    #flat-hero-2 > section ,
-    #flat-hero-3 > section  { width:100%; }
+    #flat-hero-1 > section,
+    #flat-hero-2 > section,
+    #flat-hero-3 > section { width:90%;}
+   
+    #flat-hero-1 > section > article,
+    #flat-hero-2 > section > article,
+    #flat-hero-3 > section > article { padding:0px 20px;width:50%; }
+}
+
+@media screen and ( max-width:1000px ) {
+
+    #flat-hero-1 > section > article:last-child { justify-content: flex-end; }
+
+    #flat-hero-1 > section > article > button,
+    #flat-hero-2 > section > article > button,
+    #flat-hero-3 > section > article > button { width:100%; } 
+}
+
+
+@media screen and ( max-width:850px )
+{
 
     #flat-hero-1 > section > article:first-child ,
     #flat-hero-2 > section > article:last-child,
-    #flat-hero-3 > section > article:last-child { width:100%;padding:8%; }
+    #flat-hero-3 > section > article:last-child { width:100%; }
 
     #flat-hero-1 > section > article:last-child,
     #flat-hero-2 > section > article:first-child,
     #flat-hero-3 > section > article:first-child { display:none; }
 
-    #flat-hero-1 > section > article:first-child > button,
-    #flat-hero-2 > section > article:last-child > button,
-    #flat-hero-3 > section > article:last-child > button { width:100%; }
-}
+    #flat-hero-1 > section > article,
+    #flat-hero-2 > section > article,
+    #flat-hero-3 > section > article { padding:0px;}
 
+    #flat-hero-1,
+    #flat-hero-2,
+    #flat-hero-3 { height:70vh; }
+
+}
 
 /*  hero-1 */
 
@@ -550,7 +583,7 @@
     #hero-2 > section:last-child > section > section:last-child > button { width:100%; }
 }
 
-@media screen and ( max-width:760px )
+@media screen and ( max-width:850px )
 {
     .mockup { display: none; }
 
