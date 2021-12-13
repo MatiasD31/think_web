@@ -21,6 +21,8 @@ function loadVideosMockups()
 
     videos = document.getElementsByClassName('video-mockup')
 
+    console.log ( bodyWidth = document.body.clientWidth )
+
     for( i = 0 ; i < btnPlay.length ; i++ )
     {
         btnPlay[i].addEventListener('click', (e) => {
@@ -44,7 +46,7 @@ function loadVideosMockups()
 
         bodyWidth = document.body.clientWidth
 
-        if( bodyWidth > 1120  ) if( cont >= 0 ) deslice( 'prev' )
+        if( bodyWidth > 1120  ) if( cont >= -1 ) deslice( 'prev' )
 
         if( bodyWidth < 1120  ) if( cont >= -1 ) deslice( 'prev' ) 
     })
@@ -53,7 +55,7 @@ function loadVideosMockups()
 
         bodyWidth = document.body.clientWidth
 
-        if( bodyWidth > 1120  ) if( cont < 1 ) deslice( 'next' )
+        if( bodyWidth > 1120  ) if( cont < 2 ) deslice( 'next' )
 
         if( bodyWidth < 1120  ) if( cont <= 1 ) deslice( 'next' )                
     })
@@ -81,7 +83,7 @@ function stop()
 {
     for( k = 0 ; k < videos.length ; k++ )
     {
-        videos[k].pause()
+        videos[ k ].pause()
 
         btnPlay[ k ].style.display = 'flex'
 
@@ -93,14 +95,14 @@ function deslice ( direction )
 {
     if( direction == 'next' ) 
     {
-        margin -= 625
+        margin -= 680
 
         cont++
     }
 
     if( direction == 'prev' ) 
     {
-        margin += 625
+        margin += 680
 
         cont--
     }

@@ -778,17 +778,23 @@
     #our-products > section > section { width:100%; }
 }
 
-/* mockups videos */
 
-@media screen and ( max-width:650px ) 
+/* mockup videos */
+
+@media screen and ( max-width:800px )
 {
-    .bx-mockups-videos 
-    { 
-        min-width:300px !important;
-        height:65vh !important;
-    }
+    #prev-mockup-video { left:-45px; }
+    #next-mockup-video { right:-45px; }
+
+    #prev-mockup-video > img,
+    #next-mockup-video > img,
+    .bx-btn-play { margin:0px; }
 }
 
+@media screen and ( max-width:600px )
+{
+    #mockups > header { width:80%; }
+}
 
 
  
