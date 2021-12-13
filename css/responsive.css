@@ -3,12 +3,15 @@
 @media screen and ( max-width: 1728px )
 {
     #integrations > section > article:last-child { height:650px; }
+    #complementary > article > ul > li > p { padding-top:0px; }
+    #complementary > article > ul > li > div { height:260px; }
 
     #hero-1 > section,
     #hero-2 > section { height:450px; }
 
     #flat-hero-1 { height:900px; }
     .rectangle { height:450px; }
+
 }
 
 @media screen and ( max-width: 600px ) 
@@ -116,15 +119,33 @@
 /* complementary */
 
 
-@media screen and ( max-width: 1100px )
+@media screen and ( max-width: 1200px )
 {
     #complementary > article > ul > li:first-of-type { padding:0px;width:90%;text-align: center;}    
 
     #complementary > article > ul > li { width:50%;}
+
+    #bx-displace-complementary  { justify-content: center; }
+}
+
+@media screen and ( max-width: 800px )
+{
+    #bx-displace-complementary > li { padding:20px; }
+
+    #complementary > article { width:90%; }
 }
 
 @media screen and ( max-width: 600px )
 {
+
+
+    .box-thinks-products > h1 { font-size:35px;}
+
+
+    #btns-complementary > .btn-slide-apps { margin:80px 5px; }
+
+    #btns-complementary > .btn-slide-apps > img { margin:auto; }
+
 
     #complementary > article > ul > li:first-of-type { width:28%; align-self: flex-start; display: flex;}
 

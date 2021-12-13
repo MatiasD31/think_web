@@ -417,6 +417,16 @@
 /* complementary */
 
 
+
+#bx-displace-complementary 
+{
+    display:flex;
+    justify-self: flex-start;
+}
+
+#complementary > article > ul {}
+
+
 #complementary > article > ul { list-style:none; }
 
 #complementary > article > ul > li > a { text-decoration: none; }
@@ -424,9 +434,9 @@
 
 .box-thinks-products 
 {
-    width:200px;
-    height:200px;
-    border-radius:50px;
+    width:194px;
+    height:194px;
+    border-radius:30px;
     background-color:#F6F6F6;
     position:absolute;
     box-shadow:0px 15px 15px rgba(0,0,0,.1);
@@ -435,9 +445,9 @@
 
 .img-prouct 
 {
-    width:200px;
-    height:200px;
-    border-radius:50px;
+    width:194px;
+    height:194px;
+    border-radius:30px;
     position:absolute;
     right:0px;
 }
