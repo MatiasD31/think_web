@@ -479,53 +479,89 @@
 
 @media screen and ( max-width:1200px )
 {
-    #razons > section > article:nth-child(1) { margin-top:150px;width:40%; }
-    #razons > section > article:nth-child(1) > img { width:30%; }
-    #razons > section > article:nth-child(2) { width:90%; }
-    #razons > section > article:nth-child(3) { width:40%; }
 
-    #box-btns-razons { top:25%; }
-}
+    #razons >  header { width:80%; }
 
-@media screen and ( max-width:900px )
-{
-    #box-btns-razons { width:90%; }
-}
+    #razons > section > article:nth-child(1) > img { width:50%; }
 
-@media screen and ( max-width:700px )
-{
-    #razons > section > article:nth-child(1) { width:80%; }
-    #razons > section > article:nth-child(2) { width:90%; }
-    #razons > section > article:nth-child(3) { width:90%; }
+    #razons > section > article:nth-child(1) 
+    { 
+        margin-top:150px;
+        min-width:450px;
+        width:40%;
+    }
 
-    #box-btns-razons { top:20%; }
+    #razons > section > article:nth-child(2) 
+    { 
+        width:70%;
+        padding:80px 25px;
+        text-align: justify; 
+    }
 
-    #razons > header { width:90%; }
+    #razons > section > article:nth-child(3) { padding:0px 25px; width:70%; }
+
+    #box-btns-razons { min-width:450px;top:300px; }
 }
 
 @media screen and ( max-width:600px ) 
 {
+
+   .razons > article > ul > li { font-size:14px; }
+
+    #razons > section > article:nth-child(1) 
+    { 
+        margin-top:80px;
+        width:80%;
+        min-width:200px;  
+    }
+
+    #razons > section > article:nth-child(2) 
+    { 
+        width:80%; 
+        padding:30px 0px; 
+    }
+    
+    #razons > section > article:nth-child(2) > p { text-align: justify; }
+
+    #razons > section > article:nth-child(3) 
+    { 
+        width:80%; 
+        padding:30px 0px; 
+    }
+
+    #box-btns-razons 
+    { 
+        top:250px;
+        width:100%;
+        min-width:100px; 
+    }
+
+    #box-btns-razons > ul > li 
+    { 
+        width:50px;
+        height:50px;
+    } 
+    #box-btns-razons > ul > li > img 
+    { 
+        width:35px;
+        display:block;
+        margin:auto; 
+    } 
+
     .razons > article > p ,
     .razons > article > h4,
     .razons > article > h6, 
     .razons > article > ul { text-align: center; list-style: none; }
     .razons > article > ul > li { padding:5px 0px; }
+
+    .razons > article:nth-child(1) > div:first-of-type > h4 { line-height:18px; }
+
+    .razons > article:nth-child(1) > div > img { width:50%; }
+
+    .razons > article { padding:0px 0px; }
 }
 
-@media screen and ( max-width:500px ) 
-{
-    .btns-razons { width:60px;height:60px;margin-top:-25%; }
-    .btns-razons > img { width:30px; }
 
-    /* aca */
-    /* .razons > article:nth-child(1) { border:1px solid black; } */
-}
-
-@media screen and ( max-width:400px ) 
-{
-    .razons > article { padding:10px 20px;width:90% !important; }
-    .razons > article:first-child { margin-top:50px !important; }
-}
 
 
 /* flat heros */
