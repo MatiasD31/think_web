@@ -7,6 +7,22 @@ nav
     width:100%;
     z-index:60;
     padding-right:20px;
+    background-color:rgba(0,0,0,.3);
+}
+
+#triangle 
+{
+    width:25px;
+    height:25px;
+    background-color:#FFFFFF;
+    position:absolute;
+    top:-10px;
+    border-radius:3px;
+    transform: rotate(-45deg);
+    display:flex;
+    margin:auto;
+    left:0px;
+    right:0px;
 }
 
 #bx-btn
@@ -24,7 +40,7 @@ nav
     display:flex;
     justify-content: center;
     align-items: center;
-    width:15%;
+    width:232px;
     height:80px;
 }
 
@@ -68,8 +84,8 @@ nav > ul > li:hover #sub-list { display:flex; }
 #sub-list 
 {
     border:1px solid #FFFFFF;
-    width:520px;
-    height:120px;
+    width:506px;
+    height:252px;
     position:absolute;
     background-color:#FFFFFF;
     border-radius:5px;
@@ -81,22 +97,24 @@ nav > ul > li:hover #sub-list { display:flex; }
     display:none;
 }
 
-#sub-list > section > article > ul  
-{
-    list-style: none;
-}
+#sub-list > section > article > ul  { list-style: none; }
 
 #sub-list > section > article > ul > li 
 {
-    font-size:.8rem;
-    padding:10px 0px 0px 10px;
-    display:flex;
+    padding:17px 0px 0px 10px;
+    display:flex;   
+}
+
+#sub-list > section > article > ul > li > span > a
+{
+    color:#000000 ;
+    text-decoration: none;
+    font-family: "think-medium";
+    font-size:16px;
 }
 
 #sub-list > section > article > ul > li > div > img { width:30px;padding:0px 10px 0px 0px; } 
 
-
-.sub-btns > span > a { text-decoration: none; }
 
 @media screen and ( max-width:1200px )
 {
@@ -104,14 +122,14 @@ nav > ul > li:hover #sub-list { display:flex; }
 
     nav 
     { 
-        background-color:#191919;
+        background-color:rgba(0,0,0,.9);
         position:fixed; 
         padding-right:0px;
     }
 
     nav > ul 
     {
-        background-color:#191919;
+        background-color:rgba(0,0,0,.9);
         position:absolute;
         display:flex;
         flex-direction: column;
@@ -154,22 +172,37 @@ nav > ul > li:hover #sub-list { display:flex; }
 
 @media screen and ( max-width:800px ) 
 {
-    #logo > div:first-child > img { margin-top:5px; }
-    #logo > div:last-child > img { height:10px;margin-top:10px; }
+    #logo > div:first-child > a > img { margin-top:8px; }
+    #logo > div:last-child > img { margin-top:15px; }
 
     #bx-btn { display:flex; padding-bottom:15px; }
 }
 
 @media screen and ( max-width:600px ) 
 {       
-    #logo { padding-bottom:10px; }
-
-    #logo > div { height:30px;margin-top:20px; }
-
-    #logo > div > img { height:15px; }
-    
     nav { height:50px; }
-    #logo { width:125px;min-width:0px;height:50px; }
+
+    #logo 
+    { 
+        height:50px; 
+        min-width:0px;
+        padding-bottom:10px;
+        width:125px;
+    }
+
+    #logo > div 
+    { 
+        height:30px; 
+        margin-top:10px; 
+    }
+
+    #logo > div > a >  img { height:15px; }
+    .arrow-logo { margin-top:13px !important; height:10px; }
+    
+    
+    
+   
+
     #bx-btn 
     { 
         height:50px;

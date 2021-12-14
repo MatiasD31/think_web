@@ -115,6 +115,33 @@
     .img-slide { margin-left:-100%; }
 }
 
+/* infinite-slide */
+
+@media screen and ( max-width: 1200px )
+{
+    #infinite-slide > header { width:80%; }
+}
+
+@media screen and ( max-width: 900px )
+{
+    #infinite-slide > header { width:80%; }
+
+    .badge-integrations { display:block; margin:auto; height:auto; margin-top:10px;}
+}
+
+@media screen and ( max-width: 600px )
+{
+    #infinite-slide > header { padding:0px; }
+    .badge-integrations { min-width:250px;font-size:15px; }
+
+    .img-radius-integrations { width:180px;height:180px; }
+
+    #bx-slide-infinite { width:1250px;height:35vh; }
+}
+
+
+
+
 
 /* complementary */
 
