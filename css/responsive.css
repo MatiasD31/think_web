@@ -827,32 +827,41 @@
 
 
 /* prices */
+@media screen and ( max-width:1200px )
+{
+    #prices > section { width:90%; }
+}
 
 @media screen and ( max-width:1000px )
 {
-    #prices > header { margin-top:150px ; }
-    #prices > section { width:90%; }
+    #prices > section { width:100%; }
+    #prices > header { margin-top:100px;}
 }
+
 
 @media screen and ( max-width:800px )
 {
     #prices > section { flex-wrap: wrap; }
-    #prices > section > section { width:80%; }
+    #prices > section > section { width:70%; }
 }
 
 @media screen and ( max-width:600px )
 {
     #prices > section > section { width:100%;}
+
+    #prices > header > .f-1 { font-size:45px; }
+    #prices > header > .f-5 { line-height:20px; }
+
+    #prices > section > section > article > article > .f-1 { font-size:45px; } 
+    #prices > section > section > article > article > .f-4 { font-size:24px; } 
 }
 
 @media screen and ( max-width:400px )
 {
-    #prices > section { width:90%; }
-    #prices > section > section { padding:0px;margin-bottom:20px; }
+    
+    #prices > section > section { padding:0px;margin-bottom:50px; }
 
-    #prices > section > section  > article { padding:25px;}
-
-    #prices > section > section > article > article > ul { padding-left:20px;}
+    #prices > section > section  > article { padding:50px 10px; }
 }
 
 /* our-products */
