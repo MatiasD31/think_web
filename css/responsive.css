@@ -2,25 +2,74 @@
 
 @media screen and ( max-width: 1728px )
 {
+    /* mockups videos */
+    
+    #bx-mockups-deslice { height:60vh; }
+
+    #mockups 
+    { 
+        height:70vh; 
+        padding:30% 0px; 
+    }
+
+    /* integrations */
+
     #integrations > section > article:last-child { height:650px; }
+
+    /* complementary */
+
     #complementary > article > ul > li > p { padding-top:0px; }
     #complementary > article > ul > li > div { height:260px; }
+
+    /* heros */
+
+    .rectangle { height:450px; }
 
     #hero-1 > section,
     #hero-2 > section { height:450px; }
 
-    #flat-hero-1 { height:900px; }
-    .rectangle { height:450px; }
+    /* flat heros */
 
+    #flat-hero-1 { height:900px; }
+    
+
+    /* previews */
+
+    .slide-previews { width:1728px; height:100vh; }
+
+    .card-think-about { bottom:-40px; }
 }
+
+@media screen and ( max-width: 1440px ) 
+{
+    /* mockups videos */
+
+    #mockups 
+    { 
+        height:70vh; 
+        padding:40% 0px; 
+    }
+}
+
+@media screen and ( max-width: 1000px ) 
+{
+    #mockups 
+    { 
+        height:100vh; 
+        
+        padding:450px 0px; 
+    }
+}
+
+/* fonts size pos 600px */
 
 @media screen and ( max-width: 600px ) 
 {
-    .f-1 { font-size:28px;line-height:36px }
-    .f-2 { font-size:20px;line-height:36px }
-    .f-3 { font-size:18px;line-height:36px }
-    .f-4 { font-size:15px;line-height:36px }
-    .f-5 { font-size:.9rem;line-height:28px }
+    .f-1 { font-size:28px; line-height:36px }
+    .f-2 { font-size:20px; line-height:36px }
+    .f-3 { font-size:18px; line-height:36px }
+    .f-4 { font-size:15px; line-height:36px }
+    .f-5 { font-size:.9rem; line-height:28px }
 }
 
 /* slide */
@@ -28,10 +77,18 @@
 
 @media screen and ( max-width: 1440px ) 
 {
-    #slide > section > article { width:60%;min-width:680px; }
+    #slide > section > article 
+    { 
+        width:60%;
+        min-width:680px; 
+    }
 
-    .img-slide { width:100%;height:100vh;min-width:1440px;}
-    
+    .img-slide 
+    { 
+        width:100%;
+        height:100vh;
+        min-width:1440px;
+    }   
 }
 
 @media screen and ( max-width: 1200px )
@@ -153,6 +210,15 @@
     #complementary > article > ul > li { width:50%;}
 
     #bx-displace-complementary  { justify-content: center; }
+
+    #complements > article > ul > li:first-child 
+    {
+        width:100%;
+        padding:20px;
+        text-align: center;
+    }
+
+    #complements > article > ul > li { width:50%; }
 }
 
 @media screen and ( max-width: 800px )
@@ -162,9 +228,17 @@
     #complementary > article { width:90%; }
 }
 
+@media screen and ( max-width: 700px )
+{
+    #complements > article > ul > li { width:90%; }
+}
+
 @media screen and ( max-width: 600px )
 {
 
+    #complements > #btns-complementary { display:none; }
+
+    .f-26 { font-size:20px; }
 
     .box-thinks-products > h1 { font-size:35px;}
 
@@ -441,10 +515,6 @@
 
 /* cite */
 
-@media screen and ( max-width:1440px )
-{
-    
-}
 
 @media screen and ( max-width:800px ) 
 {
@@ -458,6 +528,8 @@
     #cite > section > article { width:90%;padding:10px; }
 
     #cite > section > article > .f-3 { font-size:1.2rem; }
+
+    #cite > section > article p:first-of-type { text-align: justify;}
 }
 
 @media screen and ( max-width:350px ) 
@@ -807,6 +879,11 @@
 
 
 /* mockup videos */
+@media screen and ( max-width:1000px )
+{
+    #mockups { height:100vh; padding:450px 0px; }
+}
+
 
 @media screen and ( max-width:800px )
 {
