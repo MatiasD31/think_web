@@ -1,31 +1,17 @@
 /* all */
 
-@media screen and ( max-height: 1080px )
-{
-    
-}
-
-
 @media screen and ( max-width: 1728px )
 {
 
     /* infinite-slide */
 
-    #infinite-slide 
-    {
-        height:800px;
-        padding:150px 0px;
-    }
+    #infinite-slide { height:800px; padding:150px 0px; }
 
     /* mockups videos */
     
     #bx-mockups-deslice { height:60vh; }
 
-    #mockups 
-    { 
-        height:70vh; 
-        padding:30% 0px; 
-    }
+    #mockups { height:70vh; padding:30% 0px; }
 
     /* integrations */
 
@@ -47,7 +33,6 @@
 
     #flat-hero-1 { height:900px; }
     
-
     /* previews */
 
     .slide-previews { width:1728px; height:100vh; }
@@ -146,7 +131,7 @@
         float:left;
         min-width:0px;
         width:1100px !important;
-        height:90vh !important;
+        height:80vh !important;
     }
 
     #slide > section > article { width:100%;padding:4%;}
@@ -165,16 +150,13 @@
     #slide { height:100vh; } 
 }
 
-@media screen and ( max-width: 600px )
-{
-    .img-slide { width:1100px !important; height:80vh !important; }
-}
 
 @media screen and ( max-width: 450px )
 {
     .img-slide 
     { 
-        width:800px;
+        width:1000px !important;
+        height:80vh !important;
         margin-left:-120%; 
     }
 
@@ -184,13 +166,19 @@
     #slide { height:100vh; } 
 }
 
+@media screen and ( max-width: 420px )
+{
+    .img-slide { height:70vh !important;margin-left:-130% !important; }
+}
+
 @media screen and ( max-width: 380px )
 {
-    .img-slide 
-    { 
-        width:1000px !important; 
-        height:70vh !important; 
-        margin-left:-130% !important; }
+    .img-slide { height:70vh !important; }
+}
+
+@media screen and ( max-width: 360px )
+{
+    .img-slide { height:80vh !important; }
 }
 
 /* infinite-slide */
@@ -641,7 +629,6 @@
 
     #razons > section > article:nth-child(1) 
     { 
-        margin-top:150px;
         min-width:450px;
         width:40%;
     }
@@ -656,6 +643,8 @@
     #razons > section > article:nth-child(3) { padding:0px 25px; width:70%; }
 
     #box-btns-razons { min-width:450px;top:300px; }
+
+    #box-btns-razons { width:60%; margin-top:0px; }
 }
 
 @media screen and ( max-width:600px ) 
@@ -665,7 +654,6 @@
 
     #razons > section > article:nth-child(1) 
     { 
-        margin-top:80px;
         width:80%;
         min-width:200px;  
     }
@@ -686,9 +674,9 @@
 
     #box-btns-razons 
     { 
-        top:250px;
-        width:100%;
-        min-width:100px; 
+        margin-top:-50px;
+        width:80%;
+        min-width:350px; 
     }
 
     #box-btns-razons > ul > li 

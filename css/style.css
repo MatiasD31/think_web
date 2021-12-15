@@ -728,12 +728,8 @@
 
 #box-btns-razons 
 {
-    position:absolute;
-    left:0px;
-    right:0px;
-    margin:auto;
-    width:37%;
-    bottom:40px;
+    width:40%;
+    margin-top:50px;
 }
 
 #box-btns-razons > ul 
