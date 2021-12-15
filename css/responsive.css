@@ -71,32 +71,18 @@
 
 @media screen and ( max-width: 1440px ) 
 {
-
     /* slide */
 
-    .img-slide
-    {
-        width:1440px;
-        height:900px;
-    }
+    .img-slide { width:1440px; height:900px; }
 
     /* mockups videos */
 
-    #mockups 
-    { 
-        height:70vh; 
-        padding:40% 0px; 
-    }
+    #mockups { height:70vh; padding:40% 0px; }
 }
 
 @media screen and ( max-width: 1000px ) 
 {
-    #mockups 
-    { 
-        height:100vh; 
-        
-        padding:450px 0px; 
-    }
+    #mockups { height:100vh; padding:450px 0px; }
 }
 
 /* fonts size pos 600px */
@@ -225,6 +211,8 @@
 
 @media screen and ( max-width: 600px )
 {
+    #infinite-slide { height:90vh; padding:100px 0px; }
+
     #infinite-slide > header { padding:0px; }
     .badge-integrations { min-width:250px;font-size:15px; }
 
@@ -233,12 +221,7 @@
     #bx-slide-infinite { width:1250px;height:35vh; }
 }
 
-
-
-
-
 /* complementary */
-
 
 @media screen and ( max-width: 1200px )
 {
