@@ -81,8 +81,6 @@
         width:60%;
         min-width:680px; 
     }
-
-    .img-slide { width:1600px !important; }
 }
 
 @media screen and ( max-width: 1440px ) 
@@ -100,9 +98,22 @@
     .img-slide { width:130%;margin-left:-40%; }
 }
 
+@media screen and ( max-width: 1030px )
+{
+    #slide { height:100vh; }
+    .img-slide { width:150% !important; height:60vh !important; margin-left:-50%; }
+
+    #gradient 
+    {
+        height:150vh;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%);
+    }
+}
+
 @media screen and ( max-width: 900px )
 {
-    .img-slide { margin-left:-60%; }
+    .img-slide { margin-left:-30%; width:150% !important; }
 }
 
 @media screen and ( max-width: 800px )
@@ -124,8 +135,27 @@
     }
 }
 
+@media screen and ( max-width: 780px )
+{
+    #slide { height:100vh; }
+
+    #gradient {
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 80%);
+    }
+
+
+    .img-slide { width:1400px !important; height:80vh !important; }
+}
+
 @media screen and ( max-width: 600px )
 {
+
+    #gradient {
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 60%);
+    }
+
     .img-slide 
     { 
         float:left;
