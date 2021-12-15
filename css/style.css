@@ -10,7 +10,7 @@
 
 #bx-content-animation { display: flex; }
 
-#bx-slide-infinite 
+.bx-slide-infinite 
 {
     min-width:1920px;
     height:50vh;
@@ -98,8 +98,8 @@
 }
 
 .img-slide { 
-    width:100%;
-    height:100vh;
+    width:100% !important;
+    height:100vh !important;
 }
 
 #gradient {
