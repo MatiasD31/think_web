@@ -1,7 +1,30 @@
 /* all */
 
+@media screen and ( max-width: 1920px )
+{
+
+}
+
+
 @media screen and ( max-width: 1728px )
 {
+
+    /* slide */
+
+    .img-slide
+    {
+        width:1728px;
+        height:1000px;
+    }
+
+    /* infinite-slide */
+
+    #infinite-slide 
+    {
+        height:800px;
+        padding:150px 0px;
+    }
+
     /* mockups videos */
     
     #bx-mockups-deslice { height:60vh; }
@@ -38,10 +61,25 @@
     .slide-previews { width:1728px; height:100vh; }
 
     .card-think-about { bottom:-40px; }
+
+    /* complements */
+
+    #complements { height:1000px;padding:150px 0px; }
+
+    #bx-displace-complementary > li > div { height:230px; }
 }
 
 @media screen and ( max-width: 1440px ) 
 {
+
+    /* slide */
+
+    .img-slide
+    {
+        width:1440px;
+        height:900px;
+    }
+
     /* mockups videos */
 
     #mockups 
@@ -155,9 +193,8 @@
 {
     .img-slide 
     { 
-        width:160%;
-        min-width:800px;
-        height:60vh;
+        width:800px;
+        height:450px;
         margin-left:-85%; 
     }
 
@@ -221,6 +258,11 @@
     #complements > article > ul > li { width:50%; }
 }
 
+@media screen and ( max-width: 1000px )
+{
+    #complements { height:auto;padding:150px 0px; }
+}
+
 @media screen and ( max-width: 800px )
 {
     #bx-displace-complementary > li { padding:20px; }
@@ -237,6 +279,10 @@
 {
 
     #complements > #btns-complementary { display:none; }
+
+    #complements > article { width:90%;padding:0px; }
+
+    #complements > article > ul { padding:0px; }
 
     .f-26 { font-size:20px; }
 
@@ -395,10 +441,6 @@
     #gadgets > article > ul > li { padding:0px; }
     #gadgets > article  { padding:30px 0px; width:100%;  }
 }
-
-
-
-
 
 /* customers */
 
@@ -592,7 +634,17 @@
 @media screen and ( max-width:450px ) 
 {   
     .card-think-about { height:auto;  }
+
     .card-think-about > p {  font-size:.9rem; }
+}
+
+@media screen and ( max-width:360px )  
+{
+    .slide-previews { width:1000px; height:550px; }
+
+    #bx-btns-previews > button { margin:-50px 5px; }
+
+    .card-think-about { padding:20px;bottom:50px; }
 }
 
 /* razons  */
@@ -827,6 +879,7 @@
 
 
 /* prices */
+
 @media screen and ( max-width:1200px )
 {
     #prices > section { width:90%; }
@@ -835,6 +888,7 @@
 @media screen and ( max-width:1000px )
 {
     #prices > section { width:100%; }
+
     #prices > header { margin-top:100px;}
 }
 
@@ -842,6 +896,7 @@
 @media screen and ( max-width:800px )
 {
     #prices > section { flex-wrap: wrap; }
+
     #prices > section > section { width:70%; }
 }
 

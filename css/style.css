@@ -82,6 +82,7 @@
 /* slide */
 
 #slide {
+
     height:100vh; 
     overflow:hidden;
     position:relative;
@@ -316,7 +317,6 @@
     bottom:-200px;
     left:10%;
     position:absolute;
-    z-index:50;
     display: none;
 }
 
@@ -357,6 +357,9 @@
     top:-7px;
     z-index:50;
 }
+
+#bx-btns-previews { z-index:10; }
+.card-think-about { z-index:5; }
 
 /* hero-1 */
 
@@ -692,10 +695,6 @@
 }
 
 .razons > article:first-of-type { margin-top:-40px;}
-
-
-
-
 
 #razons > section:first-of-type { display:flex; }
 
