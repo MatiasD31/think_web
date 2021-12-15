@@ -1,5 +1,7 @@
 /* infinite-slide */
 
+#infinite-slide { height:85vh; }    
+
 #infinite-slide > header 
 { 
     display:flex;
@@ -41,6 +43,14 @@
 }
 
 
+/* btns */
+
+#complements > .section-btn > a > button { margin-top:50px; }
+                
+#complements > .section-btn > a > button,
+#customers > article > a > button ,
+#together > article > button { min-width:252px; min-height:60px; }
+
 /* apps-radius */
 
 #apps-radius > article 
@@ -49,7 +59,6 @@
     width:80%;
     flex-wrap:nowrap;
     overflow:hidden;
-
 }
 
 #btns-apps 
@@ -366,7 +375,7 @@
 .rectangle 
 {
     width:200px;
-    height:70vh;
+    height:40vh;
     z-index:1;
     position:absolute;
     
@@ -389,7 +398,7 @@
 #hero-1 > section,
 #hero-2 > section 
 {
-    height:70vh;
+    height:40vh;
     width:100%;
     display:flex;
     justify-content: center;
@@ -873,12 +882,11 @@ footer > section > article > button { width:100% !important;color:#FFFFFF; }
 
 /* mockups videos */
 
-#mockups { padding:35% 0px; }
+#mockups { height:100vh; }
 
 #bx-mockup 
 {
     width:100%;
-    height:100vh;
     padding:80px 0px;
     display: flex;
     justify-content: center;
@@ -888,7 +896,6 @@ footer > section > article > button { width:100% !important;color:#FFFFFF; }
 #bx-mockups-deslice
 {
     width:100%;
-    height:100vh;
     min-width:1536px;
     display:flex;
     justify-content:space-around;
@@ -949,8 +956,8 @@ footer > section > article > button { width:100% !important;color:#FFFFFF; }
 {
     display:flex;
     position:absolute;
-    z-index:100;
     align-self:center;
+    z-index:10;
 }
 
 .bx-btn-play 
