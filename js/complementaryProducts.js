@@ -13,11 +13,9 @@ function loadComplementary()
 
     btnComNext.addEventListener('click', () => {
 
-        console.log( conterDeslice )
-
-        if( conterDeslice < 5 )
+        if( conterDeslice < 4 )
         {
-            longDisplace -= 100
+            longDisplace -= 120
 
             bxDisplace.style.marginLeft = longDisplace + '%'
 
@@ -27,11 +25,9 @@ function loadComplementary()
 
     btnComPrev.addEventListener('click', () => {
 
-        console.log( conterDeslice )
-
         if( conterDeslice > 0 )
         {
-            longDisplace += 100
+            longDisplace += 120
 
             bxDisplace.style.marginLeft = longDisplace + '%'
 

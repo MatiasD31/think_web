@@ -469,9 +469,63 @@
 #flat-hero-2 > section,
 #flat-hero-3 > section { justify-content: space-between; }
 
-/* complementary */
+/* --------------- complementary --------------- */
 
+/* settings imgs and hovers */
 
+.box-imgs-complements 
+{
+    width:100%;
+    position:relative;
+    height:250px;
+    display:flex;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.box-imgs-complements:hover > section > .box-thinks-products 
+{
+    opacity:.4;
+    z-index:1;
+}
+
+.box-imgs-complements:hover > section > .box-interface-soft > img
+{
+    display:block;
+    margin:auto;
+    right:0px;
+    left:0px;
+    opacity:1;
+}
+
+.box-thinks-products,
+.img-prouct
+{
+    width:194px;
+    height:194px;
+    position:absolute;
+    border-radius:30px;
+    box-shadow:0px 15px 15px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.box-thinks-products 
+{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    background-color:#F6F6F6; 
+    z-index:10; 
+}
+
+.img-prouct 
+{ 
+    opacity:.7;
+    margin-left:100px; 
+    z-index:5; 
+}
+
+/* box displace js */
 
 #bx-displace-complementary 
 {
@@ -479,33 +533,15 @@
     justify-self: flex-start;
 }
 
-
-
 #complements > article > ul ,
 #complementary > article > ul { list-style:none; }
 
 #complementary > article > ul > li > a { text-decoration: none; }
 #complementary > article > ul > li > a:hover { color:red; }
 
-.box-thinks-products 
-{
-    width:194px;
-    height:194px;
-    border-radius:30px;
-    background-color:#F6F6F6;
-    position:absolute;
-    box-shadow:0px 15px 15px rgba(0,0,0,.1);
-    z-index:30;
-}
 
-.img-prouct 
-{
-    width:194px;
-    height:194px;
-    border-radius:30px;
-    position:absolute;
-    right:0px;
-}
+
+
 
 #bx-displace-complementary
 {

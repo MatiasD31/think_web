@@ -18,7 +18,7 @@
 
 /* CONTAINER */
 
-.cont-full { margin:0px auto; width:100%; overflow:hidden; }
+.cont-full { margin:0px auto; width:100%; overflow:hidden;min-width:350px; }
 
 
 /* BOX S GRID */

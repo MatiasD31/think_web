@@ -1,16 +1,7 @@
 
-/*--------------------------------*/
-componente complementarios
 
-- pegar mas a los bordes en responsive cel -> ( realizado ) 
 
-/*--------------------------------*/
 
-pagina proc 2 
-
-componente previews 	se rompe , arreglar responsive cel -> ( arreglado ) 
-
-/*--------------------------------*/
 
 componente video 
 - agregar subrayado al seleccionado 
@@ -25,8 +16,4 @@ correjir distancia entre lineas en el titulo
 
 proseguir con precios componente -> ( proceso )
 
-/*--------------------------------*/
-pagina nosotros 
 
-arreglar previers se rompe 
-responsive cel -> arreglado
