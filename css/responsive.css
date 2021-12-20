@@ -63,11 +63,17 @@
 
 @media screen and ( max-width: 600px ) 
 {
-    .f-1 { font-size:28px; line-height:36px }
+    .f-1 { font-size:26px; line-height:36px }
     .f-2 { font-size:20px; line-height:36px }
     .f-3 { font-size:18px; line-height:36px }
     .f-4 { font-size:15px; line-height:36px }
     .f-5 { font-size:.9rem; line-height:28px }
+}
+
+@media screen and ( max-width: 1050px )
+{
+    #infinite-slide { height:auto !important; }
+    .bx-slide-infinite { height:230px !important; }
 }
 
 /* slide */
@@ -76,17 +82,32 @@
 {
     #slide > section > article { width:60%; min-width:680px; }
 
-    .img-slide { width:90%; }
+    .img-slide 
+    { 
+        width:100%;
+        min-width:1640px;
+        margin-left:-10%; 
+        height:100vh;
+    }
 }
 
 @media screen and ( max-width: 1200px )
 {
-    .img-slide { margin-left:-20%; }
+    .img-slide 
+    { 
+        min-width:1440px;
+        margin-left:-20%;
+    }
 }
 
 @media screen and ( max-width: 1000px )
 {
-    .img-slide { width:130%;margin-left:-40%; }
+    .img-slide 
+    { 
+        min-width:1440px;
+        height:120vh;
+        margin-left:-20%;
+    }
 }
 
 @media screen and ( max-width: 1030px )
@@ -228,9 +249,9 @@
     #infinite-slide > header { padding:0px; }
     .badge-integrations { min-width:250px;font-size:15px; }
 
-    .img-radius-integrations { width:180px;height:180px; }
+    .img-radius-integrations { width:150px;height:150px; }
 
-    .bx-slide-infinite { width:1250px;height:35vh; }
+    .bx-slide-infinite { height:35vh;  }
 }
 
 /* complementary */
@@ -714,7 +735,7 @@
 @media screen and ( max-width:600px ) 
 {
 
-   .razons > article > ul > li { font-size:14px; }
+   .razons > article > ul > li { font-size:12px; }
 
     #razons > section > article:nth-child(1) 
     { 
@@ -728,13 +749,15 @@
         padding:30px 0px; 
     }
     
-    #razons > section > article:nth-child(2) > p { text-align: justify; }
+    /* #razons > section > article:nth-child(2) > p { text-align: justify; } */
 
     #razons > section > article:nth-child(3) 
     { 
         width:80%; 
         padding:30px 0px; 
     }
+
+    
 
     #box-btns-razons 
     { 
@@ -768,6 +791,11 @@
     .razons > article { padding:0px 0px; }
 }
 
+@media screen and ( max-width:450px ) 
+{
+    #btns-complementary > button { width:50px;height:50px; }
+    #btns-complementary > button > img { width:18px;height:18px; }
+}
 
 
 
