@@ -11,10 +11,26 @@
     margin:auto;
 }
 
-#bx-content-animation 
-{ 
-    display: flex;
+#infinite-slide > header > h2
+{
+    display:inline-block;
+    text-align: center;
+    position: relative;
 }
+.badge-integrations 
+{
+    display:inline-block !important;
+    position: absolute;
+
+    padding:10px;
+    bottom:8px;
+    width:263px;
+    height:39px;
+    padding:8px 25px;
+    border-radius:5px;
+}
+
+#bx-content-animation { display: flex; }
 
 .bx-slide-infinite 
 {
@@ -42,6 +58,9 @@
 
 .badge-integrations 
 {
+    /* display:absolute; */
+    display: flex;
+    flex-wrap: wrap;
     width:263px;
     height:39px;
     padding:8px 25px;
@@ -135,9 +154,10 @@
 
 .img-md { width:62.99px; }
 
+#gadgets-white > article > ul > li { padding:25px 50px;}
 
-
-#gadgets > article > ul { list-style: none; }
+#gadgets > article > ul,
+#gadgets-white > article > ul { list-style: none; } 
 
 #gadgets > article > ul > li > div 
 { 
@@ -145,6 +165,9 @@
     align-items:flex-start; 
     flex-direction: column; 
 }
+
+ 
+
 
 /* customers */
 
@@ -378,13 +401,21 @@
 
 /* hero-1 */
 
+#hero-1 > section,
+#hero-2 > section 
+{
+    height:50vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+
 .rectangle 
 {
     width:200px;
-    height:40vh;
+    height:50vh;
     z-index:1;
-    position:absolute;
-    
+    position:absolute;   
 }
 
 #hero-1 > section > section:last-child,
@@ -401,14 +432,7 @@
 #hero-1 > section > .rectangle { right:0px; }
 #hero-2 > section > .rectangle { left:0px; }
 
-#hero-1 > section,
-#hero-2 > section 
-{
-    height:40vh;
-    width:100%;
-    display:flex;
-    justify-content: center;
-}
+
 
 /* cajas de texo */
 #hero-1 > section > section > section:first-child,
@@ -807,11 +831,7 @@
 
 #benefits > section > section:first-child > img { width:100%; }
 
-#benefits > section > section > article > ul 
-{ 
-    list-style: none;
-    margin-left:-12px; 
-}
+#benefits > section > section > article > ul { list-style: none; }
 
 #benefits > section > section > article > ul > li
 {
