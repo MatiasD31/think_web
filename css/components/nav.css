@@ -5,7 +5,7 @@ nav
     justify-content: space-between;
     position:absolute;
     width:100%;
-    z-index:60;
+    z-index:1000;
     padding-right:20px;
     background-color:rgba(0,0,0,.3);
 }
@@ -79,33 +79,37 @@ nav > ul > li:hover .links { color:#D5F901;}
 
 nav > ul > li:hover #sub-list { display:flex; } 
 
-/* sub list */
-
-#sub-list 
+#box-dialogue 
 {
-    border:1px solid #FFFFFF;
-    width:506px;
+
+    width:100%;
     height:252px;
     position:absolute;
     background-color:#FFFFFF;
     border-radius:5px;
-    left:-200px;
-    top:50px;
+    margin-top:50px;
     height:auto;
     padding:15px;
+}
 
+#sub-list 
+{
+    width:506px;
+    height:305px;
+    position:absolute;
+    left:-200px;
     display:none;
 }
 
-#sub-list > section > article > ul  { list-style: none; }
+#box-dialogue > section > article > ul  { list-style: none; }
 
-#sub-list > section > article > ul > li 
+#box-dialogue > section > article > ul > li 
 {
     padding:17px 0px 0px 10px;
     display:flex;   
 }
 
-#sub-list > section > article > ul > li > span > a
+#box-dialogue > section > article > ul > li > span > a
 {
     color:#000000 ;
     text-decoration: none;
@@ -113,11 +117,21 @@ nav > ul > li:hover #sub-list { display:flex; }
     font-size:16px;
 }
 
-#sub-list > section > article > ul > li > div > img { width:30px;padding:0px 10px 0px 0px; } 
+#box-dialogue > section > article > ul > li > div > img { width:30px;padding:0px 10px 0px 0px; } 
+
+.sub-btns:hover .sub-links 
+{ 
+    color:#7A42EB !important; 
+    text-decoration: underline !important; 
+}
 
 
 @media screen and ( max-width:1200px )
 {
+    /* logo */
+
+    #logo { min-width:250px; }
+
     #bx-btn { display:flex; }
 
     nav 
@@ -140,34 +154,27 @@ nav > ul > li:hover #sub-list { display:flex; }
         max-width:450px;
         min-width:320px;
         justify-content: flex-start;
-        display:none;
-        
+        display:none;   
     }
-
 
     nav > ul > li:first-child { margin-top:80px;}
     nav > ul > li { margin:25px 0px;}
+    nav > ul > li > span { text-align: center; display:block; } 
+    
+    /* sub menu */
 
-    #sub-list 
-    {  
-        width:100%;
-        height:auto;
+    #box-dialogue
+    {
         position:relative;
         border-radius:0px;
-        left:0px;
-        top:20px;
-        height:auto;
-        padding:15px;
-        display:none;
     }
 
-    nav > ul > li > span 
-    { 
-        text-align: center; 
-        display:block; 
-    }  
-
-    #logo { min-width:250px; }
+    #sub-list  
+    {
+        position:relative;
+        left:0px;
+        width:100%;
+    }
 }
 
 @media screen and ( max-width:800px ) 
@@ -176,6 +183,10 @@ nav > ul > li:hover #sub-list { display:flex; }
     #logo > div:last-child > img { margin-top:15px; }
 
     #bx-btn { display:flex; padding-bottom:15px; }
+
+    #sub-list { height:auto; }
+
+    nav > ul { width:100%;max-width:1000px; }
 }
 
 @media screen and ( max-width:600px ) 
@@ -190,37 +201,29 @@ nav > ul > li:hover #sub-list { display:flex; }
         width:125px;
     }
 
-    #logo > div 
-    { 
-        height:30px; 
-        margin-top:10px; 
-    }
+    #logo > div { height:30px; margin-top:10px; }
 
     #logo > div > a >  img { height:15px; }
     .arrow-logo { margin-top:13px !important; height:10px; }
     
-    
-    
-   
-
     #bx-btn 
     { 
         height:50px;
         padding:15px 0px; 
     }
 
-    nav > ul  { max-width:300px;top:50px; }
+    nav > ul  { top:50px; }
+
+    #box-dialogue > section > article 
+    { 
+        display:block;
+        margin:auto;
+        width:auto;
+        min-width:280px;
+    }
 }
 
 @media screen and ( max-width:400px ) 
 {
-    #sub-list > section > article 
-    { 
-        width:100%;
-        display:flex;
-        justify-content: center;
-        align-items: center; 
-    }
-
-    nav > ul { width:100%;max-width:1000px; }
+    #box-dialogue > section > article > ul > li { padding:3px 0px; }
 }

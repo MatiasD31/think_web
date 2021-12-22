@@ -1,0 +1,138 @@
+/* previews */
+
+#previews { width:100%;height:100vh; position: relative;}
+
+/* btns */
+#bx-btns-previews > button > img { display:block; margin: auto; }
+
+/* imgs */
+.slide-previews { width:100%; height:1080px; }
+
+.card-think-about
+{
+    padding:35px 60px;
+    width:544px;
+    height:auto;
+    line-height: 30px;
+    bottom:-50px;
+    left:5%;
+    position:absolute;
+    display: none;
+}
+
+
+.slide-previews { display:none; } 
+.slide-previews:first-of-type { display:flex; }
+
+#previews > section > button { background-color:rgba(255,255,255,.6); }
+#previews > section > button:active { background-color: #7A42EB; } 
+
+#bx-btns-previews
+{
+    display: flex;
+    margin:auto;
+    top:0px;
+    bottom:0px;
+    position: absolute;
+    width:100%;
+    height:60px;
+    z-index:50;
+    justify-content: space-between;
+}
+
+.card-think-about:first-of-type { display:flex; }
+
+.card-think-about > p > a,
+.card-think-about > p > span 
+{
+    text-align: left;
+    display:block; 
+    text-decoration: none; 
+    margin-top:10px;
+}
+
+#bx-arrows-thinks-reviews 
+{
+    position:absolute;
+    top:15px;
+    left:0px;
+    width:100px;
+    height:100px;
+}
+
+#bx-arrows-thinks-reviews > img { position:absolute; }
+
+#bx-arrows-thinks-reviews > img:first-of-type 
+{
+    width:40px;
+    left:-10px;
+    top:15px;
+    z-index:5;
+}
+
+#bx-arrows-thinks-reviews > img:last-child
+{
+    width:72px;
+    left:-18px;
+    top:-7px;
+    z-index:50;
+}
+
+#bx-btns-previews { z-index:10; }
+.card-think-about { z-index:5; }
+
+/* responsive */
+
+@media screen and ( max-width:1750px ) 
+{
+    /* imgs */
+    .slide-previews { width:1730px; height:100vh; }
+    
+    .card-think-about { bottom:-60px; }
+}
+
+@media screen and ( max-width:1450px ) 
+{
+    .slide-previews { width:1440px; height:800px; }
+
+    .card-think-about { bottom:50px; }
+}
+
+@media screen and ( max-width:1350px ) 
+{
+    .slide-previews { width:1350px; height:90vh; }
+}
+
+@media screen and ( max-width:1200px ) 
+{
+    
+    .slide-previews { width:1200px; }
+}
+
+
+@media screen and ( max-width:700px )
+{
+    .card-think-about { padding:30px; left:5%; width:90%;height:auto; }
+} 
+
+@media screen and ( max-width:600px ) 
+{
+    #bx-btns-previews > button { margin:-50px 5px; }
+
+    #previews { height:600px; }
+    .slide-previews { width:800px; height:450px; } 
+
+    .card-think-about { justify-content: center; align-items: center; }
+}
+
+@media screen and ( max-width:450px ) 
+{   
+    .card-think-about { padding:20px; }
+
+    .card-think-about > p {  font-size:.9rem; }
+}
+
+@media screen and ( max-width:360px )  
+{
+    .card-think-about { padding:20px; bottom:40px; }
+}

@@ -23,24 +23,6 @@ function loadMenu()
             toggleMenu = false
         }
     })
-
-    btnSubMenu = document.getElementById('btn-think-submenu')
-
-    subList = document.getElementById('sub-list')
-
-    btnSubMenu.addEventListener('click',() => {
-
-        if( toggleSubMenu == false )
-        {
-            subList.style.display = 'flex'
-            toggleSubMenu = true 
-        }else 
-        {
-            subList.style.display = 'none'
-            toggleSubMenu = false
-        }
-
-    })
 }
 
 

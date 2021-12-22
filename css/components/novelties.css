@@ -1,0 +1,108 @@
+#novelties > section 
+{
+    min-height:400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;  
+} 
+
+#novelties > section > article:first-of-type 
+{
+    position:relative;
+    z-index:3;
+}
+
+#novelties > section > article:first-of-type { min-width:680px;}
+
+#novelties > section > article:first-of-type > div > .f-1 { padding-bottom:0px; }
+
+#novelties > section > article:first-of-type > div > .f-1,
+#novelties > section > article:first-of-type > div > .f-5 { padding-left:60px; }
+
+.vector-Think {
+    left:-20px;
+    top:80px;
+    width:78px;
+}
+
+.more-shadow 
+{
+    position:absolute;
+    z-index:1;
+    left:0px;
+    top:35px;
+    width:138px;
+}
+
+/* form */
+
+#bx-subscribe
+{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bx-subscribe > input 
+{
+    width:300px;
+    height:60px;
+    background-color:transparent;
+    border:1px solid white;
+    padding-left:25px;
+}
+
+#bx-subscribe > button 
+{
+    width:155px;
+    height:60px;
+}
+
+/* novelties */
+
+@media screen and ( max-width: 1441px )
+{
+    #novelties { padding:50px 0px 100px 0px; }
+}
+
+@media screen and ( max-width: 1441px )
+{
+    #novelties > section > article:first-of-type { width:55%;min-width:0px; }
+    #novelties > section > article:last-child { width:45%; }
+
+    #bx-subscribe { justify-content: flex-start; }
+}
+
+
+@media screen and ( max-width: 1200px ) 
+{
+    #novelties > section > article:first-of-type,
+    #novelties > section > article:last-child { width:90%; }
+
+    #bx-subscribe { justify-content: center; }
+
+    #form-subscribe > div { flex-direction: column; }
+    #form-subscribe > div > input { margin-bottom:15px; width:250px; }
+    #form-subscribe > div > button { width:250px; }
+}
+
+@media screen and ( max-width: 800px ) 
+{
+    #novelties > section > article:first-of-type > div > .f-1,
+    #novelties > section > article:first-of-type > div > .f-5 { padding-left:0px; }
+
+    #novelties > section > article > h1,
+    #novelties > section > article > p { text-align: center;}
+
+    .inp-subscribe { text-align: center; }
+}
+
+@media screen and ( max-width: 500px ) 
+{
+    #novelties > section > article:first-of-type > div { width:100%; }
+    #bx-subscribe { flex-direction:column; }
+    
+    #bx-subscribe > input,
+    #bx-subscribe > button { width:100%; max-width:none; margin-bottom:10px; }
+}

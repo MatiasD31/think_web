@@ -1,0 +1,108 @@
+/* infinite-slide */
+
+#infinite-slide { height:auto; }    
+
+#infinite-slide > header 
+{ 
+    display:flex;
+    margin:auto;
+}
+
+#infinite-slide > header > h2
+{
+    display:inline-block;
+    text-align: center;
+    position: relative;
+}
+.badge-integrations 
+{
+    display:inline-block !important;
+    position: absolute;
+
+    font-size:18px !important;
+    padding:10px;
+    bottom:8px;
+    width:263px;
+    height:39px;
+    padding:8px 25px;
+    border-radius:5px;
+}
+
+#bx-content-animation { display: flex; }
+
+.bx-slide-infinite 
+{
+    min-width:1920px;
+    height:auto;
+    padding:5% 0px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-animation:slideshow 8s linear infinite;
+    -moz-animation:slideshow 8s linear infinite;
+    -o-animation:slideshow 8s linear infinite;
+}
+
+.img-radius-integrations 
+{ 
+    width:210px;
+    height:210px;
+}
+
+@keyframes slideshow 
+{
+    0% { transform: translate(0); }
+    100% { transform: translate(-100%); }
+} 
+
+.badge-integrations 
+{
+    display: flex;
+    flex-wrap: wrap;
+    width:263px;
+    height:39px;
+    padding:8px 25px;
+    border-radius:5px;
+    font-size:22px;
+}
+
+/* responsive */
+
+@media screen and ( max-width: 1200px )
+{
+    #infinite-slide > header { width:80%; }
+}
+
+@media screen and ( max-width: 1000px )
+{
+    .badge-integrations
+    {
+        display:block !important;
+        position: relative;
+        margin:50px auto;
+    }
+}
+
+@media screen and ( max-width: 900px )
+{
+    #infinite-slide > header { width:80%; }
+
+    .badge-integrations { display:block; margin:auto; height:auto; margin:50px auto; }
+}
+
+@media screen and ( max-width: 770px )
+{
+    .bx-slide-infinite { height:30vh; }
+}
+
+@media screen and ( max-width: 600px )
+{
+    #infinite-slide { height:90vh; padding:100px 0px; }
+
+    #infinite-slide > header { padding:0px; }
+    .badge-integrations { min-width:250px;font-size:15px; }
+
+    .img-radius-integrations { width:150px;height:150px; }
+
+    .bx-slide-infinite { height:35vh;  }
+}
