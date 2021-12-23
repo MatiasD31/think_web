@@ -1,0 +1,141 @@
+#modal-contact
+{
+    width:100%;
+    height:100vh;
+    background-color:rgba(0,0,0,.7);
+    position:fixed;
+    z-index:2000;
+    display:flex;
+    overflow: scroll;
+    padding-bottom:150px;
+    display:none;
+}
+
+#close-modal 
+{
+    position: absolute;
+    right:20px;
+    top:20px;
+    height:40px;
+    width:40px;
+    opacity:.8;
+    cursor: pointer;
+}
+
+.icon-cross { width:100%; }
+
+#form-modal 
+{
+    margin:100px auto auto;
+    width:100%;
+    max-width:600px;
+    display:flex;
+    height:auto;
+    padding:50px;
+    background-color:#FFFFFF;
+    border-radius:5px;
+}
+
+.icons-form 
+{
+    width:30px;
+    height:20px;
+    border-right:1px solid rgba(0,0,0,.2);
+    padding-right:10px;
+    position:absolute;
+}
+
+.bx-input
+{
+    border-radius:3px;
+    border:1px solid rgba(0,0,0,.2);
+    width:90%;
+    height:45px;
+    padding:10px;
+    margin-top:25px;
+    position: relative;
+    box-shadow:0px 0px 50px rgba(0,0,0,.1);
+}
+
+
+.inputs-form 
+{
+    position: absolute;
+    right:15px;
+    width:315px;
+    top:0px;
+    height:40px;
+    border:none;
+    outline: none;
+    
+}
+
+.bx-msg  
+{ 
+    border-radius:3px;
+    margin-top:25px;
+    width:90%;
+    height:250px;
+    padding:10px;
+    position: relative;
+    border:1px solid rgba(0,0,0,.2);
+    box-shadow:0px 0px 50px rgba(0,0,0,.1);
+}
+
+.bx-msg:hover,
+.bx-input:hover { box-shadow:0px 0px 50px #7a42eb3b; }
+
+
+
+.msg-form 
+{
+    position: absolute;
+    top:10px;
+    right:5px;
+    width:90%;
+    height:230px;
+    border:none;
+    padding:5px 15px;
+    outline: none;
+}
+
+.btn-form 
+{
+    width:90%;
+    border:none;
+    font-size:16px;
+    font-family: 'think-bold';
+    height:60px;
+    margin-top:25px;
+    background-color:#D5F901;
+    cursor: pointer;
+    transition:.3s;
+    -webkit-transition:.3s;
+    -moz-transition:.3s;
+    -o-transition:.3s;
+}
+
+.btn-form:hover { background-color:#7A42EB; color:#FFFFFF; }
+
+
+@media screen and ( max-width:850px ) 
+{
+    #form-modal { padding:20px 10px; }
+
+    #form-modal > form { width:100%; padding:10px 0px;}
+
+    .inputs-form { left:43px; width:80%; }
+}
+
+@media screen and ( max-width:650px ) 
+{
+    #form-modal { width:90%; }
+
+    .msg-form { left:45px; width:80%; }
+
+    #form-modal { padding:25px 0px; }
+    #form-modal > form > div { width:90%; }
+    #form-modal > form > div > h6 { text-align: center; }
+}
+
+@media screen and ( max-width:300px ) { .msg-form { left:45px; width:75%; } }

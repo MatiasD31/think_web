@@ -11,9 +11,65 @@
     <link rel="stylesheet" href="./css/colours.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Thinkion - Revolucionate</title>
+    <link rel="stylesheet" href="./css/components/prices.css">
+    <link rel="stylesheet" href="./css/components/contact.css">
     <link rel="stylesheet" href="./css/components/slide.css">
 </head>
 <body>
+
+    <section id="modal-contact">
+
+        <article id="form-modal" class="center">
+            
+            <div id="close-modal">
+                <img src="./imagenes/form-icons/cross.png" class="icon-cross">
+            </div>
+
+            <form action="" class="bx-90 center col ">
+
+                <div class="bx-f center">
+                    <h2 class="f-2 think-bold">Trabajemos Juntos</h2>
+                </div>
+
+                <div class="bx-f center">
+                    <h6 class="f-6">Dejanos un Mensaje y rápidamente te contactaremos</h6>
+                </div>
+
+                <div class="bx-input b">
+                    <img src="./imagenes/form-icons/icon-user.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Tu Nombre">
+                </div>
+
+                <div class="bx-input">
+                    <img src="./imagenes/form-icons/icon-email.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Tu Email">
+                </div>
+
+                <div class="bx-input">
+                    <img src="./imagenes/form-icons/icon-phone.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Tu Telefono">
+                </div>
+
+                <div class="bx-input">
+                    <img src="./imagenes/form-icons/icon-layer.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Asunto">
+                </div>
+
+                <div class="bx-msg">
+                    <img src="./imagenes/form-icons/icon-pencil.png" class="icons-form">
+                    <textarea name="" class="msg-form">Tu mensaje</textarea>
+                </div>
+                
+                <button class="btn-form">
+                    Enviar mensaje
+                </button>
+
+
+            </form>
+
+        </article>
+
+    </section>
 
     <nav class="bg-think-dark">
         <div id="logo" class="bg-think">
@@ -112,7 +168,7 @@
             <li><a class="links" href="prices.html">PRECIOS</a></li>
             <li><a class="links" href="us.html">NOSOTROS</a></li>
             <li><a class="links" href="customers.html">CLIENTES</a></li>
-            <li><a class="links" href="">CONTACTO</a></li>
+            <li><a class="links" id="contact">CONTACTO</a></li>
         </ul>
         <div id="bx-btn">
             <img src="./imagenes/hamburger button.png" alt="">
@@ -127,73 +183,23 @@
                 <h5 class="text-center f-5 pb-2 think-bold">ACCEDÉ A TODO EL SISTEMA, DESDE EL NIVEL MÁS BAJO</h5>
                 <h2 class="text-center f-1 think-bold">THINKION</h2>
             </header>
-
-            <style>
-
-                #prices > section > section:first-of-type > article 
-                { 
-                    border-top:5px solid #7A42EB;
-                    transition:.2s; 
-                }
-
-
-                #prices > section > section:first-of-type > article:hover 
-                {
-                    box-shadow:0px 0px 50px #7a42eb4b;
-                    background-color:#7A42EB;
-                    color:rgba(255,255,255,.9);
-                }
-
-                #prices > section > section:last-child > article:hover
-                {
-                    box-shadow:0px 0px 50px #00b7ff78;
-                    background-color:#00B8FF; 
-                     color:rgba(255,255,255,.9);
-                }
-
-                #prices > section > section > article:hover .list
-                {
-                    background-color:#FFFFFF;
-                }
-
-                #prices > section > section:last-child > article 
-                { 
-                    border-top:5px solid #00B8FF; 
-                }
-
-                .list-card > li 
-                { 
-                    display:flex;
-                    margin:10px;
-                    font-family: "think-bold";
-                }
-
-                .btn-price 
-                {
-                    width:252px;
-                    height:60px;
-                    border:none;
-                }
-
-            </style>
-            
             
             <section class="bx-70 mt-5 center">
 
                 <section class="bx-50">
 
-                    <article class="bx-f d-f col p-5 bg-think-white">
+                    <article class="card-lvl-price bx-f d-f col p-5 bg-think-white">
 
-                        <article class="bx-f">
+                        <article class="bx-f h-2">
                             <h3 class="f-1 pb-2 think-bold">$10.900</h3>
                             <p class="f-4 pb-2 think-bold">Nivel 1</p>
                         </article>
 
-                        <article class="bx-f">
+                        <article class="bx-f h-2">
                             <p class="line-ht4">El primer nivel de Thinkion incluye todas las funcioanlidades del sistema, dando acceso completo desde el ingreso.</p>
                         </article>
 
-                        <article class="bx-f">
+                        <article class="bx-f h-5">
 
                             <ul class="list-card un-list">
                                 <li> <div class="list"></div>Soporte L a D 10 a 01 hs</li>
@@ -210,7 +216,7 @@
 
                         </article>
 
-                        <article class="bx-f">
+                        <article class="bx-f h-2">
                             <p class="line-ht4">Incluye todas las integraciones con Pedidos Ya, Rappi, Wabi, Más Delivery y Mercado Pago. Facturas electrónicas ilimitadas. Pedidos por autopedido ilimitados, turnos digitales y más.</p>
                         </article>
 
@@ -228,18 +234,18 @@
 
                 <section class="bx-50">
 
-                    <article class="bx-f d-f col p-5 bg-think-white">
+                    <article class="card-lvl-price bx-f d-f col p-5 bg-think-white">
 
-                        <article class="bx-f">
+                        <article class="bx-f h-2">
                             <h3 class="f-1 pb-2 think-bold">$15.900</h3>
                             <p class="f-4 pb-2 think-bold">Nivel 2</p>
                         </article>
 
-                        <article class="bx-f">
+                        <article class="bx-f h-2">
                             <p class="line-ht4">El segundo nivel de Thinkion es el más completo, incluyendo soporte 24 hs, productos adicionales incluídos y capacitaciones presenciales.</p>
                         </article>
 
-                        <article class="bx-f">
+                        <article class="bx-f h-5">
 
                             <ul class="list-card un-list">
                                 <li> <div class="list"></div>Funciones de Nivel 2</li>
@@ -252,7 +258,7 @@
 
                         </article>
 
-                        <article class="bx-f">
+                        <article class="bx-f h-2">
                             <p class="line-ht4">Guardia pasiva de 01 am a 07 am. Guardia técnica y funcional de 07 a 01 am.</p>
                         </article>
 
@@ -272,179 +278,224 @@
         
         </section>
 
-        <section id="our-products" class="gral-padding center col bg-think-gray">
+        <section id="our-products" class="center col bg-think-gray pb-5">
 
             <header class="bx-50 center col">
                 <h2 class="text-center think-bold f-1 pb-2">Nuestros otros Productos</h2>
-                <h5 class="text-center f-5 pb-2">Todos nuestros productos incluyen desde la licencia única por local, el acceso completo a cada herramienta sin restricciones. Creemos que es importante que puedas vivir la experiencia completa siempre.</h5>
+                <h5 class="text-center think-light f-5 pb-2">Todos nuestros productos incluyen desde la licencia única por local, el acceso completo a cada herramienta sin restricciones. Creemos que es importante que puedas vivir la experiencia completa siempre.</h5>
             </header>
 
             <section class="bx-90 wrap mt-5 center">
 
                 <section class="bx-25">
-                    <section class="bx-f py-5 center col bg-think-white text-center">
-                        <article class="bx-f p-1 fc-think">
-                            <h1 class="f-2 think-bold p-1">Dark Kitchen</h1>
-                            <h2 class="f-5 think-medium">Delivery + Take Away</h2>
-                        </article>
-                        <article class="bx-f fc-think-blue">
-                            <h6 class="f-1 think-bold p-1">$ 5500</h6>
+                    <section class="card-our-prices b center col bg-think-white text-center">
+                        
+                        <header class="bx-f">
+                            <h1 class="f-2 title-card-prices think-bold">Ecommerce</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Delivery + Take Away</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 5500</h6>
                             <h2 class="f-5">Por licencia mensual</h2>
                         </article>
-                        <article class="bx-90">
-                            <p class="line-ht4 text-j p-2">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
                         </article>
 
-                        <article class="section-btn center mt-1">
-                            <a href="customers.html" class="bx-f center">
-                                <button class="btn-price bg-think-yellow f-5 think-bold">
-                                    Trabajemos juntos
-                                </button>
-                            </a>
-                        </article>
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
                         
                     </section>
                 </section>
 
                 <section class="bx-25">
-                    <section class="bx-f py-5 b text-center">
-                        <article class="bx-f p-3">
-                            <h1 class="f-3">Ecommerce</h1>
-                            <h2 class="f-6">Delivery + Take Away</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <h6 class="f-1">$ 5500</h6>
-                            <h2 class="f-6 think-light">Por licencia mensual</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <p class="think-light">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
-                        </article>
+                    <section class="card-our-prices center col bg-think-white text-center">
                         
-                        <button class="btn bx-f">
-                            Trabajemos juntos
-                        </button>
+                        <header class="bx-f p-1">
+                            <h1 class="f-2 title-card-prices think-bold">Call Center</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Delivery + Take Away</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 5500</h6>
+                            <h2 class="f-5">Por mes hasta 10 locales</h2>
+                        </article>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">El módulo incluye la integración del Sistema de Call center con la App de Ventas para la recepción de pedidos y automatización de procesos. Consultar costo por más de 10 locales.</p>
+                        </article>
+
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
+                        
                     </section>
                 </section>
 
                 <section class="bx-25">
-                    <section class="bx-f py-5 b text-center">
-                        <article class="bx-f p-3">
-                            <h1 class="f-3">Ecommerce</h1>
-                            <h2 class="f-6">Delivery + Take Away</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <h6 class="f-1">$ 5500</h6>
-                            <h2 class="f-6 think-light">Por licencia mensual</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <p class="think-light">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
-                        </article>
+                    <section class="card-our-prices center col bg-think-white text-center">
                         
-                        <button class="btn bx-f">
-                            Trabajemos juntos
-                        </button>
+                        <header class="bx-f p-1">
+                            <h1 class="f-2 title-card-prices think-bold">Reservas</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Módulo Integrado al POS</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 2500</h6>
+                            <h2 class="f-5">Por mes / local</h2>
+                        </article>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">Administrá y gestioná todas tus reservas desdeThinkion. Ofreceles pre compra y analiza sus consumos por la asociación de orden.</p>
+                        </article>
+
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
+                        
                     </section>
                 </section>
 
                 <section class="bx-25">
-                    <section class="bx-f py-5 b text-center">
-                        <article class="bx-f p-3">
-                            <h1 class="f-3">Ecommerce</h1>
-                            <h2 class="f-6">Delivery + Take Away</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <h6 class="f-1">$ 5500</h6>
-                            <h2 class="f-6 think-light">Por licencia mensual</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <p class="think-light">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
-                        </article>
+                    <section class="card-our-prices center col bg-think-white text-center">
                         
-                        <button class="btn bx-f">
-                            Trabajemos juntos
-                        </button>
+                        <header class="bx-f p-1">
+                            <h1 class="f-2 title-card-prices think-bold">Dark Kitchen</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Cocinas compartidas</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 5500</h6>
+                            <h2 class="f-5">Por mes / local</h2>
+                        </article>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">Licencia Mensual para segundas App de Ventas instaladas en servidores locales ya existentes en Thinkion. Manejá todas las Dark Kitchen desde <strong>Thinkion</strong>.</p>
+                        </article>
+
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
+                        
                     </section>
                 </section>
 
                 <section class="bx-25">
-                    <section class="bx-f py-5 b text-center">
-                        <article class="bx-f p-3">
-                            <h1 class="f-3">Ecommerce</h1>
-                            <h2 class="f-6">Delivery + Take Away</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <h6 class="f-1">$ 5500</h6>
-                            <h2 class="f-6 think-light">Por licencia mensual</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <p class="think-light">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
-                        </article>
+                    <section class="card-our-prices center col bg-think-white text-center">
                         
-                        <button class="btn bx-f">
-                            Trabajemos juntos
-                        </button>
+                        <header class="bx-f p-1">
+                            <h1 class="f-2 title-card-prices think-bold">Think Food</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Sistema de Recompra</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 3400</h6>
+                            <h2 class="f-5">Por licencia mensual</h2>
+                        </article>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">Hasta 3 dispositivos tablet + QR (O input de datos) es considerado una licencia. Consultá el precios especiales por <strong>licencias ilimitadas</strong> por local.</p>
+                        </article>
+
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
+                        
                     </section>
                 </section>
+
+                <section class="bx-25">
+                    <section class="card-our-prices center col bg-think-white text-center">
+                        
+                        <header class="bx-f p-1">
+                            <h1 class="f-2 title-card-prices think-bold">Think Check</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Sistema de Auditorías</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 1200</h6>
+                            <h2 class="f-5">Por mes/local</h2>
+                        </article>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">Licencia única por local, sin límite de usuarios, auditorías ni accesos. Consultá el precio especial por <strong>cantidad de locales</strong>.</p>
+                        </article>
+
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
+                        
+                    </section>
+                </section>
+
+                <section class="bx-25">
+                    <section class="card-our-prices center col bg-think-white text-center">
+                        
+                        <header class="bx-f p-1">
+                            <h1 class="f-2 title-card-prices think-bold">Think Card</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Sistema de Fidelización</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 1200</h6>
+                            <h2 class="f-5">Por mes/local</h2>
+                        </article>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">Licencia única por local, sin límite de usuarios, beneficios ni accesos. Consultá el precio especial por <strong>cantidad de locales.</strong></p>
+                        </article>
+
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
+                        
+                    </section>
+                </section>
+
+                <section class="bx-25">
+                    <section class="card-our-prices center col bg-think-white text-center">
+                        
+                        <header class="bx-f p-1">
+                            <h1 class="f-2 title-card-prices think-bold">Intranet</h1>
+                            <h2 class="f-5 sub-title-card-prices think-medium">Intranet Corporativa</h2>
+                        </header>
+
+                        <article class="bx-f">
+                            <h6 class="f-1 price-card think-bold">$ 10900</h6>
+                            <h2 class="f-5">Licencia única mensual </h2>
+                        </article>
+
+                        <article class="bx-f bx-txt-card-price">
+                            <p class="f-5 line-ht3 p-2">Licencia única, sin límite de usuarios, locales, novedades ni accesos. Consultá el precio especial por <strong>cantidad de locales.</strong></p>
+                        </article>
+
+                        <a href="#">
+                            <button class="btn-card">
+                                Trabajemos juntos
+                            </button>
+                        </a>
+                        
+                    </section>
+                </section>
+
                 
-                <section class="bx-25">
-                    <section class="bx-f py-5 b text-center">
-                        <article class="bx-f p-3">
-                            <h1 class="f-3">Ecommerce</h1>
-                            <h2 class="f-6">Delivery + Take Away</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <h6 class="f-1">$ 5500</h6>
-                            <h2 class="f-6 think-light">Por licencia mensual</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <p class="think-light">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
-                        </article>
-                        
-                        <button class="btn bx-f">
-                            Trabajemos juntos
-                        </button>
-                    </section>
-                </section>
-
-                <section class="bx-25">
-                    <section class="bx-f py-5 b text-center">
-                        <article class="bx-f p-3">
-                            <h1 class="f-3">Ecommerce</h1>
-                            <h2 class="f-6">Delivery + Take Away</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <h6 class="f-1">$ 5500</h6>
-                            <h2 class="f-6 think-light">Por licencia mensual</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <p class="think-light">Manejá todos los locales que quieras dentro de tu ecommerce. Costo variable por pedido de 1.5%.</p>
-                        </article>
-                        
-                        <button class="btn bx-f">
-                            Trabajemos juntos
-                        </button>
-                    </section>
-                </section>
-
-                <section class="bx-25">
-                    <section class="bx-f py-5 b text-center">
-                        <article class="bx-f p-3">
-                            <h1 class="f-3">Intranet</h1>
-                            <h2 class="f-6">Intranet Corporativa</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <h6 class="f-1">$ 10900</h6>
-                            <h2 class="f-6 think-light">Licencia única mensual</h2>
-                        </article>
-                        <article class="bx-f p-3">
-                            <p class="think-light">Licencia única, sin límite de usuarios, locales, novedades ni accesos. Consultá el precio especial por cantidad de locales.</p>
-                        </article>
-                        
-                        <button class="btn bx-f">
-                            Trabajemos juntos
-                        </button>
-                    </section>
-                </section>
 
             </section>
             
@@ -569,6 +620,7 @@
 
     </footer>
 
+    <script src="js/contact.js"></script>
     <script src="js/toggle-menu.js"></script>
 </body>
 </html>

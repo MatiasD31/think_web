@@ -11,11 +11,66 @@
     <link rel="stylesheet" href="./css/colours.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- components -->
+    <link rel="stylesheet" href="./css/components/contact.css">
     <link rel="stylesheet" href="./css/components/slide.css">
     <link rel="stylesheet" href="./css/components/integrations.css">
     <title>Thinkion - Revolucionate</title>
 </head>
 <body>
+
+    <section id="modal-contact">
+
+        <article id="form-modal" class="center">
+            
+            <div id="close-modal">
+                <img src="./imagenes/form-icons/cross.png" class="icon-cross">
+            </div>
+
+            <form action="" class="bx-90 center col ">
+
+                <div class="bx-f center">
+                    <h2 class="f-2 think-bold">Trabajemos Juntos</h2>
+                </div>
+
+                <div class="bx-f center">
+                    <h6 class="f-6">Dejanos un Mensaje y rápidamente te contactaremos</h6>
+                </div>
+
+                <div class="bx-input b">
+                    <img src="./imagenes/form-icons/icon-user.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Tu Nombre">
+                </div>
+
+                <div class="bx-input">
+                    <img src="./imagenes/form-icons/icon-email.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Tu Email">
+                </div>
+
+                <div class="bx-input">
+                    <img src="./imagenes/form-icons/icon-phone.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Tu Telefono">
+                </div>
+
+                <div class="bx-input">
+                    <img src="./imagenes/form-icons/icon-layer.png" class="icons-form">
+                    <input type="text" class="inputs-form" placeholder="Asunto">
+                </div>
+
+                <div class="bx-msg">
+                    <img src="./imagenes/form-icons/icon-pencil.png" class="icons-form">
+                    <textarea name="" class="msg-form">Tu mensaje</textarea>
+                </div>
+                
+                <button class="btn-form">
+                    Enviar mensaje
+                </button>
+
+
+            </form>
+
+        </article>
+
+    </section>
 
     <nav>
         <div id="logo" class="bg-think">
@@ -114,7 +169,7 @@
             <li><a class="links" href="prices.html">PRECIOS</a></li>
             <li><a class="links" href="us.html">NOSOTROS</a></li>
             <li><a class="links" href="customers.html">CLIENTES</a></li>
-            <li><a class="links" href="">CONTACTO</a></li>
+            <li><a class="links" id="contact">CONTACTO</a></li>
         </ul>
         <div id="bx-btn">
             <img src="./imagenes/hamburger button.png" alt="">
@@ -527,6 +582,7 @@
 
     </footer>
 
+    <script src="js/contact.js"></script>
     <script src="js/mockupsVideos.js"></script>
     <script src="js/toggle-menu.js"></script>
     </body>
