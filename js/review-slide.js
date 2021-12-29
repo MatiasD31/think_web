@@ -10,6 +10,8 @@ function load_previews()
 
     card = document.getElementsByClassName('card-think-about')
 
+    console.log( images_previews ) 
+
     next_preview.addEventListener('click', () => {
 
         cnt_preview++
