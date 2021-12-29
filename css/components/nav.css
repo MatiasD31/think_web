@@ -179,8 +179,7 @@ nav > ul > li:hover #sub-list { display:flex; }
 
 @media screen and ( max-width:800px ) 
 {
-    #logo > div:first-child > a > img { margin-top:8px; }
-    #logo > div:last-child > img { margin-top:15px; }
+    #logo > a >  img { margin-top:10px; }
 
     #bx-btn { display:flex; padding-bottom:15px; }
 
@@ -201,11 +200,8 @@ nav > ul > li:hover #sub-list { display:flex; }
         width:125px;
     }
 
-    #logo > div { height:30px; margin-top:10px; }
-
-    #logo > div > a >  img { height:15px; }
-    .arrow-logo { margin-top:13px !important; height:10px; }
-    
+    #logo > a > img { width:93px; margin-top:25px;height:15px; }
+        
     #bx-btn 
     { 
         height:50px;

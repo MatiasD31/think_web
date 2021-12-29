@@ -3,19 +3,24 @@ var toggleModal = false
 
 function loadContact() 
 {
-    contact = document.getElementById('contact')
+    contact = document.getElementsByClassName('contact')
 
     closeModal = document.getElementById('close-modal')
 
     modal = document.getElementById('modal-contact')
 
-    contact.addEventListener('click', exeToggleModal)
+    for( i = 0 ; i < contact.length ; i++)
+    {
+        contact[i].addEventListener('click', exeToggleModal)
+    }
 
     closeModal.addEventListener('click', exeToggleModal)
 
 
     function exeToggleModal()
     {
+        console.log( 'hola' )
+
         if( toggleModal == false )
         {
             modal.style.display = 'block'
