@@ -1,3 +1,21 @@
+/* paddings */
+
+#customers ,  
+#preview , #cite , #complements , #complementary , #novelties { margin:150px 0px; }
+
+
+@media screen and ( max-width:800px ) 
+{
+    #preview { margin:50px 0px; }
+}
+
+
+@media screen and ( max-width:400px ) 
+{
+    #customers,
+    #preview , #novelties ,  #complementary { margin:50px 0px; }
+}
+
 /* btns */
 
 .btn-yellow 
@@ -9,7 +27,26 @@
     font-size:18px;
     background-color:#D5F901;
     cursor:pointer;
+
+    transition:.2s;
 }
+
+.btn-yellow:hover,
+.hover-think:hover { color:#FFFFFF; background-color:#7A42EB; } 
+
+.hover-lila:hover { color:#FFFFFF; background-color:#7A42EB; } 
+
+.hover-think-yellow:hover { color:#000000; background-color:#D5F901; }
+
+.hover-think:hover { color:#000000; background-color:#D5F901; }
+
+.hover-hero-dark:hover { color:#FFFFFF; background-color:#000000; }
+
+.hover-hero-green:hover { color:#000000; background-color:#00E6C9; }
+
+
+
+
 
 /* btns */
 
