@@ -55,6 +55,8 @@
     }
 }
 
+
+
 @media screen and ( max-width: 1000px )
 {
     .img-slide 
@@ -68,7 +70,7 @@
 @media screen and ( max-width: 1030px )
 {
     #slide { height:100vh; }
-    .img-slide { width:150% !important; height:60vh !important; margin-left:-50%; }
+    .img-slide { width:150% !important; height:60vh; margin-left:-50%; }
 
     #gradient 
     {
@@ -76,6 +78,18 @@
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 80%);
     }
+}
+
+@media screen and ( width:1024px ) and ( height:600px )
+{
+    .img-slide { height:100vh; }
+
+    #gradient { height:50vh;bottom:0px;  }
+}
+
+@media screen and ( width:820px ) and ( height:1180px )
+{
+    .img-slide { height:60vh; margin-left:-75% !important; }
 }
 
 @media screen and ( max-width: 900px )
@@ -171,7 +185,15 @@
 
 @media screen and ( max-width: 420px )
 {
-    .img-slide { height:70vh !important;margin-left:-130% !important; }
+    .img-slide { height:60vh !important; margin-left:-130%; }
+    #gradient 
+    { 
+        height:100vh;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 45%, rgba(0,0,0,0) 70%); 
+    }
+
+    
 }
 
 @media screen and ( max-width: 380px )
