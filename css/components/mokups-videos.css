@@ -1,6 +1,4 @@
 
-/* mockups videos */
-
 #mockups { height:100vh; }
 
 #bx-mockup 
@@ -55,8 +53,6 @@
     align-self: center;
 }
 
-/* mockups videos - btns */
-
 #btns-mockups 
 {
     border:1px solid black;
@@ -81,7 +77,6 @@
 
 .bx-btn-play 
 {
-
     width:89%;
     height:300px;
     position: absolute;
@@ -111,9 +106,33 @@
 
 .btn-pause { display:none; }
 
-.btn-pause:hover { opacity:1; }
+.btn-pause:hover,
 .btn-play:hover { opacity:1; }
 
-/* mockup - video */
-
 .video-mockup { margin:-150px 0px 0px -350px; }
+
+@media screen and ( max-width:1000px )
+{
+    #mockups { height:100vh; padding:450px 0px; }
+}
+
+@media screen and ( max-width:800px )
+{
+    #prev-mockup-video { left:-45px; }
+    #next-mockup-video { right:-45px; }
+
+    #prev-mockup-video > img,
+    #next-mockup-video > img,
+    .bx-btn-play { margin:0px; }
+}
+
+@media screen and ( max-width:600px )
+{
+    #mockups > header { width:80%; }
+}
+
+@media screen and ( max-width: 400px ) 
+{
+    #next-mockup-video { right:-40px !important; }
+    #prev-mockup-video { left:-40px !important; }
+}

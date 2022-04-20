@@ -120,7 +120,7 @@
     .bg-image-us,
     .bg-image-customers { background-position-x: center; }
 
-    .bg-image-work { background-size:700px auto; }
+    .bg-image-work { background-size:800px auto; }
 
     #gradient {
         background: rgb(0,0,0);
@@ -140,17 +140,6 @@
     #slide { height:100vh; } 
 }
 
-@media screen and ( max-width:500px )
-{
-
-
-    /* .bg-image-booking,
-    .bg-image-pack-digital
-    {
-        background-position-x: center;
-    }
-     */
-}
 
 @media screen and ( max-width: 450px )
 {
@@ -176,7 +165,13 @@
     .bg-image-home,
     .bg-image-products,
     .bg-image-reports,
-    .bg-image-us 
+    .bg-image-us,
+    .bg-image-work,
+    .bg-image-app-shell,
+    .bg-image-admin,
+    .bg-image-ecommerce,
+    .bg-image-pack-digital,
+    .bg-image-booking
     {
         background-size:900px auto;
         /* background-position-x: center; */
@@ -212,11 +207,23 @@
     .bg-image-home,
     .bg-image-products,
     .bg-image-us,
-    .bg-image-reports
+    .bg-image-reports,
+    .bg-image-customers,
+    .bg-image-work,
+    .bg-image-app-shell,
+    .bg-image-admin,
+    .bg-image-ecommerce,
+    .bg-image-pack-digital,
+    .bg-image-booking
     {
         background-size:1920px auto;
-        /* background-position-x: center; */
     }
+
+    .bg-image-customers ,
+    .bg-image-ecommerce,
+    .bg-image-pack-digital,
+    .bg-image-booking,
+    .bg-image-admin{ background-position-x: center; }
 }
 
 @media screen and ( width: 768px )  and ( height:1024px ) {
@@ -224,7 +231,14 @@
     .bg-image-home,
     .bg-image-products,
     .bg-image-us,
-    .bg-image-reports
+    .bg-image-reports,
+    .bg-image-customers,
+    .bg-image-work,
+    .bg-image-app-shell,
+    .bg-image-admin,
+    .bg-image-ecommerce,
+    .bg-image-pack-digital,
+    .bg-image-booking
     {
         background-size:1100px auto;
         /* background-position-x: center; */
@@ -236,11 +250,22 @@
     .bg-image-home,
     .bg-image-products,
     .bg-image-us,
-    .bg-image-reports
+    .bg-image-reports,
+    .bg-image-customers,
+    .bg-image-work,
+    .bg-image-app-shell,
+    .bg-image-admin,
+    .bg-image-ecommerce,
+    .bg-image-pack-digital,
+    .bg-image-booking
     {
         background-size:1920px auto;
-        /* background-position-x: center; */
     }
+
+    .bg-image-admin,
+    .bg-image-pack-digital,
+    .bg-image-booking,
+    .bg-image-ecommerce{ background-position-x: center; }
 }
 
 @media screen and ( max-width: 300px ) 
@@ -248,10 +273,16 @@
     .bg-image-home,
     .bg-image-products,
     .bg-image-us,
-    .bg-image-reports
+    .bg-image-reports,
+    .bg-image-customers,
+    .bg-image-work,
+    .bg-image-app-shell,
+    .bg-image-admin,
+    .bg-image-ecommerce,
+    .bg-image-pack-digital,
+    .bg-image-booking
     {
         background-size:700px auto;
-        /* background-position-x: center; */
     }
 }
 
@@ -260,9 +291,15 @@
     .bg-image-home,
     .bg-image-products,
     .bg-image-us,
-    .bg-image-reports
+    .bg-image-reports,
+    .bg-image-work,
+    .bg-image-app-shell,
+    .bg-image-admin,
+    .bg-image-ecommerce,
+    .bg-image-pack-digital,
+    .bg-image-booking
     {
         background-size:1100px auto;
-        /* background-position-x: center; */
     }
 }
+
