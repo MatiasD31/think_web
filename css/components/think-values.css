@@ -1,0 +1,46 @@
+.think-values-dark,
+.think-values-white { padding:100px 0px; }
+
+.think-values-dark > section > article,
+.think-values-white > section > article
+{
+    display: flex;
+    justify-content: center;
+}
+
+.think-values-dark > section > article > img , 
+.think-values-white > section > article > img 
+{
+    width:50%;
+}
+
+@media screen and ( max-width:850px ) 
+{
+    .think-values-dark > section ,
+    .think-values-white > section
+    {
+        display:flex;   
+        width:100%;
+    }
+
+    .think-values-dark > section  { flex-direction: column-reverse; }
+    .think-values-white > section { flex-direction: column; }
+
+    .think-values-dark > section > article,
+    .think-values-white > section > article {
+        width:100%;
+        display: flex;
+    }
+
+    .think-values-dark > section > article > img ,
+    .think-values-white > section > article > img { width:30%; }
+}
+
+@media screen and ( max-width:500px ) 
+{
+    .think-values-dark,
+    .think-values-white { padding:50px 0px; }
+
+    .think-values-dark > section > article:last-of-type,
+    .think-values-white > section > article:first-of-type { display:none; }
+}

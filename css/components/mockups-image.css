@@ -106,10 +106,21 @@
 @media screen and ( max-width:800px ) 
 {
 
-    .mockups-images { height:110vh ;}
+    .mockups-images { height:110vh; }
+
+    .mimage-h-10 { height:10vh; }
+    .mimage-h-20 { height:20vh; }
+    .mimage-h-30 { height:30vh; }
+    .mimage-h-40 { height:40vh; }
+    .mimage-h-50 { height:50vh; }
+    .mimage-h-60 { height:60vh; }
+    .mimage-h-70 { height:70vh; }
+    .mimage-h-80 { height:80vh; }
+    .mimage-h-90 { height:90vh; }
+    .mimage-h-100 { height:100vh; }
 
     .section-mockup:first-of-type ,
-    .section-mockup > .container-top { height:40vh; }
+    .section-mockup > .container-top { height:35vh; }
 
 
     .think > .section-mockup > .container-bottom > .box-mockup-image { display:none; }
@@ -137,6 +148,21 @@
     .think > .section-mockup .container-top > .box-mockup-image,
     .blue > .section-mockup .container-top > .box-mockup-image {  width:100%; }
 
-    
-    
+    .section-mockup:first-of-type ,
+    .section-mockup > .container-top{ height:26vh; }
+
+    .rect { height:27vh; }
+
+
+    .mimage-h-10 { height:10vh; }
+    .mimage-h-20 { height:20vh; }
+    .mimage-h-30 { height:30vh; }
+    .mimage-h-40 { height:40vh; }
+    .mimage-h-50 { height:50vh; }
+    .mimage-h-60 { height:60vh; }
+    .mimage-h-70 { height:60%; }
+    .mimage-h-80 { height:80vh; }
+    .mimage-h-90 { height:90vh; }
+    .mimage-h-100 { height:100vh; }
+        
 }
