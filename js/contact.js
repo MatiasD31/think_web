@@ -19,8 +19,6 @@ function loadContact()
 
     function exeToggleModal()
     {
-        console.log( 'hola' )
-
         if( toggleModal == false )
         {
             modal.style.display = 'block'

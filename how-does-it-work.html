@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- Components -->
     <link rel="stylesheet" href="./css/components/contact.css">
-    <link rel="stylesheet" href="./css/components/slide.css">
+    <!-- <link rel="stylesheet" href="./css/components/slide.css"> -->
+    <link rel="stylesheet" href="./css/components/bg-slide.css">
     <link rel="stylesheet" href="./css/components/preview.css">
+    <link rel="stylesheet" href="./css/components/info-cards.css">
     <link rel="stylesheet" href="./css/components/novelties.css">
     <link rel="stylesheet" href="./css/components/integrations.css">
     <link rel="stylesheet" href="./css/components/footer.css">
@@ -78,7 +80,7 @@
 
     <nav>
         <div id="logo" class="bg-think">
-            <a href="index.html"><img src="./logo Thinkion.svg"></a>
+            <a href="index.html"><img src="./imagenes/logo/Thinkion.svg"></a>
         </div>
         <ul id="menu">
 
@@ -177,11 +179,11 @@
 
     <section class="cont-full">
 
-        <section id="slide"> 
+        <section id="slide" class="bg-image-work"> 
             
             <div id="gradient"></div>
 
-            <img src="./imagenes/how-does-it-work/hero.jpg" class="img-slide">
+            <!-- <img src="./imagenes/how-does-it-work/hero.jpg" class="img-slide-work"> -->
 
             <section class="bx-90 fc-w1 p-5">
 
@@ -189,7 +191,7 @@
                     <h1 class="f-5 pb-2 think-bold">Todo integrado es posible.</h1>
                     <h1 class="f-1 pb-2 line-ht1 think-bold">Solución Integral Gastronómica.</h1>
                     <h5 class="f-5 pb-4 line-ht3 think-bold">Accede a tus locales , Opera y efectivízalos de donde sea. Descubrimos y soluciona tu mundo de forma digital !</h5>
-                    <a href="#">
+                    <a class="contact">
                         <button class="btn-yellow">
                             Trabajemos juntos
                         </button>
@@ -209,7 +211,7 @@
 
                         <div class="bx-80">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/dark-icons/Union.svg" class="img-md">
+                                <img src="./imagenes/icons/dark-icons/Union.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">INTEGRACIONES</h5>
                             <p class="f-5 line-ht3">Tenemos integraciones con los principales servicios del mercado, cómo Mercado Pago, Pedidos Ya, Glovo, Rappi, Fudex entre otros.</p>
@@ -221,7 +223,7 @@
 
                         <div class="bx-80">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/dark-icons/image.svg" class="img-md">
+                                <img src="./imagenes/icons/dark-icons/image.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">REPORTES BI</h5>
                             <p class="f-5 line-ht3">Nuestro módulo de reportes es el más avanzado del mercado. Podes crear todos los Dashboards que necesites con nuestras más de 800 métricas y reportes.</p>
@@ -233,7 +235,7 @@
 
                         <div class="bx-80">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/dark-icons/Clock.svg" class="img-md">
+                                <img src="./imagenes/icons/dark-icons/Clock.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">BACKUP DIARIO</h5>
                             <p class="f-5 line-ht3">Si, tu información es crucial para nosotros. Por eso contamos con muchos métodos de control de los datos y backup diario.</p>
@@ -245,7 +247,7 @@
 
                         <div class="bx-80">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/dark-icons/Calendar.svg" class="img-md">
+                                <img src="./imagenes/icons/dark-icons/Calendar.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">SINCRONIZACIÓN AUTOMATICA</h5>
                             <p class="f-5 line-ht3">Todas tus modificaciones se actualizaran en los locales automáticamente al otro día, sin que tengas que recordar "Sincronizar".</p>
@@ -275,7 +277,7 @@
                         <li class="list-integration"> <div class="list"></div>Mayor seguridad en los cobros. Separa Venta de facturación.</li>
                         <li class="list-integration"> <div class="list"></div>Cambios de precio por horario y administración de grupos de productos.</li>
                     </ul>
-                    <a href="">
+                    <a href="./app-shells.html">
                         <button class="btn bg-think think-bold fc-w1 hover-think">
                             Ver más
                         </button>
@@ -317,7 +319,7 @@
                         <li class="list-integration"> <div class="list"></div>Chequeras Virtuales.</li>
                     </ul>
 
-                    <a href="">
+                    <a href="./admin.html">
                         <button class="btn bg-think think-bold fc-w1 hover-think">
                             Ver más
                         </button>
@@ -347,7 +349,7 @@
                         <li class="list-integration"> <div class="list"></div>Módulo de Auditoría con detección de fraude.</li>
                         <li class="list-integration"> <div class="list"></div>Accesible desde cualquier dispositivo en cualquier lugar.</li>
                     </ul>
-                    <a href="">
+                    <a href="./reports.html">
                         <button class="btn bg-think think-bold fc-w1 hover-think">
                             Ver más
                         </button>
@@ -386,10 +388,11 @@
                         <li class="list-integration"> <div class="list"></div>Pedidos Ya!.</li>
                         <li class="list-integration"> <div class="list"></div>Mercado Pago.</li>
                         <li class="list-integration"> <div class="list"></div>Rappi.</li>
-                        <li class="list-integration"> <div class="list"></div>Glovo.</li>
+                        <li class="list-integration"> <div class="list"></div>Wabbi.</li>
+                        <li class="list-integration"> <div class="list"></div>Muchas mas...</li>
                     </ul>
 
-                    <a href="">
+                    <a href="./integrations.html">
                         <button class="btn bg-think think-bold fc-w1 hover-think">
                             Ver más
                         </button>
@@ -435,35 +438,36 @@
             <article class="bx-90">
                 <ul class="center wrap">
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/clubdelabirra.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/el_club_de_la_milanesa.png">
                     </li>
                     <li class="bx-20">
                         <img class="img-lg center-block" src="./imagenes/customers/costumbres.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/crisol.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/patagonia.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/cuervo-cafe.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/temple.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/el_club_de_la_milanesa.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/clubdelabirra.png">
                     </li>
                     <li class="bx-20">
                         <img class="img-lg center-block" src="./imagenes/customers/havanna.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/LA-GUITARRITA.png">
-                    </li>
-                    <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/logopatagonia.png">
-                    </li>
-                    <li class="bx-20">
                         <img class="img-lg center-block" src="./imagenes/customers/sushi_2x1.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/tacuara.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/LA-GUITARRITA.png">
                     </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/cuervo-cafe.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/crisol.png">
+                    </li>
+
                 </ul>
 
             </article>
@@ -478,26 +482,26 @@
 
         </section>
 
-        <section id="preview">
+        <section id="info-cards" class="box-info-cards">
 
-            <section id="bx-previews">
+            <article class="bx-image">
 
-                <img src="./imagenes/how-does-it-work/slider.jpg" class="slide-previews">
+                <img src="./imagenes/how-does-it-work/slider.jpg" class="info-image">
 
-            </section>
+            </article>
 
-            <section id="content-cards">
+            <section class="cards">
 
-                <article class="card-think-about col d-f bg-think">
+                <article class="float-card bg-think">
 
                     <div class="bx-arrows-thinks-reviews">
     
-                        <img src="./imagenes/Vector.png">
+                        <img src="./imagenes/info-cards/more.png">
     
-                        <img src="./imagenes/shadow-more.png">
+                        <img src="./imagenes/info-cards/shadow-more.png">
     
                     </div>
-
+    
                     <p class="bx-f f-5 fc-w1 line-ht3">
                         <strong class="think-bold fc-think-yellow">Thinkion</strong> es una suite completa de <strong class="think-bold">herramientas de facturación</strong> de punto de venta , gestión, administración, satisfacción, auditorías, ecommerce y mucho más. <strong class="think-bold">Venimos a revolucionar tu negocio.</strong>
                     </p>
@@ -512,9 +516,9 @@
             
             <section class="bx-90 d-f wrap bg-think pos-r">
                  
-                 <img src="./imagenes/Vector.png" class="pos-a vector-Think">
+                 <img src="./imagenes/info-cards/more.png" class="pos-a vector-Think">
 
-                 <img src="./imagenes/shadow-more.png" class="more-shadow">
+                 <img src="./imagenes/info-cards/shadow-more.png" class="more-shadow">
                   
                  <article class="bx-55">
                     <div class="bx-f">
@@ -538,67 +542,148 @@
  
         </section> 
 
-        <section id="complements" class="gral-padding center col" style="display:none;">
+        <section id="complementary" class="center col">
 
             <header class="bx-80 center col">
-                <h5 class="text-center f-5 pb-2 think-bold">OTROS PRODUCTOS</h5>
+                <h5 class="text-center f-5 pb-2 think-bold">Conocé la Suite Thinkion</h5>
                 <h2 class="text-center f-1 think-bold">Productos complementarios</h2>
             </header>
 
             <section id="btns-complementary">
                 <button id="btn-com-prev" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-left.png" alt="">
+                    <img src="./imagenes/icons/arrow-left.png" alt="">
                 </button>
                 <button id="btn-com-next" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-right.png" alt="">
+                    <img src="./imagenes/icons/arrow-right.png" alt="">
                 </button>
             </section>
-
-            
-
+             
             <article class="bx-80" class="center">
 
-                <ul id="bx-displace-complementary" class="d-f wrap py-5">
+                <ul id="bx-displace-complementary" class="d-f wrap">
 
                     <li class="bx-3 p-5">
-                        <p class="f-26 line-ht2 fc-think">En Thinkion pensamos productos bla texto que da introduccion a los productos complementarios. </p>
+                        <p class="f-26 line-ht2 fc-think">En Thinkion pensamos nuestros productos como ecosistema en función de las necesidades del negocio.
+                        </p>
                     </li>
+
                     <li class="bx-3 p-4">
-                        <div class="b-f h-3" style="position:relative;">
-                            <article class="box-thinks-products center" style="position:absolute;">
-                                <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">FOOD</span></h1>
-                            </article>
-                            <img src="./imagenes/Mask Group.png" class="img-prouct">
-                        </div>
-                        <p class="line-ht3 f-5 pt-3">ThinkFood es una herramienta de satisfaccion que permite capturar datos de clientes y conocer que ocurre en tus locales, desde el punto de vista de tus clientes.</p>
-                        <br>
-                        <a class="fc-think think-bold cp">VER MAS</a>
+
+                        <article class="box-imgs-complements">
+                            <section class="bx-f">
+                                <article class="box-thinks-products">
+                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">FOOD</span></h1>
+                                </article>
+                                <article class="box-interface-soft">
+                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
+                                </article>
+                            </section>
+                        </article>
+                        <article>
+                            <p class="line-ht3 f-5">
+                                Permite capturar datos de clientes y conocer que ocurre en los locales, mediante encuestas realizadas por vía QR, dando la opción de ganar uno o más beneficios. Su potente motor de email Marketing facilita el contacto 1 a 1 con diferentes filtrados de información.
+                            </p>
+                            <br>
+                            <a href="./products.html" class="fc-think think-bold cp">VER MAS</a>
+                        </article>
+                        
                     </li>
+
                     <li class="bx-3 p-4">
-                        <div class="b-f h-3 pos-r">
-                            <article class="box-thinks-products center" style="position:absolute;">
-                                <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">CHECK</span></h1>
-                            </article>
-                            <img src="./imagenes/Mask Group.png" class="img-prouct">
-                        </div>
-                        <p class="line-ht3 f-5 pt-3">ThinkFood es una herramienta de satisfaccion que permite capturar datos de clientes y conocer que ocurre en tus locales, desde el punto de vista de tus clientes.</p>
-                        <br>
-                        <a class="fc-think think-bold cp">VER MAS</a>
+
+                        <article class="box-imgs-complements">
+                            <section class="bx-f">
+                                <article class="box-thinks-products">
+                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">CHECK</span></h1>
+                                </article>
+                                <article class="box-interface-soft">
+                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
+                                </article>
+                            </section>
+                        </article>
+                        <article>
+                            <p class="line-ht3 f-5">Una herramienta ideal para auditorías de puntos de venta,
+                                tanto franquicias cómo locales propios. Con la posiblidad de generar múltiples índices
+                                con sub índices, puntos de auditoría, respuestas de 1 a 5, binarias, comentarios, fotos
+                                y muchos más.
+                                </p>
+                            <br>
+                            <a href="./products.html" class="fc-think think-bold cp">VER MAS</a>
+                        </article>
+                        
                     </li>
-                    
+
+                    <li class="bx-3 p-4">
+
+                        <article class="box-imgs-complements">
+                            <section class="bx-f">
+                                <article class="box-thinks-products">
+                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">STORE</span></h1>
+                                </article>
+                                <article class="box-interface-soft">
+                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
+                                </article>
+                            </section>
+                        </article>
+                        <article>
+                            <p class="line-ht3 f-5">Un potente motor de Ecommerce conectado a Think ERP que 
+                                cumplimenta con las más de 200 reglas de Google en cuanto usabilidad, velocidad y experiencia
+                                del usuario. Posee Checkout conectado a Mercado Pago.
+                            </p>
+                            <br>
+                            <a href="./products.html" class="fc-think think-bold cp">VER MAS</a>
+                        </article>
+                        
+                    </li>
+
+                    <li class="bx-3 p-4">
+
+                        <article class="box-imgs-complements">
+                            <section class="bx-f">
+                                <article class="box-thinks-products">
+                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">CARD</span></h1>
+                                </article>
+                                <article class="box-interface-soft">
+                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
+                                </article>
+                            </section>
+                        </article>
+                        <article>
+                            <p class="line-ht3 f-5">
+                                Think Card es una herramienta de fidelización que mediante
+								la identificaciǿn del cliente, permite poder acceder a diferentes tipos de beneficios cómo
+								descuentos, productos, premiación por visitas entre otros, limitando días, locales y más.
+                            </p>
+                            <br>
+                            <a href="./products.html" class="fc-think think-bold cp">VER MAS</a>
+                        </article>
+                        
+                    </li>
+
+                    <li class="bx-3 p-4">
+
+                        <article class="box-imgs-complements">
+                            <section class="bx-f">
+                                <article class="box-thinks-products">
+                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">NET</span></h1>
+                                </article>
+                                <article class="box-interface-soft">
+                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
+                                </article>
+                            </section>
+                        </article>
+                        <article>
+                            <p class="line-ht3 f-5">Mediante su timeline, permite visualizar todas las novedades, las cuales pueden ser de nuevos manuales, lanzamientos, información general con adjuntos, videos, link de referencias,etc. Además cuenta con un motor de videos para capacitación auto administrable.
+                            </p>
+                            <br>
+                            <a href="./products.html" class="fc-think think-bold cp">VER MAS</a>
+                        </article>
+                        
+                    </li>
+
                 </ul>
 
             </article>
-
-            
-            <article class="section-btn bx-f center">
-                <a href="#" class="bx-f center">
-                    <button class="btn bg-think fc-w1 think-bold">
-                        Ver todos
-                    </button>
-                </a>
-            </article>
-            
 
         </section>
 
@@ -613,7 +698,7 @@
                 <h5 class="f-5 pb-2 think-bold">CONTACTO</h5>
                 <h2 class="f-1 pb-5 think-bold text-center">Trabajemos juntos</h2>
                 <article class="section-btn bx-f center">
-                    <a href="#" class="bx-f center">
+                    <a class="bx-f center contact">
                         <button class="btn bg-think-dark fc-w1 think-bold hover-lila">
                             Contactanos
                         </button>
@@ -631,7 +716,7 @@
 
                     <div class="d-f">
                         
-                        <img src="./logo Thinkion.svg" alt="">
+                        <img src="./imagenes/logo/Thinkion.svg" alt="">
                         
                     </div>
 
@@ -726,23 +811,21 @@
                 </article>
 
                 <article class="bx-20">
-                    <form action="">
+                    
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">TRABAJEMOS JUNTOS</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">TRABAJEMOS JUNTOS</p>
-                        </article>
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">info@thinkion.com.ar</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">info@thinkion.com.ar</p>
-                        </article>
-
-                        <article class="bx-f fc-w1 f-5 center">
-                            <button class="footer-btn bg-think">
-                                Escribinos
-                            </button>
-                        </article>
-
-                    </form>
+                    <article class="bx-f fc-w1 f-5 center">
+                        <button class="footer-btn bg-think contact">
+                            Escribinos
+                        </button>
+                    </article>
+                    
                 </article>
 
                 <section class="legal-footer bx-f">
@@ -757,11 +840,11 @@
 
                         <span class="fc-w1">Seguinos</span>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.linkedin.com/company/b-smart/">
                             <img src="./imagenes/footer/icon-linkedin.svg" alt="" class="ml-2">
                         </a>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.instagram.com/_thinkion_/">
                             <img src="./imagenes/footer/icon-instagram.svg" alt="" class="ml-2">
                         </a>
 

@@ -12,10 +12,12 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- Components -->
     <link rel="stylesheet" href="./css/components/contact.css">
-    <link rel="stylesheet" href="./css/components/slide.css">
+    <!-- <link rel="stylesheet" href="./css/components/slide.css"> -->
+    <link rel="stylesheet" href="./css/components/bg-slide.css">
     <link rel="stylesheet" href="./css/components/integrations.css">
     <link rel="stylesheet" href="./css/components/heros.css">
     <link rel="stylesheet" href="./css/components/preview.css">
+    <link rel="stylesheet" href="./css/components/info-cards.css">
     <link rel="stylesheet" href="./css/components/footer.css">
     <title>Thinkion - Revolucionate</title>
 </head>
@@ -68,7 +70,6 @@
                     Enviar mensaje
                 </button>
 
-
             </form>
 
         </article>
@@ -77,7 +78,7 @@
 
     <nav>
         <div id="logo" class="bg-think">
-            <a href="index.html"><img src="./logo Thinkion.svg"></a>
+            <a href="index.html"><img src="./imagenes/logo/Thinkion.svg"></a>
         </div>
         <ul id="menu">
 
@@ -176,11 +177,11 @@
 
     <section class="cont-full">
         
-        <section id="slide"> 
+        <section id="slide" class="bg-image-app-shell"> 
             
             <div id="gradient"></div>
 
-            <img src="./imagenes/app-shell/hero.jpg" class="img-slide-app-shell">
+            <!-- <img src="./imagenes/app-shell/hero.jpg" class="img-slide-app-shell"> -->
 
             <section class="bx-90 fc-w1 p-5">
 
@@ -188,7 +189,7 @@
                     <h1 class="f-5 pb-2 think-bold">Best POS in town</h1>
                     <h1 class="f-1 pb-2 line-ht1 think-bold">El punto de venta bajo tu total control.</h1>
                     <h5 class="f-5 pb-4 line-ht3 think-bold">Con <strong>Thinkion</strong> es posible tener toda tu operación monitoreada y controlada desde cualquier lugar.</h5>
-                    <a href="#">
+                    <a class="contact">
                         <button class="btn-yellow">
                             Trabajemos juntos
                         </button>
@@ -233,7 +234,7 @@
                             <p class="fc-w1 f-5 think-light line-ht2 pb-2" >Sumergite en el mundo de <strong>Thinkion</strong> y conocé la aplicación más segura de todas.</p>
                         </div>
 
-                        <a href="">
+                        <a href="" class="d-n">
                             <button class="btn-hero ml-1 fc-think">
                                 Ver más
                             </button>
@@ -292,7 +293,7 @@
                             <p class="fc-w1 f-5 think-light line-ht2 pb-2">Contamos con integraciones natales con servicios cómo <strong>Pedido Ya, Glovo, Mercado Pago, Rappi</strong> incluso con soluciones propias o <strong>Ad hoc</strong> para el cliente, haciendo que la estrategia de seguridad del sistema sea muy sólida.</p>
                         </div>
 
-                        <a href="">
+                        <a href="" class="d-n">
                             <button class="btn-hero ml-1 fc-think-blue">
                                 Ver más
                             </button>
@@ -341,7 +342,7 @@
                         <li class="list-integration"> <div class="list"></div>Interfaz desarrollada bajo normas de usabilidad y experiencia del usuario.</li>
                     </ul>
 
-                    <a href="">
+                    <a href="" class="d-n">
                         <button class="btn bg-think think-bold fc-w1">
                             Ver más
                         </button>
@@ -355,157 +356,93 @@
 
         </section>
 
-        <section id="preview">
+        <section id="info-cards" class="box-info-cards">
 
-            <section id="bx-previews">
+            <article class="bx-image">
 
+                <img src="./imagenes/app-shell/slider.jpg" class="info-image">
 
-                <button id="prev-preview" class="btn-slide-apps" style="display:none;">
-                    <img src="./imagenes/arrow-left.png" alt="">
-                </button>
-                <button id="next-preview" class="btn-slide-apps" style="display:none;">
-                    <img src="./imagenes/arrow-right.png" alt="">
-                </button>
+            </article>
 
-                <img src="./imagenes/app-shell/slider.jpg" class="slide-previews">
+            <section class="cards">
 
-            </section>
-
-            <section id="content-cards">
-
-                <article class="card-think-about col d-f bg-think">
+                <article class="float-card bg-think">
 
                     <div class="bx-arrows-thinks-reviews">
     
-                        <img src="./imagenes/Vector.png">
+                        <img src="./imagenes/info-cards/more.png">
     
-                        <img src="./imagenes/shadow-more.png">
+                        <img src="./imagenes/info-cards/shadow-more.png">
     
                     </div>
-
+    
                     <h3 class="f-4 fc-w1 think-bold"> App funcional offline / online </h3>
                     <br>
                     <p class="f-5 think-light fc-w1 line-ht3">
                         Alojado en servidores de Google Compute Engine, podes acceder desde cualquier dispositivo en cualquier momento.
                     </p>
-                   
-                </article>
-
-                <article class="card-think-about col d-f bg-think-blue" style="display:none;">
-
-                    <div class="bx-arrows-thinks-reviews">
-    
-                        <img src="./imagenes/Vector.png">
-    
-                        <img src="./imagenes/shadow-more.png">
-    
-                    </div>
                     
-                    <h3 class="f-4 fc-w1 think-bold"> Tecnología aplicada al Hardware </h3>
-                    <br>
-
-                    <p class="bx-f f-5 think-light fc-w1 line-ht3">
-                        Mediante el servidor local, el Almacenamiento de datos máximo 48 hs (Habiendo conexión a Internet) en servidor Linux actualizado a última versión disponible. La tecnología de su Spooler permite tener las impresoras fiscales en red e imprimir comprobantes de cualquier usuario/dispositivo habilitado con permisos
-                    </p>
-                   
                 </article>
 
             </section>
-
-            
-            
-            
 
         </section>
 
-        <section id="mockups" class="center col pos-r">
+        <section id="customers" class="center col">
 
             <header class="bx-50 center col">
-                <h5 class="text-center f-5 pb-1 think-bold">FEATURE O PARTE DEL SISTEMA</h5>
-                <h2 class="text-center f-1 think-bold">Screems del sistema</h2>
+                <h5 class="text-center f-5 pb-2 think-bold">ELIJEN THINK ERP</h5>
+                <h2 class="text-center f-1 think-bold">Ellos ya se sumaron al cambio.</h2>
             </header>
 
-            <section id="bx-mockup">
+            <article class="bx-90">
+                <ul class="center wrap">
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/el_club_de_la_milanesa.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/costumbres.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/patagonia.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/temple.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/clubdelabirra.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/havanna.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/sushi_2x1.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/LA-GUITARRITA.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/cuervo-cafe.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/crisol.png">
+                    </li>
 
-                <button id="prev-mockup-video" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-left.png" alt="">
-                </button>
-                <button id="next-mockup-video" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-right.png" alt="">
-                </button>
+                </ul>
 
-                <div id="circle-mockups" class="bg-think-yellow"></div>
+            </article>
 
-                <section id="bx-mockups-deslice">
-    
-                    <div class="bx-mockups-videos pos-r">  
-                        <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
-                            </div>
-                            <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="bx-mockups-videos pos-r">  
-                        <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="1">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="1">
-                            </div>
-                            <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="1  " width="1000" height="680" controls></video>
-                            </div>
-                        </div> 
-                    </div>
-
-                    <div class="bx-mockups-videos pos-r">  
-                        <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="2">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="2">
-                            </div>
-                            <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="2" width="1000" height="680" controls></video>
-                            </div>
-                        </div> 
-                    </div>
-    
-                    <div class="bx-mockups-videos pos-r">  
-                        <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="3">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="3">
-                            </div>
-                            <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="3" width="1000" height="680" controls></video>
-                            </div>
-                        </div> 
-                    </div>
-    
-                    <div class="bx-mockups-videos pos-r">  
-                        <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="4">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="4">
-                            </div>
-                            <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="4" width="1000" height="680" controls></video>
-                            </div>
-                        </div> 
-                    </div>
-        
-                </section>
-
-            </section>
+            <article class="section-btn bx-f center mt-5">
+                <a href="customers.html" class="bx-f center">
+                    <button class="btn bg-think fc-w1 think-bold hover-think-yellow">
+                        Ver todos los clientes
+                    </button>
+                </a>
+            </article>
 
         </section>
 
         <section id="together" class="center bg-think-yellow ps-r">
-
 
             <h1 class="revol-banner think-black"> REVO </h1>
             <h1 class="revol-banner think-black"> LUCIO </h1>
@@ -515,7 +452,7 @@
                 <h5 class="f-5 pb-2 think-bold">CONTACTO</h5>
                 <h2 class="f-1 pb-5 think-bold text-center">Trabajemos juntos</h2>
                 <article class="section-btn bx-f center">
-                    <a href="#" class="bx-f center">
+                    <a class="bx-f center contact">
                         <button class="btn bg-think-dark fc-w1 think-bold hover-lila">
                             Contactanos
                         </button>
@@ -533,7 +470,7 @@
 
                     <div class="d-f">
                         
-                        <img src="./logo Thinkion.svg" alt="">
+                        <img src="./imagenes/logo/Thinkion.svg" alt="">
                         
                     </div>
 
@@ -628,23 +565,21 @@
                 </article>
 
                 <article class="bx-20">
-                    <form action="">
+                    
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">TRABAJEMOS JUNTOS</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">TRABAJEMOS JUNTOS</p>
-                        </article>
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">info@thinkion.com.ar</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">info@thinkion.com.ar</p>
-                        </article>
+                    <article class="bx-f fc-w1 f-5 center">
+                        <button class="footer-btn bg-think contact">
+                            Escribinos
+                        </button>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5 center">
-                            <button class="footer-btn bg-think">
-                                Escribinos
-                            </button>
-                        </article>
-
-                    </form>
                 </article>
 
                 <section class="legal-footer bx-f">
@@ -659,11 +594,11 @@
 
                         <span class="fc-w1">Seguinos</span>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.linkedin.com/company/b-smart/">
                             <img src="./imagenes/footer/icon-linkedin.svg" alt="" class="ml-2">
                         </a>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.instagram.com/_thinkion_/">
                             <img src="./imagenes/footer/icon-instagram.svg" alt="" class="ml-2">
                         </a>
 
@@ -678,8 +613,6 @@
         </footer>
 
     </section>
-
-    
 
     <script src="js/footer-displace.js" defer></script>
     <script src="js/contact.js" defer></script>

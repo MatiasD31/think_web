@@ -6,11 +6,9 @@ function load_previews()
 
     next_preview = document.getElementById('next-preview')
 
-    images_previews = document.getElementsByClassName('slide-previews')
+    images_previews = document.getElementsByClassName('info-image')
 
-    card = document.getElementsByClassName('card-think-about')
-
-    console.log( images_previews ) 
+    card = document.getElementsByClassName('float-card')
 
     next_preview.addEventListener('click', () => {
 

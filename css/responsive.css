@@ -400,6 +400,19 @@
     .revol-banner:nth-child(3) { margin-top:160px; }
 }
 
+@media screen and ( max-width:410px ) 
+{
+    .revol-banner 
+    { 
+        font-size:60px;
+        text-align: center;
+        letter-spacing:0px;
+        left:50px; 
+    }
+    .revol-banner:nth-child(1) { margin-bottom:100px; }
+    .revol-banner:nth-child(3) { margin-top:100px; }
+}
+
 
 
 /* razons  */

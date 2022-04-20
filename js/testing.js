@@ -60,15 +60,11 @@ function load ()
         boxis[cont].style.display = 'none'
 
         cont++
-
-        console.log(cont)
     }
 
     function appear()
     {
         boxis[cont].style.opacity = '1'
-
-        console.log(cont)
     }
 }
 

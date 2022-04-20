@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="./css/colours.css">
     <link rel="stylesheet" href="./css/responsive.css">
     <!-- components -->
+    <link rel="stylesheet" href="./css/components/admin.css">
+    <link rel="stylesheet" href="./css/components/mokups-videos.css">
     <link rel="stylesheet" href="./css/components/contact.css">
-    <link rel="stylesheet" href="./css/components/slide.css">
-    <link rel="stylesheet" href="./css/components/integrations.css">
+    <link rel="stylesheet" href="./css/components/bg-slide.css">
+    <!-- <link rel="stylesheet" href="./css/components/slide.css"> -->
     <link rel="stylesheet" href="./css/components/footer.css">
     <title>Thinkion - Revolucionate</title>
 </head>
@@ -75,7 +77,7 @@
 
     <nav>
         <div id="logo" class="bg-think">
-            <a href="index.html"><img src="./logo Thinkion.svg"></a>
+            <a href="index.html"><img src="./imagenes/logo/Thinkion.svg"></a>
         </div>
         <ul id="menu">
 
@@ -174,11 +176,11 @@
 
     <section class="cont-full">
 
-        <section id="slide"> 
+        <section id="slide" class="bg-image-admin"> 
             
             <div id="gradient"></div>
 
-            <img src="./imagenes/bg-image-home.jpg.png" class="img-slide">
+            <!-- <img src="./imagenes/management-administration/admin_hero.jpg" class="img-slide-admin"> -->
 
             <section class="bx-90 fc-w1 p-5">
 
@@ -187,7 +189,7 @@
                     <h1 class="f-1 pb-2 line-ht1 think-bold">La gestión organizada, es posible con Thinkion.</h1>
                     <h5 class="f-5 pb-4 line-ht3 think-bold">Contamos con módulos diseñados y pensados para mejorar tu gestión, incorporando procesos y mejorando actuales. </h5>
                     
-                    <a href="#">
+                    <a class="contact">
                         <button class="btn-yellow">
                             Trabajemos juntos
                         </button>
@@ -199,7 +201,7 @@
 
         </section> 
 
-        <section id="integrations" class="center col py-5 fc-w1 bg-think-dark">
+        <section id="admin" class="center col py-5 fc-w1 bg-think-dark">
              
             <section class="bx-90 center wrap">
 
@@ -218,9 +220,9 @@
 
                 </article>
 
-                <article class="bx-50 b-w h-9 pos-r">
+                <article class="box-image-admin bx-50 pos-r">
 
-                    <img src="" alt="">
+                    <img class="img-lg" src="./imagenes/management-administration/gestion_integrada.jpg">
 
                 </article>
 
@@ -228,13 +230,13 @@
 
         </section>
 
-        <section id="integrations" class="center col py-5">
+        <section id="admin" class="center col py-5">
              
             <section class="bx-90 center wrap">
 
-                <article class="bx-50 b">
+                <article class="box-image-admin bx-50">
 
-                    <img src="" alt="">
+                    <img class="img-lg" src="./imagenes/management-administration/compras_centralizadas.jpg">
 
                 </article>
 
@@ -257,7 +259,7 @@
 
         </section>
 
-        <section id="integrations" class="center col py-5 fc-w1 bg-think-dark">
+        <section id="admin" class="center col py-5 fc-w1 bg-think-dark">
              
             <section class="bx-90 center wrap">
 
@@ -276,9 +278,9 @@
 
                 </article>
 
-                <article class="bx-50 b-w h-9 pos-r">
+                <article class="box-image-admin bx-50 pos-r">
 
-                    <img src="" alt="">
+                    <img class="img-lg" src="./imagenes/management-administration/stock.jpg">
 
                 </article>
 
@@ -286,13 +288,13 @@
 
         </section>
 
-        <section id="integrations" class="center col py-5">
+        <section id="admin" class="center col py-5">
              
             <section class="bx-90 center wrap">
 
-                <article class="bx-50 b">
+                <article class="box-image-admin bx-50">
 
-                    <img src="" alt="">
+                    <img class="img-lg" src="./imagenes/management-administration/pagos.jpg">
 
                 </article>
 
@@ -324,7 +326,7 @@
 
                         <div class="bx-80 fc-w1">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/Union.svg" class="img-md">
+                                <img src="./imagenes/management-administration/icono_cuenta_corriente.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">Cuentas Claras</h5>
                             <p class="f-5 line-ht3">Administrá tus cobros y pagos, en un sólo lugar. Seguimiento Calendarizado de pagos y cobros.</p>
@@ -336,7 +338,7 @@
 
                         <div class="bx-80 fc-w1">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/image.svg" class="img-md">
+                                <img src="./imagenes/management-administration/icono_seguridad.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">Información Protegida</h5>
                             <p class="f-5 line-ht3">Backup Diario. Certificados de 2048 bits. Encriptación de datos en doble vía.</p>
@@ -348,7 +350,7 @@
 
                         <div class="bx-80 fc-w1">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/Clock.svg" class="img-md">
+                                <img src="./imagenes/management-administration/consistencia_info.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">Consistencia de la Información</h5>
                             <p class="f-5 line-ht3">Garantizamos que la información tomada de la App de venta, cómo la generada en el Administrador es consistente.</p>
@@ -360,7 +362,7 @@
 
                         <div class="bx-80 fc-w1">
                             <div class="bx-30 pb-3">
-                                <img src="./imagenes/Iconos/Calendar.svg" class="img-md">
+                                <img src="./imagenes/management-administration/gestion_central.svg" class="img-md">
                             </div>
                             <h5 class="f-5 pb-2 fc-think think-bold">Gestión Centralizada</h5>
                             <p class="f-5 line-ht3">Un sólo lugar, para una única gestión. Simplificá el trabajo. Hacelo desde cualquier lugar.</p>
@@ -377,17 +379,17 @@
         <section id="mockups" class="gral-padding center col pos-r">
 
             <header class="bx-50 center col">
-                <h5 class="text-center f-5 pb-1 think-bold">FEATURE O PARTE DEL SISTEMA</h5>
-                <h2 class="text-center f-1 think-bold">Screems del sistema</h2>
+                <h5 class="text-center f-5 pb-1 think-bold">Controlá y gestioná tu negocio desde cualquier lugar</h5>
+                <h2 class="text-center f-1 think-bold">GESTION Y ADMINISTRACION </h2>
             </header>
 
             <section id="bx-mockup">
 
                 <button id="prev-mockup-video" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-left.png" alt="">
+                    <img src="./imagenes/icons/arrow-left.png" alt="">
                 </button>
                 <button id="next-mockup-video" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-right.png" alt="">
+                    <img src="./imagenes/icons/arrow-right.png" alt="">
                 </button>
 
                 <div id="circle-mockups" class="bg-think-yellow"></div>
@@ -396,60 +398,195 @@
     
                     <div class="bx-mockups-videos pos-r">  
                         <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
+                            <!-- <div class="bx-btn-play">
                                 <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
                                 <img src="./imagenes/icon-play.png" class="btn-play" index="0">
-                            </div>
+                            </div> -->
                             <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video>
+                                <img src="./imagenes/management-administration/prints_carrousel/print_0.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
                             </div>
                         </div> 
                     </div>
 
                     <div class="bx-mockups-videos pos-r">  
                         <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="1">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="1">
-                            </div>
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
                             <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="1  " width="1000" height="680" controls></video>
+                                <img src="./imagenes/management-administration/prints_carrousel/print_1.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_2.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
                             </div>
                         </div> 
                     </div>
 
                     <div class="bx-mockups-videos pos-r">  
                         <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="2">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="2">
-                            </div>
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
                             <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="2" width="1000" height="680" controls></video>
+                                <img src="./imagenes/management-administration/prints_carrousel/print_3.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
                             </div>
                         </div> 
                     </div>
-    
+
                     <div class="bx-mockups-videos pos-r">  
                         <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="3">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="3">
-                            </div>
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
                             <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="3" width="1000" height="680" controls></video>
+                                <img src="./imagenes/management-administration/prints_carrousel/print_4.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
                             </div>
                         </div> 
                     </div>
-    
+
                     <div class="bx-mockups-videos pos-r">  
                         <div class="box-inner-mockup-video">
-                            <div class="bx-btn-play">
-                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="4">
-                                <img src="./imagenes/icon-play.png" class="btn-play" index="4">
-                            </div>
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
                             <div id="bx-video-mockup">
-                                <video src="./videos/01.mp4" class="video-mockup" index="4" width="1000" height="680" controls></video>
+                                <img src="./imagenes/management-administration/prints_carrousel/print_5.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_6.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_7.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_8.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_9.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_10.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_11.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_12.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_13.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="bx-mockups-videos pos-r">  
+                        <div class="box-inner-mockup-video">
+                            <!-- <div class="bx-btn-play">
+                                <img src="./imagenes/icon-pause.png" class="btn-pause" index="0">
+                                <img src="./imagenes/icon-play.png" class="btn-play" index="0">
+                            </div> -->
+                            <div id="bx-video-mockup">
+                                <img src="./imagenes/management-administration/prints_carrousel/print_14.jpg" alt="">
+                                <!-- <video src="./videos/01.mp4" class="video-mockup" index="0" width="1000" height="680" controls></video> -->
                             </div>
                         </div> 
                     </div>
@@ -471,7 +608,7 @@
                 <h5 class="f-5 pb-2 think-bold">CONTACTO</h5>
                 <h2 class="f-1 pb-5 think-bold text-center">Trabajemos juntos</h2>
                 <article class="section-btn bx-f center">
-                    <a href="#" class="bx-f center">
+                    <a class="bx-f center contact">
                         <button class="btn bg-think-dark fc-w1 think-bold hover-lila">
                             Contactanos
                         </button>
@@ -489,7 +626,7 @@
 
                     <div class="d-f">
                         
-                        <img src="./logo Thinkion.svg" alt="">
+                        <img src="./imagenes/logo/Thinkion.svg" alt="">
                         
                     </div>
 
@@ -584,23 +721,21 @@
                 </article>
 
                 <article class="bx-20">
-                    <form action="">
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">TRABAJEMOS JUNTOS</p>
-                        </article>
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">TRABAJEMOS JUNTOS</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">info@thinkion.com.ar</p>
-                        </article>
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">info@thinkion.com.ar</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5 center">
-                            <button class="footer-btn bg-think">
-                                Escribinos
-                            </button>
-                        </article>
+                    <article class="bx-f fc-w1 f-5 center">
+                        <button class="footer-btn bg-think contact">
+                            Escribinos
+                        </button>
+                    </article>
 
-                    </form>
                 </article>
 
                 <section class="legal-footer bx-f">
@@ -615,11 +750,11 @@
 
                         <span class="fc-w1">Seguinos</span>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.linkedin.com/company/b-smart/">
                             <img src="./imagenes/footer/icon-linkedin.svg" alt="" class="ml-2">
                         </a>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.instagram.com/_thinkion_/">
                             <img src="./imagenes/footer/icon-instagram.svg" alt="" class="ml-2">
                         </a>
 

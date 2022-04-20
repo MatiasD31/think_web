@@ -1,0 +1,31 @@
+#admin 
+{
+    display:flex;
+    padding:150px 0px;
+}
+
+#uno {
+    color:white;
+}
+
+#admin > section > .box-image-admin
+{
+    display:flex;
+    justify-content: center;
+}
+
+#admin > section > .box-image-admin > img { border-radius:5px; }
+
+@media screen and ( max-width:1150px )
+{
+    #admin > section > .box-image-admin { justify-content: start; }
+
+    #admin > section { justify-content:center; flex-direction: column-reverse ; }
+    #admin > section > article { width:90%; padding:0px; }
+    #admin > section > article:last-child { margin-bottom:50px; }
+}
+
+@media screen and ( max-width:600px )
+{
+    #admin > section > .box-image-admin > img { width:100%; }
+}

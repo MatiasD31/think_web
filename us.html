@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <title>Thinkion - Revolucionate</title>
     <link rel="stylesheet" href="./css/components/contact.css">
-    <link rel="stylesheet" href="./css/components/slide.css">
-    <link rel="stylesheet" href="./css/components/previews.css">
+    <!-- <link rel="stylesheet" href="./css/components/slide.css"> -->
+    <link rel="stylesheet" href="./css/components/bg-slide.css">
     <link rel="stylesheet" href="./css/components/footer.css">
     <link rel="stylesheet" href="./css/components/integrations.css">
 </head>
@@ -75,7 +75,7 @@
 
     <nav>
         <div id="logo" class="bg-think">
-            <a href="index.html"><img src="./logo Thinkion.svg"></a>
+            <a href="index.html"><img src="./imagenes/logo/Thinkion.svg"></a>
         </div>
         <ul id="menu">
 
@@ -174,11 +174,9 @@
     
     <section class="cont-full">
 
-        <section id="slide"> 
+        <section id="slide" class="bg-image-us"> 
             
             <div id="gradient"></div>
-
-            <img src="./imagenes/bg-image-home.jpg.png" class="img-slide">
 
             <section class="bx-90 fc-w1 p-5">
 
@@ -186,7 +184,7 @@
                     <h1 class="f-5 pb-2 think-bold">CONOCÉ MÁS SOBRE NOSOTROS</h1>
                     <h1 class="f-1 pb-2 line-ht1 think-bold">Llegamos para revolucionar la gastronomía</h1>
                     <h5 class="f-5 pb-4 line-ht3 think-bold">Creamos sistemas sustentables basados en la mejora contínua y nuevas tecnologías, enfocados en la funcionalidad y el cliente.</h5>
-                    <a href="#">
+                    <a class="contact">
                         <button class="btn-yellow">
                             Trabajemos juntos
                         </button>
@@ -325,35 +323,36 @@
             <article class="bx-90">
                 <ul class="center wrap">
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/clubdelabirra.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/el_club_de_la_milanesa.png">
                     </li>
                     <li class="bx-20">
                         <img class="img-lg center-block" src="./imagenes/customers/costumbres.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/crisol.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/patagonia.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/cuervo-cafe.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/temple.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/el_club_de_la_milanesa.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/clubdelabirra.png">
                     </li>
                     <li class="bx-20">
                         <img class="img-lg center-block" src="./imagenes/customers/havanna.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/LA-GUITARRITA.png">
-                    </li>
-                    <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/logopatagonia.png">
-                    </li>
-                    <li class="bx-20">
                         <img class="img-lg center-block" src="./imagenes/customers/sushi_2x1.png">
                     </li>
                     <li class="bx-20">
-                        <img class="img-lg center-block" src="./imagenes/customers/tacuara.png">
+                        <img class="img-lg center-block" src="./imagenes/customers/LA-GUITARRITA.png">
                     </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/cuervo-cafe.png">
+                    </li>
+                    <li class="bx-20">
+                        <img class="img-lg center-block" src="./imagenes/customers/crisol.png">
+                    </li>
+
                 </ul>
 
             </article>
@@ -368,149 +367,262 @@
 
         </section>
 
-        <section id="complementary" class="center col">
-
-            <header class="bx-80 center col">
-                <h5 class="text-center f-5 pb-2 think-bold">OTROS PRODUCTOS</h5>
-                <h2 class="text-center f-1 think-bold">Productos complementarios</h2>
+        <section id="razons" class="gral-padding col bg-think-gray pos-r">
+            
+            <header class="bx-60 center col">
+                <h5 class="text-center f-5 pb-1 think-bold">POR QUE ELEGIRNOS</h5>
+                <h2 class="text-center f-1 think-bold">Cinco razones para sumarte al cambio</h2>
             </header>
 
-            <section id="btns-complementary">
-                <button id="btn-com-prev" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-left.png" alt="">
-                </button>
-                <button id="btn-com-next" class="btn-slide-apps">
-                    <img src="./imagenes/arrow-right.png" alt="">
-                </button>
+            <section class="razons">  
+
+                <article class="bx-30 center col">
+
+                    <div class="bx-60">
+                        <h4 class="f-4 fc-think text-center think-bold">CENTRALIZACION REAL DE LA INFO</h4>
+                    </div>
+                    <div class="bx-60">
+                        <img src="./imagenes/svg_icons/01.svg" class="img-razons">
+                    </div>
+
+                </article>
+
+                <article class="bx-25">
+
+                    <p class="f-5 line-ht3">
+                        Thinkion nace centralizado, por lo tanto todos sus maestros son únicos y no están replicados por local, si no que están
+                        fraccionados desde un central. Desde nuestro potente administrador podes decidir que información ve, accede y tiene cada usuario y local. 
+                    </p>
+
+                    <p class="f-5 line-ht3 mt-3">
+                        Reportes, Productos, Descuentos, Compras y todo lo que necesitas en un sólo lugar, sin duplicación de información.
+                    </p>
+
+                </article>
+
+                <article class="bx-30 px-5">
+
+                    <h6 class="f-5 fc-think think-light">Beneficios de la centralizacion real</h6>
+
+                    <ul class="pb-5">
+                        <li> <div class="list"></div>Maestros Unicos</li>
+                        <li> <div class="list"></div>Sincronizacion automatica</li>
+                        <li> <div class="list"></div>Datos sin duplicación</li>
+                        <li> <div class="list"></div>Administracion centralizada</li>
+                        <li> <div class="list"></div>Sistema de pedidos desde el local</li>
+                        <li> <div class="list"></div>Aplicacion de Blockchain para producción</li>
+                    </ul>
+
+                </article>
+
             </section>
-             
-            <article class="bx-80" class="center">
 
-                <ul id="bx-displace-complementary" class="d-f wrap">
+            <section class="razons bx-f center">
 
-                    <li class="bx-3 p-5">
-                        <p class="f-26 line-ht2 fc-think">En Thinkion pensamos productos bla texto que da introduccion a los productos complementarios. </p>
+                <article class="bx-30 center col">
+
+                    <div class="bx-60">
+                        <h4 class="f-4 fc-think text-center think-bold">SEGURIDAD Y CONSISTENCIA EN LOS DATOS</h4>
+                    </div>
+                    <div class="bx-60">
+                        <img src="./imagenes/svg_icons/02.svg" class="img-razons">
+                    </div>
+
+                </article>
+
+                <article class="bx-25 d-f j-start">
+
+                    <p class="f-5 line-ht3">
+                        Tu información es nuestra prioridad. Garantizamos la consistencia de los datos, mediante técnicas de chequeo con nuestro potente motor de publicación y sincronizado. Mantenemos segura la información evitando errores de datos. 
+									
+                    </p>
+
+                </article>
+
+                <article class="bx-30 px-5">
+
+                    <h6 class="f-5 fc-think think-light">Beneficios de la centralizacion real</h6>
+
+                    <ul class="pb-5">
+                        <li> <div class="list"></div>Servidor local encryptado Linux.</li>
+                        <li> <div class="list"></div>Servidor central en google Compute Engine.</li>
+                        <li> <div class="list"></div>Backup diario.</li>
+                        <li> <div class="list"></div>Validación de cada Venta sincronizada.</li>
+                        <li> <div class="list"></div>Permisos de usuario por habilidad</li>
+                        <li> <div class="list"></div>Certificado SSL 2048 bits.</li>
+                    </ul>
+
+                </article>
+
+            </section>
+
+            <section class="razons bx-f center">
+
+                <article class="bx-30 center col">
+
+                    <div class="bx-60">
+                        <h4 class="f-4 fc-think text-center think-bold">SOPORTE TÉCNIOCO DE CALIDAD</h4>
+                    </div>
+                    <div class="bx-60">
+                        <img src="./imagenes/svg_icons/03.svg" class="img-razons">
+                    </div>
+
+                </article>
+
+                <article class="bx-25">
+
+                    <p class="f-5 line-ht3">
+                        Nuestro soporte técnico está a disposición de las necesidades de los usuarios. El equipo durante todo el tiempo,
+						da asistencia tanto técnica cómo funcional. Nuestra prioridad es darte una rápida respuesta, por ese motivo creamos
+						grupos exclusivos de WhatsApp para mantener el contacto con los usuarios, generando una velocidad de respuesta mayor. 
+						Todo incluído en el mismo soporte.					
+                    </p>
+
+                </article>
+
+                <article class="bx-30 px-5">
+
+                    <h6 class="f-5 fc-think think-light">Beneficios de la centralizacion real</h6>
+
+                    <ul class="pb-5">
+                        <li> 
+                            <div class="list"></div>Soporte técnico
+                        </li>
+                        <p class="f-6 think-medium ml-3 line-ht3">
+                            Resolución de problemas técnicos directos o adyacentes al sistema.
+                            Durante todo el tiempo del soporte.
+                        </p>
+                        <li> 
+                            <div class="list"></div>Soporte técnico
+                        </li>
+                        <p class="f-6 think-medium ml-3 line-ht3">
+                            Capacitación y guía online, sobre dudas de usuarios.
+							Durante todo el tiempo del soporte.
+                        </p>
+
+                    </ul>
+
+                </article>
+
+            </section>
+
+            <section class="razons bx-f center">
+
+                <article class="bx-30 center col">
+
+                    <div class="bx-60">
+                        <h4 class="f-4 fc-think text-center think-bold">GESTIÓN , PRODUCCIÓN Y ADMINITRACIÓN</h4>
+                    </div>
+                    <div class="bx-60">
+                        <img src="./imagenes/svg_icons/04.svg" class="img-razons">
+                    </div>
+
+                </article>
+
+                <article class="bx-25">
+
+                    <p class="f-5 think-bold line-ht3">
+                        Gestioná de forma centralizada, o descentralizada. Cómo quieras, donde quieras.
+                    </p>
+                    <p class="f-5 line-ht3 mt-3">
+                        Thinkion cuenta cón los siguientes módulos.
+                    </p>
+
+                </article>
+
+                <article class="bx-30 px-5">
+
+                    <h6 class="f-5 fc-think think-light">Beneficios de la centralizacion real</h6>
+
+                    <ul class="pb-5">
+                        <li> <div class="list"></div>Producción y Elaboración.</li>
+                        <li> <div class="list"></div>Compras y Cuentas Corrientes.</li>
+                        <li> <div class="list"></div>Plan de Cuentas y Gastos.</li>
+                        <li> <div class="list"></div>Stock.</li>
+                        <li> <div class="list"></div>Empleados , Fichajes y Sueldos.</li>
+                        <li> <div class="list"></div>Administración App de Ventas.</li>
+                    </ul>
+
+                </article>
+
+            </section>
+
+            <section class="razons bx-f center">
+
+                <article class="bx-30 center col">
+
+                    <div class="bx-60">
+                        <h4 class="f-4 fc-think text-center think-bold">DASHBOARDS Y REPORTES</h4>
+                    </div>
+                    <div class="bx-60">
+                        <img src="./imagenes/svg_icons/05.svg" class="img-razons">
+                    </div>
+
+                </article>
+
+                <article class="bx-25">
+
+                    <p class="f-5 line-ht3">
+                        Con más de 800 métricas y reportes, podes crear tus Dashboards las métricas y reportes que necesites.
+                    </p>
+
+                    <p class="f-5 line-ht3 mt-3">
+                        Tenes disponible gráficos de barra, torta, radar, polar, tablas comparativas, resultados y mucho más! Todo descargable en Excel!
+                    </p>
+
+                    <p class="f-5 line-ht3 mt-3">
+                        Podes ver los datos en Real Time y desde tu celular!
+                    </p>
+
+                </article>
+
+                <article class="bx-30 px-5">
+
+                    <h6 class="f-5 fc-think think-light">Beneficios de la centralizacion real</h6>
+
+                    <ul class="pb-5">
+                        <li> <div class="list"></div>Dashboard Ilimitados</li>
+                        <li> <div class="list"></div>Mas de 800 Métricas de Reportes</li>
+                        <li> <div class="list"></div>Módulo de Auditoría Inteligente</li>
+                        <li> <div class="list"></div>Reportes de Hoja de Cálculos</li>
+                        <li> <div class="list"></div>Información en Real Time</li>
+                        <li> <div class="list"></div>Carga de Reportes en Segundos</li>
+                        <li> <div class="list"></div>Filtros Inteligentes</li>
+                    </ul>
+
+                </article>
+
+            </section>
+
+            <div id="box-btns-razons">
+
+                <ul class="bx-50 center">
+    
+                    <li class="btns-razons" for="0">
+                        <img src="./imagenes/svg_icons/min-01.png" alt="">
                     </li>
-
-                    <li class="bx-3 p-4">
-
-                        <article class="box-imgs-complements">
-                            <section class="bx-f">
-                                <article class="box-thinks-products">
-                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">FOOD</span></h1>
-                                </article>
-                                <article class="box-interface-soft">
-                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
-                                </article>
-                            </section>
-                        </article>
-                        <article>
-                            <p class="line-ht3 f-5">
-                                Permite capturar datos de clientes y conocer que ocurre en los locales, mediante encuestas realizadas por vía QR, dando la opción de ganar uno o más beneficios. Su potente motor de email Marketing facilita el contacto 1 a 1 con diferentes filtrados de información.
-                            </p>
-                            <br>
-                            <a class="fc-think think-bold cp">VER MAS</a>
-                        </article>
-                        
+        
+                    <li class="btns-razons" for="1">
+                        <img src="./imagenes/svg_icons/min-02.png" alt="">
                     </li>
-
-                    <li class="bx-3 p-4">
-
-                        <article class="box-imgs-complements">
-                            <section class="bx-f">
-                                <article class="box-thinks-products">
-                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">CHECK</span></h1>
-                                </article>
-                                <article class="box-interface-soft">
-                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
-                                </article>
-                            </section>
-                        </article>
-                        <article>
-                            <p class="line-ht3 f-5">Una herramienta ideal para auditorías de puntos de venta,
-                                tanto franquicias cómo locales propios. Con la posiblidad de generar múltiples índices
-                                con sub índices, puntos de auditoría, respuestas de 1 a 5, binarias, comentarios, fotos
-                                y muchos más.
-                                </p>
-                            <br>
-                            <a class="fc-think think-bold cp">VER MAS</a>
-                        </article>
-                        
+        
+                    <li class="btns-razons" for="2">
+                        <img src="./imagenes/svg_icons/min-03.png" alt="">
                     </li>
-
-                    <li class="bx-3 p-4">
-
-                        <article class="box-imgs-complements">
-                            <section class="bx-f">
-                                <article class="box-thinks-products">
-                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">STORE</span></h1>
-                                </article>
-                                <article class="box-interface-soft">
-                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
-                                </article>
-                            </section>
-                        </article>
-                        <article>
-                            <p class="line-ht3 f-5">Un potente motor de Ecommerce conectado a Think ERP que 
-                                cumplimenta con las más de 200 reglas de Google en cuanto usabilidad, velocidad y experiencia
-                                del usuario. Posee Checkout conectado a Mercado Pago.
-                            </p>
-                            <br>
-                            <a class="fc-think think-bold cp">VER MAS</a>
-                        </article>
-                        
+        
+                    <li class="btns-razons" for="3">
+                        <img src="./imagenes/svg_icons/min-04.png" alt="">
                     </li>
-
-                    <li class="bx-3 p-4">
-
-                        <article class="box-imgs-complements">
-                            <section class="bx-f">
-                                <article class="box-thinks-products">
-                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">CARD</span></h1>
-                                </article>
-                                <article class="box-interface-soft">
-                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
-                                </article>
-                            </section>
-                        </article>
-                        <article>
-                            <p class="line-ht3 f-5">
-                                Think Card es una herramienta de fidelización que mediante
-								la identificaciǿn del cliente, permite poder acceder a diferentes tipos de beneficios cómo
-								descuentos, productos, premiación por visitas entre otros, limitando días, locales y más.
-                            </p>
-                            <br>
-                            <a class="fc-think think-bold cp">VER MAS</a>
-                        </article>
-                        
+        
+                    <li class="btns-razons" for="4">
+                        <img src="./imagenes/svg_icons/min-05.png" alt="">
                     </li>
-
-                    <li class="bx-3 p-4">
-
-                        <article class="box-imgs-complements">
-                            <section class="bx-f">
-                                <article class="box-thinks-products">
-                                    <h1 class="f-2 think-bold"> THINK <br> <span class="fc-think think-bold">NET</span></h1>
-                                </article>
-                                <article class="box-interface-soft">
-                                    <img src="./imagenes/Mask Group.png" class="img-prouct">
-                                </article>
-                            </section>
-                        </article>
-                        <article>
-                            <p class="line-ht3 f-5">Mediante su timeline, permite visualizar todas las novedades, las cuales pueden ser de nuevos manuales, lanzamientos, información general con adjuntos, videos, link de referencias,etc. Además cuenta con un motor de videos para capacitación auto administrable.
-                            </p>
-                            <br>
-                            <a class="fc-think think-bold cp">VER MAS</a>
-                        </article>
-                        
-                    </li>
-
+        
                 </ul>
-
-            </article>
+            </div>
 
         </section>
+
 
         <section id="together" class="center bg-think-yellow ps-r">
 
@@ -523,7 +635,7 @@
                 <h5 class="f-5 pb-2 think-bold">CONTACTO</h5>
                 <h2 class="f-1 pb-5 think-bold text-center">Trabajemos juntos</h2>
                 <article class="section-btn bx-f center">
-                    <a href="#" class="bx-f center">
+                    <a class="bx-f center contact">
                         <button class="btn bg-think-dark fc-w1 think-bold hover-lila">
                             Contactanos
                         </button>
@@ -541,7 +653,7 @@
 
                     <div class="d-f">
                         
-                        <img src="./logo Thinkion.svg" alt="">
+                        <img src="./imagenes/logo/Thinkion.svg" alt="">
                         
                     </div>
 
@@ -636,23 +748,21 @@
                 </article>
 
                 <article class="bx-20">
-                    <form action="">
+                    
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">TRABAJEMOS JUNTOS</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">TRABAJEMOS JUNTOS</p>
-                        </article>
+                    <article class="bx-f fc-w1 f-5">
+                        <p class="text-center">info@thinkion.com.ar</p>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5">
-                            <p class="text-center">info@thinkion.com.ar</p>
-                        </article>
+                    <article class="bx-f fc-w1 f-5 center">
+                        <button class="footer-btn bg-think contact">
+                            Escribinos
+                        </button>
+                    </article>
 
-                        <article class="bx-f fc-w1 f-5 center">
-                            <button class="footer-btn bg-think">
-                                Escribinos
-                            </button>
-                        </article>
-
-                    </form>
                 </article>
 
                 <section class="legal-footer bx-f">
@@ -667,11 +777,11 @@
 
                         <span class="fc-w1">Seguinos</span>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.linkedin.com/company/b-smart/">
                             <img src="./imagenes/footer/icon-linkedin.svg" alt="" class="ml-2">
                         </a>
 
-                        <a href="">
+                        <a target="a_black" href="https://www.instagram.com/_thinkion_/">
                             <img src="./imagenes/footer/icon-instagram.svg" alt="" class="ml-2">
                         </a>
 
@@ -687,8 +797,8 @@
 
     </section>
 
+    <script src="./js/choose-think.js" defer></script>
     <script src="js/footer-displace.js" defer></script>
-    <script src="./js/complementaryProducts.js" defer></script>
     <script src="js/contact.js" defer></script>
     <script src="js/toggle-menu.js" defer></script>
 </body>

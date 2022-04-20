@@ -1,20 +1,3 @@
-/* slide */
-
-.bg-image-home { background-image: url('./../../imagenes/home/hero.jpg'); }
-.bg-image-products { background-image: url('./../../imagenes/products/hero.jpg'); }
-.bg-image-us { background-image: url('./../../imagenes/us/hero.jpg'); }
-.bg-image-reports { background-image: url('./../../imagenes/reports/hero.jpg'); }
-.bg-image-customers { background-image: url('./../../imagenes/customers/hero.jpg'); }
-.bg-image-booking { background-image: url('./../../imagenes/booking/hero_reservas.jpg'); }
-
-.bg-image-home,
-.bg-image-products,
-.bg-image-us,
-.bg-image-reports
-{
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 #slide {
     height:100vh; 
@@ -22,32 +5,34 @@
     position:relative;
 }
 
-.image-slide 
+.bg-image-home { background-image: url('./../../imagenes/home/hero.jpg'); }
+.bg-image-products { background-image: url('./../../imagenes/products/hero.jpg'); }
+.bg-image-us { background-image: url('./../../imagenes/us/hero.jpg'); }
+.bg-image-reports { background-image: url('./../../imagenes/reports/hero.jpg'); }
+.bg-image-customers { background-image: url('./../../imagenes/customers/hero.jpg'); }
+.bg-image-booking { background-image: url('./../../imagenes/booking/hero.jpg'); }
+.bg-image-pack-digital { background-image: url('./../../imagenes/digital-pack/hero.jpg'); }
+.bg-image-ecommerce { background-image: url('./../../imagenes/ecommerce/hero.jpg'); }
+.bg-image-admin { background-image: url('./../../imagenes/management-administration/hero.jpg'); }
+.bg-image-app-shell { background-image: url('./../../imagenes/app-shell/hero.jpg'); }
+.bg-image-work { background-image: url('./../../imagenes/how-does-it-work/hero.jpg'); }
+
+.bg-image-home,
+.bg-image-products,
+.bg-image-us,
+.bg-image-reports,
+.bg-image-booking,
+.bg-image-pack-digital,
+.bg-image-ecommerce,
+.bg-image-admin,
+.bg-image-app-shell,
+.bg-image-work,
+.bg-image-customers
 {
-    width:100%;
-    height:120vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-
-.img-slide
-{ 
-    width:100%; 
-    height:100vh; 
-}
-
-
-.img-slide-admin 
-{ 
-    width:100%; 
-    min-width:1920px;
-    height:100vh; 
-}
-
-.img-slide-ecommerce { width:100%; }
-.img-slide-reports { width:100%; }
-.img-slide-work { width:100%; height:100vh; }
-
-.img-slide-app-shell { width:100%; height:100vh; }
 
 #gradient {
     height:100vh;
@@ -70,8 +55,6 @@
     z-index:10; 
 }
 
-/* responsive */
-
 @media screen and ( max-width: 1440px ) 
 {
     #slide > section > article { width:60%; min-width:680px; }
@@ -79,25 +62,25 @@
 
 @media screen and ( max-width: 1030px )
 {
-    #slide { height:100vh; }
+    /* #slide { height:100vh; } */
 
     .bg-image-home,
     .bg-image-products,
     .bg-image-us,
-    .bg-image-reports
+    .bg-image-reports,
+    .bg-image-booking,
+    .bg-image-ecommerce,
+    .bg-image-admin,
+    .bg-image-app-shell,
+    .bg-image-work,
+    .bg-image-customers
     {
         background-size:1000px auto;
-        /* background-position-x: center; */
     }
 
-    .bg-image-reports{ background-position-x: center; }
+    .bg-image-reports { background-position-x: center; }
 
-    .img-slide-admin 
-    { 
-        width:100%;
-        margin-top:-130px;
-        min-width:800px;
-    }
+    .bg-image-work { background-position-x:center; }
    
     #gradient 
     {
@@ -112,47 +95,37 @@
     #gradient { height:50vh;bottom:0px;  }
 }
 
-
-@media screen and ( max-width: 900px )
-{
-    .img-slide 
-    { 
-        width:100%; 
-        min-width:900px;
-        height:60vh; 
-    }
-}
-
-
-
 @media screen and ( max-width: 800px )
 {
     #slide > section > article { width:100% !important; min-width:20px; padding:1%; }
-
-    .img-slide-work { width:850px;height:60vh; } 
 }
 
 @media screen and ( max-width: 600px )
 {
-    .img-slide { width:100%; height:60vh; min-width:800px; }
 
-    .img-slide-work { width:100%; margin-top:50px; min-width:600px; height:60vh; } 
+    .bg-image-home,
+    .bg-image-products,
+    .bg-image-reports,
+    .bg-image-pack-digital,
+    .bg-image-ecommerce,
+    .bg-image-admin,
+    .bg-image-app-shell,
+    .bg-image-us,
+    .bg-image-customers { background-size:900px auto; }
 
-    .img-slide-admin 
-    { 
-        min-width:600px; 
-        width:110%; 
-        height:60vh; 
-        margin-top:0px;
-        margin-left:-50px;
-    }
+    .bg-image-booking,
+    .bg-image-pack-digital,
+    .bg-image-ecommerce,
+    .bg-image-admin,
+    .bg-image-us,
+    .bg-image-customers { background-position-x: center; }
+
+    .bg-image-work { background-size:700px auto; }
 
     #gradient {
         background: rgb(0,0,0);
         background: linear-gradient(0deg, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 80%);
     }
-
-    .img-slide-app-shell { width:200%; height:auto; margin-left:-120px; }
 
     #slide > section > article { width:100%; padding:4%; }
 
@@ -169,42 +142,46 @@
 
 @media screen and ( max-width:500px )
 {
-    .bg-image-home,
-    .bg-image-products,
-    .bg-image-us,
-    .bg-image-reports
+
+
+    /* .bg-image-booking,
+    .bg-image-pack-digital
     {
-        background-size:700px auto;
-        /* background-position-x: center; */
+        background-position-x: center;
     }
-    
+     */
 }
 
 @media screen and ( max-width: 450px )
 {
-
-    .img-slide-app-shell { width:300%; height:auto; margin-left:-150px; }
-
-    .img-slide-work { min-width:500px; height:55vh; } 
-
     #slide > section > article { padding:5px; }
 
     #gradient { height:100vh; }
     #slide { height:100vh; } 
+
+    .bg-image-admin ,
+    .bg-image-app-shell,
+    .bg-image-us
+    {
+        background-size: 690px auto;
+    }
+
+    .bg-image-us { background-position-x: center; }
+    .bg-image-work { background-position-x: right; }
+     
 }
 
 @media screen and ( max-width: 420px )
 {
     .bg-image-home,
     .bg-image-products,
-    .bg-image-us,
-    .bg-image-reports
+    .bg-image-reports,
+    .bg-image-us 
     {
         background-size:900px auto;
         /* background-position-x: center; */
     }
 
-    .img-slide { margin-left:-120px; }
     #gradient 
     { 
         height:100vh;
@@ -215,13 +192,10 @@
 
 @media screen and ( max-width: 376px ) 
 { 
-    .img-slide-admin 
+    .bg-image-us 
     { 
-        min-width:350px; 
-        width:120%; 
-        height:55vh; 
-        margin-top:0px;
-        margin-left:0px;
+        background-size:700px auto;
+        background-position-x:60%; 
     }
 }
 

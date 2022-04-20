@@ -1,0 +1,158 @@
+.box-info-cards
+{
+    height:100vh;
+    width:100%;
+    position: relative;
+    margin-bottom:200px;   
+}
+
+.bx-image { height:100vh; }
+
+.info-image 
+{
+    width:100%;
+    height:100vh;
+    position:absolute;
+    min-width:1200px;
+}
+
+.bx-btns-info-card 
+{
+    width:100%;
+    position: absolute;
+    top:50%;
+    bottom:0px;
+
+}
+
+.float-card
+{
+    width:544px;
+    height:260px;
+    position: absolute;
+    bottom:-50px;
+    left:200px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:0px 5%;
+    display:none;
+}
+
+.float-card:first-of-type { display:flex;}
+
+#prev-preview,
+#next-preview { position:absolute; z-index:30; }
+
+#prev-preview { left:-30px; }
+#next-preview { right:-30px; }
+
+.bx-arrows-thinks-reviews 
+{
+    position:absolute;
+    left:0px;
+    top:40px;
+    width:50px;
+}
+
+.bx-arrows-thinks-reviews > img 
+{
+    position: absolute;
+}
+.bx-arrows-thinks-reviews > img:first-of-type 
+{
+    width:40px;
+    left:-15px;
+}
+
+.bx-arrows-thinks-reviews > img:last-child 
+{
+    width:72px;
+    left:-20px;
+    top:-25px;
+}
+
+@media screen and ( max-width: 1000px ) 
+{
+    .float-card { left:10%; }
+}
+
+@media screen and ( max-width:900px ) 
+{
+    .info-image { min-width:0px; }
+
+    .info-image,
+    .bx-image,
+    .box-info-cards { height:60vh; }
+
+    .box-info-cards { margin-bottom:300px; }
+
+    .float-card { left:5%; width:50%; }
+
+    .float-card 
+    { 
+        bottom:-200px;
+        position: absolute;
+        min-width:0px;
+        width:90%;
+    }
+}
+
+@media screen and ( max-width:800px )
+{
+    #prev-preview > img ,
+    #next-preview > img { display:block; margin:auto; }
+}
+
+@media screen and ( max-width: 830px ) 
+{
+    .info-image
+    {
+        min-width:800px;
+    }
+}
+
+@media screen and ( max-width: 720px ) 
+{
+    .box-info-cards 
+    { 
+        min-width:0px;
+        margin-bottom:300px; 
+    }
+
+    .info-image
+    {
+        min-width:0px;
+    }
+}
+
+@media screen and ( max-width: 500px ) 
+{
+    .info-image,
+    .bx-image,
+    .box-info-cards 
+    { 
+        height:40vh; 
+        min-height:220px; 
+    }
+
+    .info-image { min-width:530px; }
+
+    .float-card
+    {
+        padding:0px 15%;
+    }
+
+    .card-think-about { padding:25px; text-align: center; }
+
+    #prev-preview,
+    #next-preview { width:35px; height:35px; } 
+
+    #prev-preview > img,
+    #next-preview > img { width:20px; height:15px; }
+}
+
+@media screen and ( max-width: 400px ) 
+{
+    .info-image { min-width:400px; }
+}
