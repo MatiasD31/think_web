@@ -95,6 +95,11 @@ footer
     cursor: pointer;
 }
 
+/* contact footer */
+
+.links-footer > li > .contact { cursor:pointer; }
+.links-footer > li .contact:hover { text-decoration: underline; } 
+
 @media screen and ( max-width:1300px ) 
 {
     .container-footer > article:nth-child(1) { width:100%; }

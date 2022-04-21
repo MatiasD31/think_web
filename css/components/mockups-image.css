@@ -1,22 +1,21 @@
-.mockups-images
-{
-    height:120vh;
-}            
+.mockups-images { height:100vh; }            
 
 .section-mockup
 {
-    height:60vh;
+    height:50vh;
     display:flex;
     justify-content: center;
-    align-items: center;
 }
+
+.section-mockup:first-of-type { align-items: end; }
+.section-mockup:last-of-type { align-items: start; }
 
 .container-top,
 .container-bottom 
 {
     width:100%;
     max-width:1350px;
-    height:60vh;
+    height:50vh;
     display:flex;
 }
 
@@ -64,7 +63,7 @@
 {
     position: absolute;
     width:200px;
-    height:60vh;
+    height:51vh;
 }
 
 .right-rect { right:0px; }
