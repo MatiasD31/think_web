@@ -55,8 +55,7 @@
     overflow:hidden;
     box-shadow:0px 0px 35px rgba(0,0,0,.7);
     position: absolute;
-    bottom:150px;
-    
+    bottom:150px;   
 }
 
 .rect
@@ -121,9 +120,37 @@
     .section-mockup:first-of-type ,
     .section-mockup > .container-top { height:35vh; }
 
+    .think > .section-mockup > .container-bottom > .box-mockup-image:last-of-type,
+    .blue > .section-mockup > .container-bottom > .box-mockup-image:first-of-type { width:0px; }
 
-    .think > .section-mockup > .container-bottom > .box-mockup-image { display:none; }
-    .blue > .section-mockup > .container-bottom > .box-mockup-image { display:none; }
+    .mockup-phone
+    {
+        border-radius:10px;
+        width:100px;
+        height:200px;
+        overflow:hidden;
+        box-shadow:0px 0px 35px rgba(0,0,0,.7);
+        position: absolute;
+        top:-200px;   
+        right:50px;
+    }
+
+    .inner-mockup 
+    {
+        width:90px;
+        height:190px;
+        background-color:#FFFFFF;
+        margin:5px;
+        border-radius:10px;
+        overflow: hidden;
+        display: flex;
+    }
+
+    .mockup-image { width:90px; height:190px; }
+
+
+    .think > .section-mockup > .container-bottom > .box-mockup-image { display:none; } 
+    .blue > .section-mockup > .container-bottom > .box-mockup-image { display:none; } 
 
     .think > .section-mockup > .container-bottom > .box-mockup-image:first-of-type, 
     .blue > .section-mockup > .container-bottom > .box-mockup-image:last-of-type 
@@ -141,6 +168,9 @@
 
 @media screen and ( max-width: 600px ) 
 {
+      .think > .section-mockup > .container-bottom > .box-mockup-image { display:none; }
+      .blue > .section-mockup > .container-bottom > .box-mockup-image { display:none; } 
+
     .think > .section-mockup .container-top > .box-mockup-image:last-of-type,
     .blue > .section-mockup .container-top > .box-mockup-image:first-of-type {  display:none; }
     
@@ -150,7 +180,7 @@
     .section-mockup:first-of-type ,
     .section-mockup > .container-top{ height:26vh; }
 
-    .rect { height:27vh; }
+    .rect { /* height:27vh; */ display:none; }
 
 
     .mimage-h-10 { height:10vh; }
